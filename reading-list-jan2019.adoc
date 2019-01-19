@@ -1,0 +1,7 @@
+= Reading List for Jan 2019
+
+
+== Git Repositories
+
+* Recommendation Algorithms from Microsoft [via https://changelog.com/nightly↫]
+** https://github.com/Microsoft/Recommenders
