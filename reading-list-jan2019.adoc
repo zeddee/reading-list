@@ -1,7 +1,163 @@
 = Reading List for Jan 2019
+:toc: auto
+:sectlinks:
+:sectnums:
+
+== Data science resources
+
+Am going through Datacamp's link:https://www.datacamp.com/tracks/data-scientist-with-python[python course] again,
+this time grabbing the datasets
+and working with Jetbrain's link:https://www.jetbrains.com/pycharm/[PyCharm IDE],
+which has fantastic Python `venv` handling and code completion.
+
+* link:https://en.wikipedia.org/wiki/Cross-correlation[Cross-correlation]
+** Status: to read.
+** Looked this up when trying to look up the difference between
+`numpy.ndarray.corrcoef()` and `numpy.ndarray.correlate()`
+* link:https://en.wikipedia.org/wiki/Norm_(mathematics)[Norm]
+** Status: to read.
+** Looked this up when trying to figure out what is an L norm.
+* link:https://en.wikipedia.org/wiki/Dot_product[Dot product]
+** Status: to read.
+
+Courses:
+
+* Facebook's PyTorch course: https://classroom.udacity.com/courses/ud188
+-
+
+GANs (Generative Adverserial Networks):
+
+- https://skymind.ai/wiki/generative-adversarial-network-gan (to read)
+- https://dtransposed.github.io/blog/Best-of-GANs-2018-(Part-1-out-of-2).html (to read)
+
+== Ethics and Data Governance
+
+https://easaonline.org/downloads/support/EASA%20statement%20on%20data%20governance.pdf?fbclid=IwAR1fbW1xKa7VSycnwZ-leB3qqpQjFCakZ-5VjzNig_1doj3lq8GX-EGZl-c
+
+----
+This statement describes some of the core methodical and ethical practices of ethnographic research.
+These practices have implications for the norms and forms of data management in ethnography.
+We issue this statement to help ethnographers respond to current mandates for
+data archiving, storage, and sharing from
+governments, universities, and funders.
+----
+
+== Misc. Blockchain Resources
+
+* Sparse merkle trees (↫ link:https://github.com/m0t0k1ch1[m0t0k1ch1]) (to read)
+** https://github.com/m0t0k1ch1/sparse-merkle-tree/blob/master/tree.go
+* Metamask login using Go (↫ link:https://github.com/m0t0k1ch1[m0t0k1ch1])
+** https://github.com/m0t0k1ch1/metamask-login-sample/blob/master/main.go
+* link:https://handshake.org[Handshake] Blockchain DNS
+** Whitepaper: https://handshake.org/files/handshake.txt (to read)
+** Repo: https://github.com/handshake-org/hnsd
+* Awesome list of Solidity/Smart Contract resources
+** https://github.com/bkrem/awesome-solidity
+* Smart contract best practices (↫ https://github.com/zupzup/) (to parse)
+** https://github.com/zupzup/smart-contracts-with-go/blob/master/main.go
+* Merkling in Ethereum
+** https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
 
 
-== Git Repositories
+== Cybersecurity by Huawei
 
-* Recommendation Algorithms from Microsoft [via https://changelog.com/nightly↫]
+Was digging through the govtech blog for another article when I came across this:
+https://www.tech.gov.sg/media/technews/5-cybersecurity-tips-from-huawei-chief-cybersecurity-officer
+
+They're basic ground level tips:
+
+- Think before you click
+- Passwords matter
+- Say no to public wifi
+- Control network access
+- Education is key
+
+I'm assuming that the tips are for the lay audience,
+but they're not that useful or even up to date on
+best practices. Quickly:
+
+. Think before you click
+** Generally true and correct.
+- Passwords matter
+** Generally true and correct.
+** But important details left out.
+** For example, changing passwords often has been debunked as a best practice. 
+In fact, link:https://www.cesg.gov.uk/articles/problems-forcing-regular-password-expiry[forcing users]
+to link:https://nakedsecurity.sophos.com/2016/08/18/nists-new-password-rules-what-you-need-to-know/[change passwords often]
+does two things you don't want:
+*** Users don't bother to come up with a strong password each time,
+and tend to use variations of the same password.
+*** Users start storing passwords in insecure places.
+** Also, a short password that uses symbols, alphanumeric characters etc.
+is not as strong as a long password that's just a series of words.
+Relevant: link:https://www.xkcd.com/936/[XKCD: Password Strength] +
+[link=https://www.xkcd.com/936/]
+image::xkcd_password_strength.jpg[Password strength]
+** Use a password manager. Here are some good ones:
+*** https://buttercup.pw/ [free; win, macos, linux]
+*** https://www.lastpass.com/ [free & paid: win, macos, linux]
+*** https://1password.com/ [paid: win, macos, linux]
+*** _Disclaimer: remember — if it s free, you're the product_
+. Say no to public wifi
+** Generally true and correct.
+. Control network access
+** Generally true and correct.
+** Does not mention that attacks go the other way as well.
+Connecting to a network not only allows attacks from your device,
+but also allows access to your device as well. If you're connected to your
+office network, _assume that someone is watching your online activity_.
+This is also a good time to mention that _your company reads your email_.
+No exceptions. This is a feature *built-into* Microsoft Exchange and other
+major email software services.
+. Education is key
+** Yes.
+
+Though I'd like to point out that the cybersecurity interests of the public
+has never been China's strong point, so I'd take this proffering of advice with
+a pinch of salt:
+
+- https://www.wired.com/story/us-china-cybertheft-su-bin/
+- https://www.nytimes.com/2018/02/03/opinion/sunday/china-surveillance-state-uighurs.html
+- https://www.cecc.gov/events/hearings/surveillance-suppression-and-mass-detention-xinjiang%E2%80%99s-human-rights-crisis
+
+== Anticipatory services 
+
+- https://www.tech.gov.sg/media/technews/five-key-features-of-the-new-moments-of-life-app
+- https://govinsider.asia/digital-gov/singapore-smart-nation-e-payments-national-digital-identity-anticipatory-services/
+- https://govinsider.asia/smart-gov/predictive-services-are-the-future-of-estonias-digital-government/
+- https://govinsider.asia/innovation/new-zealand-launches-predictive-service-for-new-parents/
+- https://govinsider.asia/innovation/new-zealand-end-of-life-service/
+
+One of the smart nation initiatives that I have been worrying about.
+We know that adtech has used this badly:
+
+- link:https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/#56e1681f6668[Target sent coupons for baby items to a teen, outing her pregnancy.]
+- link:https://www.theverge.com/2015/4/2/8315897/facebook-on-this-day-nostalgia-app-bringing-back-painful-memories[Facebook's "on this day" feature is terrible.]
+
+Anticipatory services are by default intrusive because they require an unprecedented
+level of access to your personal life and communications, 
+_whether or not you are aware of the data you are producing_.
+
+== Bachelard, rationalism, and computation
+
+Reading Anna Longo, "Gaston Bachelard: From Mathematical Structures to Reality",
+published 1 Oct 2012 (that's whay my Pocket Reader says, but undated on site),
+on _Glass-Bead: Research Platform_. Available:
+http://www.glass-bead.org/research-platform/gaston-bachelard-mathematical-structures-reality
+
+Author writes about how computational thinking is limited when it comes to
+reasoning about issues that are "incomputable" (similar to "intractable" in algorithmic thinking?).
+
+== Git repositories
+
+* Recommendation Algorithms from Microsoft [↫ https://changelog.com/nightly]
 ** https://github.com/Microsoft/Recommenders
+* Building Electron apps with Go
+** https://github.com/asticode/go-astilectron
+** Seems better supported than Gotron. Astilectron works out-of-the-box for my macOS machine, but Gotron does not. Need to play with this more.
+* PDF document generator for Go
+** https://github.com/jung-kurt/gofpdf
+** For future project where we build a PDF generator into Hugo for documentation sites.
+** Need to figure out how to convert asciidoctor and markdown files into PDF using this tool first.
+** Also probably need to figure out how to reliably crawl a content directory and generate a TOC or manifest, or
+** Read from a TOC/manifest to generate a set of docs.
