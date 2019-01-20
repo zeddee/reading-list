@@ -91,8 +91,7 @@ and tend to use variations of the same password.
 ** Also, a short password that uses symbols, alphanumeric characters etc.
 is not as strong as a long password that's just a series of words.
 Relevant: link:https://www.xkcd.com/936/[XKCD: Password Strength] +
-[link=https://www.xkcd.com/936/]
-image::xkcd_password_strength.jpg[Password strength]
+image:/static/xkcd_password_strength.jpg[Password strength. link=https://www.xkcd.com/936/]
 ** Use a password manager. Here are some good ones:
 *** https://buttercup.pw/ [free; win, macos, linux]
 *** https://www.lastpass.com/ [free & paid: win, macos, linux]
