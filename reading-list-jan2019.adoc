@@ -155,6 +155,17 @@ Anticipatory services are by default intrusive because they require an unprecede
 level of access to your personal life and communications, 
 _whether or not you are aware of the data you are producing_.
 
+Other developments to watch:
+
+From https://www.tech.gov.sg/media/technews/10-tech-developments-to-look-forward-to-in-2019:
+
+----
+8. A smart lamp post near you
+
+ST Engineering has been awarded a S$7.5 million contract to give lamp posts in Geylang and Buona Vista an upgrade with *Internet of Things sensors* and *cameras*. These smart lamp posts are part of the government’s efforts to create a Smart Nation Sensor Platform that allows real-time monitoring of not just *road traffic conditions*, but also *pedestrian footfall and environmental parameters such as temperature and humidity. The data collected will help inform urban and transport planning, as well as *enhance security* in Singapore.
+----
+
+
 == Bachelard, rationalism, and computation
 
 Reading Anna Longo, "Gaston Bachelard: From Mathematical Structures to Reality",
