@@ -42,6 +42,8 @@ data archiving, storage, and sharing from
 governments, universities, and funders.
 ----
 
+Also see section below on link:#mit-the-ethics-and-governance-of-ai[The Ethics and Governance of AI].
+
 == Misc. Blockchain Resources
 
 * Sparse merkle trees (↫ link:https://github.com/m0t0k1ch1[m0t0k1ch1]) (to read)
@@ -207,6 +209,21 @@ before payment gateway fees (paypal/stripe) (see link:/static/itchio-publishing.
 Gumroad takes 8.5% + US$0.30 (see link:/static/gumroad-publishing.mp4)[video])
 - *Manual*: Have customers send you an email with proof of paypal/paylah/snailmail payment,
 and you send an email back with promised material.
+
+== MIT: The Ethics and Governance of AI
+
+ MIT Lecture series: The Ethics and Governance of AI, Feb 2018
+ link:https://www.youtube.com/watch?v=MyW6eAGV-eM&list=PLj62-wQeg_DjuoWS4A_VYzLWtEVUZj1IO[Youtube]
+
+Opening event: Keynote by Joi Ito
+
+* One of the core problems of ethics is that we’re not clear on what constitutes a desirable state.
+* Alphago: not raw calculation or moveset possibilities, in fact closer to what we would grok as intuition and creativity (? really?)
+
+== MIT: Neri Oxman/Mediated Matter, MIT Media Lab
+
+To watch.
+https://www.youtube.com/watch?v=6GaQtH1bhpo&list=PLj62-wQeg_DgC-433WJ5qXegaxYoMlXBS
 
 == Git repositories
 
