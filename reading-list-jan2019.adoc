@@ -212,8 +212,8 @@ and you send an email back with promised material.
 
 == MIT: The Ethics and Governance of AI
 
- MIT Lecture series: The Ethics and Governance of AI, Feb 2018
- link:https://www.youtube.com/watch?v=MyW6eAGV-eM&list=PLj62-wQeg_DjuoWS4A_VYzLWtEVUZj1IO[Youtube]
+MIT Lecture series: The Ethics and Governance of AI, Feb 2018
+link:https://www.youtube.com/watch?v=MyW6eAGV-eM&list=PLj62-wQeg_DjuoWS4A_VYzLWtEVUZj1IO[Youtube]
 
 Opening event: Keynote by Joi Ito
 
