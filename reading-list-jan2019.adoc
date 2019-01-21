@@ -96,7 +96,7 @@ image:/static/xkcd_password_strength.jpg[Password strength. link=https://www.xkc
 *** https://buttercup.pw/ [free; win, macos, linux]
 *** https://www.lastpass.com/ [free & paid: win, macos, linux]
 *** https://1password.com/ [paid: win, macos, linux]
-*** _Disclaimer: remember — if it s free, you're the product_
+*** _Disclaimer: remember — if it's free, you're the product_
 . Say no to public wifi
 ** Generally true and correct.
 . Control network access
@@ -146,6 +146,22 @@ http://www.glass-bead.org/research-platform/gaston-bachelard-mathematical-struct
 
 Author writes about how computational thinking is limited when it comes to
 reasoning about issues that are "incomputable" (similar to "intractable" in algorithmic thinking?).
+
+== Importance of diff tools
+
+`xcode-select --install` installs, among other things, `git`.
+
+- Allows you to run `git diff <file1> <file2>` to  show the difference between files.
+- Of course, this works best with text files.
+- This works best if you're doing this with text files where you expect
+to find differences that are useful. e.g. It is not useful to run `git diff`
+on two entirely different text documents, or on two text documents where one is
+a significant rework of the other.
+- To work with word docs, save as plain text files (not rich text).
+- Or, alternatively, convert with `pandoc -f docx -t markdown <source_filename.docx> -o <destination_filename.md>`
+and diff the resulting `.md` file.
+
+- possible workshop topic: hacking for writers — using the command line for better writing.
 
 == Git repositories
 
