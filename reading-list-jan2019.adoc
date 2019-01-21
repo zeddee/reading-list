@@ -147,6 +147,19 @@ http://www.glass-bead.org/research-platform/gaston-bachelard-mathematical-struct
 Author writes about how computational thinking is limited when it comes to
 reasoning about issues that are "incomputable" (similar to "intractable" in algorithmic thinking?).
 
+== Spash Damage/Pewdiepie and media effects
+
+https://medium.com/news-to-table/splash-damage-a44e12792ce3?fbclid=IwAR2gfd9CNnW9yv9ku7YuRGVBti8TepNwZb5Srsdo5z25Wo4wuDGRbLBr0Sw
+
+----
+The research on this is well-established. PewDiePie has put out a video a day for seven years. When he walks up to the line (or goes flying over it) he does so confident that his audience will be with him out of a loyalty built up over thousands of intimate videos. Alt-right shout-outs are flagrant fouls to outsiders, but young fans of YouTubers regard them as personal friends and even family members, and defend them as such. This is why Logan Paul barely lost a step after posting a fresh suicide on his channel, or why JonTron is back to making his usual gamer diatribes two years after publicly expressing his phrenology takes. The browbeating is never going to beat the infrastructure, emotional and otherwise.
+
+I’ve personally grown tired of the media waiting for a point of no return on YouTube. PewDiePie is not going to change, and the culture in his wake is not going to change. What can change is the way we go about our coverage to re-estabish the trust and credibility needed to challenge dangerous political currents in the community.
+----
+
+link:https://wishcrys.com/[@wishcrys] interviewed in this article.
+Related is her blog post: "Public shaming, Peer surveillance, and the Profitability of internet drama" footnote:[Crystal Abidin, "Public shaming, Peer surveillance, and the Profitability of internet drama", published 23 Sep 2018. Available: https://wishcrys.com/2018/09/23/public-shaming-peer-surveillance-and-the-profitability-of-internet-drama/] 
+
 == Importance of diff tools
 
 - Diff tools allow you to quickly compare documents.
