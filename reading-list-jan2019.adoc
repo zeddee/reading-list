@@ -147,6 +147,28 @@ http://www.glass-bead.org/research-platform/gaston-bachelard-mathematical-struct
 Author writes about how computational thinking is limited when it comes to
 reasoning about issues that are "incomputable" (similar to "intractable" in algorithmic thinking?).
 
+== Ethereum: Whisper + related resources
+
+* Found an interesting RFC when reading up on datagrams:
+** FYI on Questions and Answers: Answers to Commonly Asked "New Internet User"
+Questions https://tools.ietf.org/html/rfc2664
+* DHTs (distributed hash tables)
+** Like BitTorrent protocol
+** Basically a distributed key-value store.
+Routing layer allows clients to perform tasks on
+the hash table without knowing every node on the network.
+** Great StackOverflow answer on DHTs + comparison with blockchain:
+https://stackoverflow.com/a/36430343
+** https://medium.com/@michael.dufel_10220/distributed-hash-tables-and-why-they-are-better-than-blockchain-for-exchanging-health-records-d469534cc2a5
+*** Disagree about why DHT would be better than blockchain --
+article only addresses data distribution, accessibility, sharing,
+etc.
+*** but does not address the USP of blockchains,
+which is not just the immutability of records,
+but *proof of nonexistence/revocation*
+i.e. revocation or nonexistence of a record is immutable and easily checkable.
+*** it's easy to prove existence, but more difficult to prove nonexistence.
+
 == Git repositories
 
 * Recommendation Algorithms from Microsoft [↫ https://changelog.com/nightly]
