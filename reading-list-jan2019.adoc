@@ -149,8 +149,20 @@ reasoning about issues that are "incomputable" (similar to "intractable" in algo
 
 == Importance of diff tools
 
-`xcode-select --install` installs, among other things, `git`.
+- Diff tools allow you to quickly compare documents.
+- Advanced diff tools can even allow comparisons between images (not just a file level change).
+- Valuable when someone sends you a changed file
+and doesn't tell you what has changed exactly.
+- Valuable when you want to keep track of what you've
+added in each iteration of the document.
+- Even more valuable if you're keeping track of these changes
+in a log e.g. day 1: change A; day 2: change B;
+- Can see how this can be useful in the commit history
+of this repository: https://github.com/zeddee/reading-list/commits/master
 
+=== Using the Git `diff` tool in the command line
+
+- `xcode-select --install` installs, among other things, `git`.
 - Allows you to run `git diff <file1> <file2>` to  show the difference between files.
 - Of course, this works best with text files.
 - This works best if you're doing this with text files where you expect
@@ -160,6 +172,11 @@ a significant rework of the other.
 - To work with word docs, save as plain text files (not rich text).
 - Or, alternatively, convert with `pandoc -f docx -t markdown <source_filename.docx> -o <destination_filename.md>`
 and diff the resulting `.md` file.
+
+=== Other diff tools you can use
+
+- https://www.perforce.com/products/helix-core-apps/merge-diff-tool-p4merge
+- http://www.sourcegear.com/diffmerge/
 
 - possible workshop topic: hacking for writers — using the command line for better writing.
 
