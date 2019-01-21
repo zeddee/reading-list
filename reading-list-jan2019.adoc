@@ -158,7 +158,8 @@ I’ve personally grown tired of the media waiting for a point of no return on Y
 ----
 
 link:https://wishcrys.com/[@wishcrys] interviewed in this article.
-Related is her blog post: "Public shaming, Peer surveillance, and the Profitability of internet drama" footnote:[Crystal Abidin, "Public shaming, Peer surveillance, and the Profitability of internet drama", published 23 Sep 2018. Available: https://wishcrys.com/2018/09/23/public-shaming-peer-surveillance-and-the-profitability-of-internet-drama/] 
+Related is her blog post: "Public shaming, Peer surveillance, and the Profitability of internet drama" footnote:[Crystal Abidin, "Public shaming, Peer surveillance, and the Profitability of internet drama", published 23 Sep 2018. Available: https://wishcrys.com/2018/09/23/public-shaming-peer-surveillance-and-the-profitability-of-internet-drama/],
+which is *very important reading*.
 
 == Importance of diff tools
 
@@ -193,27 +194,19 @@ and diff the resulting `.md` file.
 
 - possible workshop topic: hacking for writers — using the command line for better writing.
 
-== Ethereum: Whisper + related resources
+== Ways to sell stuff online with a PWYW model
 
-* Found an interesting RFC when reading up on datagrams:
-** FYI on Questions and Answers: Answers to Commonly Asked "New Internet User"
-Questions https://tools.ietf.org/html/rfc2664
-* DHTs (distributed hash tables)
-** Like BitTorrent protocol
-** Basically a distributed key-value store.
-Routing layer allows clients to perform tasks on
-the hash table without knowing every node on the network.
-** Great StackOverflow answer on DHTs + comparison with blockchain:
-https://stackoverflow.com/a/36430343
-** https://medium.com/@michael.dufel_10220/distributed-hash-tables-and-why-they-are-better-than-blockchain-for-exchanging-health-records-d469534cc2a5
-*** Disagree about why DHT would be better than blockchain --
-article only addresses data distribution, accessibility, sharing,
-etc.
-*** but does not address the USP of blockchains,
-which is not just the immutability of records,
-but *proof of nonexistence/revocation*
-i.e. revocation or nonexistence of a record is immutable and easily checkable.
-*** it's easy to prove existence, but more difficult to prove nonexistence.
+PWYW: Pay what you want
+
+Publishing online material e.g. zip files, pdfs etc.
+
+- *Itch.io*: https://itch.io/docs/creators/payments Itch.io takes 10%
+(adjustable; see their Open Revenue Sharing model)
+before payment gateway fees (paypal/stripe) (see link:/static/itchio-publishing.mp4[video])
+- *Gumroad*: https://help.gumroad.com/11162-getting-started/gumroad-fees
+Gumroad takes 8.5% + US$0.30 (see link:/static/gumroad-publishing.mp4)[video])
+- *Manual*: Have customers send you an email with proof of paypal/paylah/snailmail payment,
+and you send an email back with promised material.
 
 == Git repositories
 
