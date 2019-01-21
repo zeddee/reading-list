@@ -157,7 +157,8 @@ _whether or not you are aware of the data you are producing_.
 
 Other developments to watch:
 
-From https://www.tech.gov.sg/media/technews/10-tech-developments-to-look-forward-to-in-2019:
+From https://www.tech.gov.sg/media/technews/10-tech-developments-to-look-forward-to-in-2019
+link:/static/10-tech-developments-2019_govtech.pdf[pdf]:
 
 ----
 8. A smart lamp post near you
