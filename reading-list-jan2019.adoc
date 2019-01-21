@@ -219,6 +219,34 @@ Opening event: Keynote by Joi Ito
 
 * One of the core problems of ethics is that we’re not clear on what constitutes a desirable state.
 * Alphago: not raw calculation or moveset possibilities, in fact closer to what we would grok as intuition and creativity (? really?)
+* On AlphaGo: "So they will win"
+
+    "So they will win. [...] Life is a game, and they will win!"
+    So then I realised that there are at least two categories of people
+    in the world: people who, like one of my friends, knows
+    exactly how many hours they need to spend with their wife,
+    knows exactly the balance of the happiness they get from their
+    money versus the their things, and they can basically describe
+    to you in, sort of, metrics, how they measure happiness.
+    If they can optimize for happiness, they win at life.
+    And so if you believe that life is a game you can win at, then you
+    can probably imagine that a computer can beat you at life.
+    But if you believe that life is not a game, like I do,
+    like I believe that I'm a bunch of chemicals and molecular
+    interactions, and every morning I wake up my endocrine
+    system tells me what I yearn to do that day.
+    And my life is about trying to fulfill the yearnings
+    that come through, not just my endocrine system but
+    my relationships and my existence in the world, and
+    that we have somewhat a spiritual idea that we have
+    a consciousness, and we have an understanding.
+    And the word understanding is very interesting:
+    when you hear people who describe OpenAI,
+    they get so much- they get so good at this [building AI] that
+    the machine understands what's going on.
+    That's a pretty interesting use of the word "understanding".
+    [goes on to explain the Chinese room thought experiment, which I won't repeat here.]
+
 
 == MIT: Neri Oxman/Mediated Matter, MIT Media Lab
 
