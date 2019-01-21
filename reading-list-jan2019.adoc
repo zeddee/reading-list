@@ -23,7 +23,7 @@ which has fantastic Python `venv` handling and code completion.
 Courses:
 
 * Facebook's PyTorch course: https://classroom.udacity.com/courses/ud188
--
+** To attempt at later date. Should get through datacamp's basics first.
 
 GANs (Generative Adverserial Networks):
 
@@ -32,7 +32,8 @@ GANs (Generative Adverserial Networks):
 
 == Ethics and Data Governance
 
-https://easaonline.org/downloads/support/EASA%20statement%20on%20data%20governance.pdf?fbclid=IwAR1fbW1xKa7VSycnwZ-leB3qqpQjFCakZ-5VjzNig_1doj3lq8GX-EGZl-c
+https://easaonline.org/downloads/support/EASA%20statement%20on%20data%20governance.pdf?fbclid=IwAR1fbW1xKa7VSycnwZ-leB3qqpQjFCakZ-5VjzNig_1doj3lq8GX-EGZl-c 
+(also link:/static/EASA-statement-on-data-governance.pdf[here])
 
 ----
 This statement describes some of the core methodical and ethical practices of ethnographic research.
@@ -44,10 +45,20 @@ governments, universities, and funders.
 
 Also see section below on link:#mit-the-ethics-and-governance-of-ai[The Ethics and Governance of AI].
 
-== Misc. Blockchain Resources
+== Ethereum notes
 
+=== Go Ethereum
+
+* Documentation for working with RLP encoded data:
+https://gowalker.org/github.com/ethereum/go-ethereum/rlp#_ex_btn_Decode
+
+=== Misc. Blockchain Resources
+
+* CounterFactual https://github.com/counterfactual
+** Org that works on state channels + other ethereum r&d
 * Sparse merkle trees (↫ link:https://github.com/m0t0k1ch1[m0t0k1ch1]) (to read)
 ** https://github.com/m0t0k1ch1/sparse-merkle-tree/blob/master/tree.go
+* CTF exercise at https://github.com/m0t0k1ch1/happy-hacking-christmas
 * Metamask login using Go (↫ link:https://github.com/m0t0k1ch1[m0t0k1ch1])
 ** https://github.com/m0t0k1ch1/metamask-login-sample/blob/master/main.go
 * link:https://handshake.org[Handshake] Blockchain DNS
@@ -124,10 +135,15 @@ a pinch of salt:
 == Anticipatory services 
 
 - https://www.tech.gov.sg/media/technews/five-key-features-of-the-new-moments-of-life-app
+(link:/static/moments-of-life_govtech.pdf[pdf])
 - https://govinsider.asia/digital-gov/singapore-smart-nation-e-payments-national-digital-identity-anticipatory-services/
+(link:/static/singapore-anticipatory-services_GovInsider.pdf[pdf])
 - https://govinsider.asia/smart-gov/predictive-services-are-the-future-of-estonias-digital-government/
+(link:/static/estonia-future-services_GovInsider.pdf[pdf])
 - https://govinsider.asia/innovation/new-zealand-launches-predictive-service-for-new-parents/
+(link:/static/new-zealand-new-parents_GovInsider.pdf[pdf])
 - https://govinsider.asia/innovation/new-zealand-end-of-life-service/
+(link:/static/new-zealand-eol_GovInsider.pdf[pdf])
 
 One of the smart nation initiatives that I have been worrying about.
 We know that adtech has used this badly:
@@ -259,8 +275,13 @@ https://www.youtube.com/watch?v=6GaQtH1bhpo&list=PLj62-wQeg_DgC-433WJ5qXegaxYoMl
 
 == Git repositories
 
+=== Machine Learning
+
 * Recommendation Algorithms from Microsoft [↫ https://changelog.com/nightly]
 ** https://github.com/Microsoft/Recommenders
+
+=== Go tooling
+
 * Building Electron apps with Go
 ** https://github.com/asticode/go-astilectron
 ** Seems better supported than Gotron. Astilectron works out-of-the-box for my macOS machine, but Gotron does not. Need to play with this more.
@@ -270,3 +291,24 @@ https://www.youtube.com/watch?v=6GaQtH1bhpo&list=PLj62-wQeg_DgC-433WJ5qXegaxYoMl
 ** Need to figure out how to convert asciidoctor and markdown files into PDF using this tool first.
 ** Also probably need to figure out how to reliably crawl a content directory and generate a TOC or manifest, or
 ** Read from a TOC/manifest to generate a set of docs.
+
+==== Frances Campoy's Go Tooling Youtube video
+
+@francesc
+Justforfunc: https://www.youtube.com/watch?v=uBjoTxosSys
+Git repo: https://github.com/campoy/go-tooling-workshop
+
+go tools:
+
+[source]
+----
+godoc -http :9999
+go doc <packagename> <exportedVar/Func>
+----
+
+e.g.: ``go doc ethereum/go-ethereum/accounts/abi JSON``
+
+=== Python programming
+
+* What it takes to be an expert in Python
+** https://github.com/austin-taylor/code-vault/blob/master/python_expert_notebook.ipynb
