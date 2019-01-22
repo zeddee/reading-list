@@ -62,7 +62,8 @@ rather than its path in the container.
 * This becomes an issue if your local mount path is long.
 * That's because `geth` throws a 
 `Fatal: Error starting protocol stack: listen unix <container_path>/tmp/geth.ipc: bind: file name too long` error and stops
-if the total number of characters for the path to`geth.ipc` is longer than 107 characters.
+if the total number of characters for the path to`geth.ipc` is longer than 107 characters
+(see https://github.com/ethereum/go-ethereum/issues/16342).
 * For example:
 
 [source, bash]
@@ -79,11 +80,12 @@ cd /tmp/94charlocalpath_adsadsfadfadfasdfasdfasdfasdfasdfasdfasdfasdadfadsfadsfa
 docker run -ti --rm -v $(pwd):/tmp ethereum/client-go:alltools-v1.8.20 geth --dev
 ----
 
-* The examples above run `geth --dev`, so `geth.ipc` is always on `/tmp/geth.ipc` in the container.
+* The examples above run `geth --dev`, so `geth.ipc` is always on `/tmp/geth.ipc` (13 chars) in the container.
 * When running `geth` on the mainnet or testnet, this path would be
-`/root/.ethereum/geth/geth.ipc` or `/root/.ethereum/<testnet>/geth.ipc`
+`/root/.ethereum/geth/geth.ipc` (29 chars)
+or `/root/.ethereum/<testnet>/geth.ipc` (32 chars for rinkeby)
 respectively.
-* Solution: Only mount local machine directories that are shorter than ~75 characters as the `datadir`
+* Solution: Only mount local machine directories that are shorter than `107 - <container_path_length>` characters as the `datadir`
 
 === Misc. Blockchain Resources
 
