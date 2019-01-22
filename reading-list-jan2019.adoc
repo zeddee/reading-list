@@ -52,6 +52,39 @@ Also see section below on link:#mit-the-ethics-and-governance-of-ai[The Ethics a
 * Documentation for working with RLP encoded data:
 https://gowalker.org/github.com/ethereum/go-ethereum/rlp#_ex_btn_Decode
 
+=== Running Go Ethereum on Docker
+
+
+==== Quirk: Geth.ipc when mounted is parsed with full docker host machine path
+
+* If you try and run `geth` on Docker, `geth` parses the mounted local path of the `datadir` as its path,
+rather than its path in the container.
+* This becomes an issue if your local mount path is long.
+* That's because `geth` throws a 
+`Fatal: Error starting protocol stack: listen unix <container_path>/tmp/geth.ipc: bind: file name too long` error and stops
+if the total number of characters for the path to`geth.ipc` is longer than 107 characters.
+* For example:
+
+[source, bash]
+----
+# Running the following throws a "file name too long" error,
+# because the resulting path "/tmp/95charlocalpath_adsad.../tmp/geth.ipc" is 108 characters long.
+mkdir /tmp/95charlocalpath_adsadsfadfadfasdfasdfasdfasdfasdfasdfasdfasdadfadsfadsfadsfasdfasdfasdfada
+cd /tmp/95charlocalpath_adsadsfadfadfasdfasdfasdfasdfasdfasdfasdfasdadfadsfadsfadsfasdfasdfasdfada
+docker run -ti --rm -v $(pwd):/tmp ethereum/client-go:alltools-v1.8.20 geth --dev
+
+# But this works
+mkdir /tmp/94charlocalpath_adsadsfadfadfasdfasdfasdfasdfasdfasdfasdfasdadfadsfadsfadsfasdfasdfasdfad
+cd /tmp/94charlocalpath_adsadsfadfadfasdfasdfasdfasdfasdfasdfasdfasdadfadsfadsfadsfasdfasdfasdfad
+docker run -ti --rm -v $(pwd):/tmp ethereum/client-go:alltools-v1.8.20 geth --dev
+----
+
+* The examples above run `geth --dev`, so `geth.ipc` is always on `/tmp/geth.ipc` in the container.
+* When running `geth` on the mainnet or testnet, this path would be
+`/root/.ethereum/geth/geth.ipc` or `/root/.ethereum/<testnet>/geth.ipc`
+respectively.
+* Solution: Only mount local machine directories that are shorter than ~75 characters as the `datadir`
+
 === Misc. Blockchain Resources
 
 * CounterFactual https://github.com/counterfactual
