@@ -121,6 +121,11 @@ respectively.
 * For example, `v1.8.20` of the `github.com/ethereum/go-ethereum` package is stored as
 `$GOPATH/pkg/mod/github.com/ethereum/go-ethereum@v1.8.20`
 
+=== Go concurrency
+
+
+Google I/O 2012 - Go Concurrency Patterns (Rob Pike) https://www.youtube.com/watch?v=f6kdp27TYZs&t=965s
+
 == Cybersecurity by Huawei
 
 Was digging through the govtech blog for another article when I came across this:
@@ -365,7 +370,7 @@ The problem with SDP stems from the fact that it is hard to parse and work with 
 * To watch/read:
 ** Twilio on gRPC v.s. REST APIs: https://www.youtube.com/watch?v=RoXT_Rkg8LA&t=509s
 ** The Linux Foundation: gRPC and Go: Developing Efficient and Type-Safe Services - Clinton Kitson, {code} https://www.youtube.com/watch?v=J-NTfvYL_OE
-
+** Best Practices for (Go) gRPC Services https://www.youtube.com/watch?v=Z_yD7YPL2oE
 == Git repositories
 
 === Machine Learning
