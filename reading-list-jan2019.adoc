@@ -20,15 +20,22 @@ which has fantastic Python `venv` handling and code completion.
 * link:https://en.wikipedia.org/wiki/Dot_product[Dot product]
 ** Status: to read.
 
-Courses:
+=== Courses
 
 * Facebook's PyTorch course: https://classroom.udacity.com/courses/ud188
 ** To attempt at later date. Should get through datacamp's basics first.
 
-GANs (Generative Adverserial Networks):
+=== GANs (Generative Adverserial Networks):
 
 - https://skymind.ai/wiki/generative-adversarial-network-gan (to read)
 - https://dtransposed.github.io/blog/Best-of-GANs-2018-(Part-1-out-of-2).html (to read)
+
+=== Other ML/AI
+
+OpenAI has a great blogpost on the OpenAI Five AI: https://blog.openai.com/openai-five (link:/static/openai-five.pdf[pdf])
+
+* Explains methods and approaches, plus cool interactive infographic to show this.
+* Explains link:https://blog.openai.com/openai-five/#restricted[restrictions].
 
 == Ethics and Data Governance
 
