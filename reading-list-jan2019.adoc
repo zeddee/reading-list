@@ -113,6 +113,13 @@ respectively.
 * Merkling in Ethereum
 ** https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
 
+== Misc. Go notes
+
+=== Go modules
+
+* Packages downloaded by `go.mod` are stored in `$GOPATH/pkg/mod/<domain>/<repo_owner>/<pkgname>@<pkgver>`
+* For example, `v1.8.20` of the `github.com/ethereum/go-ethereum` package is stored as
+`$GOPATH/pkg/mod/github.com/ethereum/go-ethereum@v1.8.20`
 
 == Cybersecurity by Huawei
 
