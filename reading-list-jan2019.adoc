@@ -336,6 +336,9 @@ https://www.youtube.com/watch?v=6GaQtH1bhpo&list=PLj62-wQeg_DgC-433WJ5qXegaxYoMl
 
 == WebRTC
 
+* "WebRTC How it works and how it breaks" https://www.youtube.com/watch?v=3TbVi9aB09k&t=166s
+* "Google I/O 2013 WebRTC intro" https://www.youtube.com/watch?v=p2HzZkd2A40
+
 * WebRTC: Web Real-Time Communication footnote:[https://webrtc.org/start/]
 ** Funded by Google, Opera, and Mozilla (and others)
 ** Google codelab https://codelabs.developers.google.com/codelabs/webrtc-web/#0
@@ -357,6 +360,11 @@ with the effort of defining an object-centric API to real time communications.
 At its heart, ORTC aims to replace the current SDP interface that is used by WebRTC as the API used by developers.
 The problem with SDP stems from the fact that it is hard to parse and work with using Java Script code."
 
+== gRPC
+
+* To watch/read:
+** Twilio on gRPC v.s. REST APIs: https://www.youtube.com/watch?v=RoXT_Rkg8LA&t=509s
+** The Linux Foundation: gRPC and Go: Developing Efficient and Type-Safe Services - Clinton Kitson, {code} https://www.youtube.com/watch?v=J-NTfvYL_OE
 
 == Git repositories
 
