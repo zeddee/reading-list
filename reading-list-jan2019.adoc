@@ -285,6 +285,30 @@ Opening event: Keynote by Joi Ito
 To watch.
 https://www.youtube.com/watch?v=6GaQtH1bhpo&list=PLj62-wQeg_DgC-433WJ5qXegaxYoMlXBS
 
+== WebRTC
+
+* WebRTC: Web Real-Time Communication footnote:[https://webrtc.org/start/]
+** Funded by Google, Opera, and Mozilla (and others)
+** Google codelab https://codelabs.developers.google.com/codelabs/webrtc-web/#0
+* TURN: Traversal using Relay NAT footnote:[http://support.temasys.com.sg/support/solutions/articles/12000039990-what-is-turn-?_ga=2.204679632.1101110572.1548141073-820990217.1548141073]
+** STUN extension that allows clients to send and receive data through an intermediary server.
+* STUN: Session Traversal Utilities for NAT
+** https://tools.ietf.org/html/rfc5389
+* ICE: Interactive Connectivity Establishment footnote:[https://webrtcglossary.com/ice/]
+** https://tools.ietf.org/html/rfc5245
+** "ICE collects all available candidates
+(local IP addresses, reflexive addresses – STUN ones and relayed addresses – TURN ones).
+All the collected addresses are then sent to the remote peer via SDP."
+* NAT: Network address translation footnote:[https://en.wikipedia.org/wiki/Network_address_translation]
+* SDP: Session Description Protocol footnote:[https://webrtcglossary.com/sdp/]
+** https://tools.ietf.org/html/rfc4566
+* ORTC: Object-RTC footnote:[https://webrtcglossary.com/ortc/]
+** "ORTC is an initiative involving Google, Microsoft and several other companies 
+with the effort of defining an object-centric API to real time communications.
+At its heart, ORTC aims to replace the current SDP interface that is used by WebRTC as the API used by developers.
+The problem with SDP stems from the fact that it is hard to parse and work with using Java Script code."
+
+
 == Git repositories
 
 === Machine Learning
