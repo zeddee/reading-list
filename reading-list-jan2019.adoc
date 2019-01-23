@@ -2,6 +2,7 @@
 :toc: auto
 :sectlinks:
 :sectnums:
+:source-highlighter: pygments
 
 == Data science resources
 
@@ -42,13 +43,12 @@ OpenAI has a great blogpost on the OpenAI Five AI: https://blog.openai.com/opena
 https://easaonline.org/downloads/support/EASA%20statement%20on%20data%20governance.pdf?fbclid=IwAR1fbW1xKa7VSycnwZ-leB3qqpQjFCakZ-5VjzNig_1doj3lq8GX-EGZl-c 
 (also link:/static/EASA-statement-on-data-governance.pdf[here])
 
-----
+[quote]
 This statement describes some of the core methodical and ethical practices of ethnographic research.
 These practices have implications for the norms and forms of data management in ethnography.
 We issue this statement to help ethnographers respond to current mandates for
 data archiving, storage, and sharing from
 governments, universities, and funders.
-----
 
 Also see section below on link:#mit-the-ethics-and-governance-of-ai[The Ethics and Governance of AI].
 
@@ -72,7 +72,7 @@ rather than its path in the container.
 if the total number of characters for the path to`geth.ipc` is longer than 107 characters
 (see https://github.com/ethereum/go-ethereum/issues/16342).
 * For example:
-
++
 [source, bash]
 ----
 # Running the following throws a "file name too long" error,
@@ -235,15 +235,15 @@ reasoning about issues that are "incomputable" (similar to "intractable" in algo
 
 https://medium.com/news-to-table/splash-damage-a44e12792ce3?fbclid=IwAR2gfd9CNnW9yv9ku7YuRGVBti8TepNwZb5Srsdo5z25Wo4wuDGRbLBr0Sw
 
-----
+____
 According to Abidin, Everyman Empathy is crucial to the brands of even the biggest YouTube success stories. Much has been made about the concord influencers create with their followers — and how that’s made them un-cancelable in a political climate that’s otherwise quick to judgment. Fewer, though, have noticed that growing media scrutiny has given Kjellberg a way to humanize himself and deflect legitimate criticism. His proletariat gamer roots reappear on cue every time a media outlet like Vox takes his own words seriously.
-----
+____
 
-----
+____
 The research on this is well-established. PewDiePie has put out a video a day for seven years. When he walks up to the line (or goes flying over it) he does so confident that his audience will be with him out of a loyalty built up over thousands of intimate videos. Alt-right shout-outs are flagrant fouls to outsiders, but young fans of YouTubers regard them as personal friends and even family members, and defend them as such. This is why Logan Paul barely lost a step after posting a fresh suicide on his channel, or why JonTron is back to making his usual gamer diatribes two years after publicly expressing his phrenology takes. The browbeating is never going to beat the infrastructure, emotional and otherwise.
 
 I’ve personally grown tired of the media waiting for a point of no return on YouTube. PewDiePie is not going to change, and the culture in his wake is not going to change. What can change is the way we go about our coverage to re-estabish the trust and credibility needed to challenge dangerous political currents in the community.
-----
+____
 
 link:https://wishcrys.com/[@wishcrys] interviewed in this article.
 Related is her blog post: "Public shaming, Peer surveillance, and the Profitability of internet drama" footnote:[Crystal Abidin, "Public shaming, Peer surveillance, and the Profitability of internet drama", published 23 Sep 2018. Available: https://wishcrys.com/2018/09/23/public-shaming-peer-surveillance-and-the-profitability-of-internet-drama/],
@@ -306,33 +306,36 @@ Opening event: Keynote by Joi Ito
 * One of the core problems of ethics is that we’re not clear on what constitutes a desirable state.
 * Alphago: not raw calculation or moveset possibilities, in fact closer to what we would grok as intuition and creativity (? really?)
 * On AlphaGo: "So they will win"
++
+[quote]
+____
+"So they will win. [...] Life is a game, and they will win!"
+So then I realised that there are at least two categories of people
+in the world: people who, like one of my friends, knows
+exactly how many hours they need to spend with their wife,
+knows exactly the balance of the happiness they get from their
+money versus the their things, and they can basically describe
+to you in, sort of, metrics, how they measure happiness.
+If they can optimize for happiness, they win at life.
+And so if you believe that life is a game you can win at, then you
+can probably imagine that a computer can beat you at life.
 
-    "So they will win. [...] Life is a game, and they will win!"
-    So then I realised that there are at least two categories of people
-    in the world: people who, like one of my friends, knows
-    exactly how many hours they need to spend with their wife,
-    knows exactly the balance of the happiness they get from their
-    money versus the their things, and they can basically describe
-    to you in, sort of, metrics, how they measure happiness.
-    If they can optimize for happiness, they win at life.
-    And so if you believe that life is a game you can win at, then you
-    can probably imagine that a computer can beat you at life.
-    But if you believe that life is not a game, like I do,
-    like I believe that I'm a bunch of chemicals and molecular
-    interactions, and every morning I wake up my endocrine
-    system tells me what I yearn to do that day.
-    And my life is about trying to fulfill the yearnings
-    that come through, not just my endocrine system but
-    my relationships and my existence in the world, and
-    that we have somewhat a spiritual idea that we have
-    a consciousness, and we have an understanding.
-    And the word understanding is very interesting:
-    when you hear people who describe OpenAI,
-    they get so much- they get so good at this [building AI] that
-    the machine understands what's going on.
-    That's a pretty interesting use of the word "understanding".
-    [goes on to explain the Chinese room thought experiment, which I won't repeat here.]
-
+But if you believe that life is not a game, like I do,
+like I believe that I'm a bunch of chemicals and molecular
+interactions, and every morning I wake up my endocrine
+system tells me what I yearn to do that day.
+And my life is about trying to fulfill the yearnings
+that come through, not just my endocrine system but
+my relationships and my existence in the world, and
+that we have somewhat a spiritual idea that we have
+a consciousness, and we have an understanding.
+And the word understanding is very interesting:
+when you hear people who describe OpenAI,
+they get so much- they get so good at this [building AI] that
+the machine understands what's going on.
+That's a pretty interesting use of the word "understanding".
+[goes on to explain the Chinese room thought experiment, which I won't repeat here.]
+____
 
 == MIT: Neri Oxman/Mediated Matter, MIT Media Lab
 
@@ -364,6 +367,15 @@ All the collected addresses are then sent to the remote peer via SDP."
 with the effort of defining an object-centric API to real time communications.
 At its heart, ORTC aims to replace the current SDP interface that is used by WebRTC as the API used by developers.
 The problem with SDP stems from the fact that it is hard to parse and work with using Java Script code."
+
+=== SDP — Session Description Protocol
+
+https://tools.ietf.org/html/rfc4566
+
+Antón Román — link:https://webrtchacks.com/anatomy-webrtc-sdp/[Anatomy of a WebRTC SDP ]
+
+[quote]
+SDP is the protocol used to exchange  media information between SIP endpoints, and it has also been chosen by IETF and W3C to exchange media information in WebRTC. A WebRTC peer uses SDP to inform the other end about which transport protocols, ports, codecs and  other parameters to use in a media session.
 
 == gRPC
 
