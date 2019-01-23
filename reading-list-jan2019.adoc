@@ -397,6 +397,14 @@ Cezar Ionescy - What is a Mathematical Property
 - https://github.com/ionescu/open_days_2018/blob/master/slides/slides.pdf
 (also link:/static/what-is-a-mathematical-property.pdf[here])
 
+== Raft consensus algorithm
+
+https://raft.github.io/
+
+distributed consensus.
+
+cockroachDB uses it https://www.youtube.com/watch?v=hWNwI5q01gI
+
 == Bachelard, rationalism, and computation
 
 Reading Anna Longo, "Gaston Bachelard: From Mathematical Structures to Reality",
