@@ -388,6 +388,14 @@ link:/static/10-tech-developments-2019_govtech.pdf[pdf]:
 ST Engineering has been awarded a S$7.5 million contract to give lamp posts in Geylang and Buona Vista an upgrade with *Internet of Things sensors* and *cameras*. These smart lamp posts are part of the government’s efforts to create a Smart Nation Sensor Platform that allows real-time monitoring of not just *road traffic conditions*, but also *pedestrian footfall and environmental parameters such as temperature and humidity. The data collected will help inform urban and transport planning, as well as *enhance security* in Singapore.
 ----
 
+== What is a Mathematical Property?
+
+Cezar Ionescy - What is a Mathematical Property
+
+- To watch
+- https://www.youtube.com/watch?v=8IhuPi5SbcI
+- https://github.com/ionescu/open_days_2018/blob/master/slides/slides.pdf
+(also link:/static/what-is-a-mathematical-property.pdf[here])
 
 == Bachelard, rationalism, and computation
 
