@@ -419,6 +419,42 @@ SDP is the protocol used to exchange  media information between SIP endpoints, a
 ** The Linux Foundation: gRPC and Go: Developing Efficient and Type-Safe Services - Clinton Kitson, {code} https://www.youtube.com/watch?v=J-NTfvYL_OE
 ** Best Practices for (Go) gRPC Services https://www.youtube.com/watch?v=Z_yD7YPL2oE
 
+== Dealing with WebDAV folders
+
+WebDAV is a file sharing protocol that allows you to
+mount a http/https url as a folder on your local machine.
+This lets you interact with it as if it was a local folder
+on your hard disk.
+
+Most of the time, you should be using S/FTP, SSH to access a foreign file system
+on the internet. But sometimes, you'll run across a situation where
+a cheap hosting solutions provider's plan just doesn't let you do it,
+or your hosting configuration has been mangled somehow.
+
+You can mount a WebDAV folder in two ways:
+
+. Using your OS's file manager.
+** *macOS*: In a Finder window, hit `cmd+k` and enter the url of your WebDAV endpoint. When you hit enter, it should be mounted as a network drive.
+** *Windows*: 
+... In Windows Explorer, right-click the *Network* location and select *Map Network Drive*.
+... In Windows 10, there should be a text link at the bottom of the box that pops up, 
+asking you to click it if you want to
+"Connect to a Web site that you can use to store your documents and pictures".
+Click that.
+... Follow the on-screen instructions.
+. Using Cyberduck CLI (recommended)
+** Install on macOS with `brew install duck`
+** Run with:
++
+[source,bash]
+----
+duck -u username -p password -l davs://<url>/<directory_to_list>/
+duck -u username -p password -d davs://<url>/<file_to_download>
+duck -u username -p password -d davs://<url>/<directory_to_download>/ # you must add a trailing slash to download dirs
+----
+
+
+
 == Git repositories
 
 === Machine Learning
