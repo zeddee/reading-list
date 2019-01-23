@@ -695,10 +695,17 @@ transfers etc. Saved me my sanity, and a bucketload of time (wish I'd found it s
 
 == Git repositories
 
+=== APIs
+
+* API evangelist: http://101.apievangelist.com/
+** https://github.com/api-evangelist
+
 === Machine Learning
 
 * Recommendation Algorithms from Microsoft [↫ https://changelog.com/nightly]
 ** https://github.com/Microsoft/Recommenders
+* CS231 Convolutional Neural Networks for Visual Recognition: http://cs231n.github.io/
+
 
 === Go tools
 
@@ -716,3 +723,7 @@ transfers etc. Saved me my sanity, and a bucketload of time (wish I'd found it s
 
 * What it takes to be an expert in Python
 ** https://github.com/austin-taylor/code-vault/blob/master/python_expert_notebook.ipynb
+
+=== Javascript/Web dev
+
+* Swup page transitions: https://github.com/gmrchk/swup
