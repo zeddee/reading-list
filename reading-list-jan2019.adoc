@@ -442,6 +442,17 @@ asking you to click it if you want to
 "Connect to a Web site that you can use to store your documents and pictures".
 Click that.
 ... Follow the on-screen instructions.
+
+This usually gives you a sketchy connection, since a HTTP/HTTPS WebDAV connection is nowhere near as stable as
+an SSH tunnel, and isn't as resilient as S/FTP. This usually isn't a problem, but when using such a connection
+with your local file manager (Finder/Windows Explorer), it causes problems because file managers expect
+stable and consistent connections. They'll freak out and start acting weird should the connection drop.
+I've spent hours having to repeat work over and over again because Finder would stop responding when
+a WebDAV connection drops or times out; it just doesn't know how to respond.
+
+Enter solution 2:
+
+[start=2]
 . Using Cyberduck CLI (recommended)
 ** Install on macOS with `brew install duck`
 ** Run with:
@@ -453,6 +464,9 @@ duck -u username -p password -d davs://<url>/<file_to_download>
 duck -u username -p password -d davs://<url>/<directory_to_download>/ # you must add a trailing slash to download dirs
 ----
 
+Because Cyberduck is made for FTP connections, it handles WebDAV connections like FTP connections: that is, if a connection drops,
+it knows not to keep waiting for it, but breaks the dropped connection and retries, while keeping track of the progress of any file
+transfers etc. Saved me my sanity, and a bucketload of time (wish I'd found it sooner).
 
 
 == Git repositories
