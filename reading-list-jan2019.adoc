@@ -123,8 +123,43 @@ respectively.
 
 === Go concurrency
 
-
 Google I/O 2012 - Go Concurrency Patterns (Rob Pike) https://www.youtube.com/watch?v=f6kdp27TYZs&t=965s
+
+==== Frances Campoy's Go Tooling Youtube video
+
+* @francesc
+** Justforfunc: https://www.youtube.com/watch?v=uBjoTxosSys
+** Git repo: https://github.com/campoy/go-tooling-workshop
+
+go tools:
+
+* Start a Go documentation server that serves a site locally,
+and contains API documentation for standard library packages
+_and_ every single package you've downloaded with `go get`
++
+[source,bash]
+----
+# anywhere
+godoc -http :9999
+----
+
+* Print to terminal the godoc for `<packagename> [<exportedVar/Func>]`
++
+[source, bash]
+----
+go doc <packagename> <exportedVar/Func>
+----
++
+e.g.: ``go doc ethereum/go-ethereum/accounts/abi JSON``
+
+* Print to terminal any possible issues with your code
+(that are not errors):
++
+[source, bash]
+----
+# In project directory
+go vet
+----
 
 == Cybersecurity by Huawei
 
@@ -391,7 +426,7 @@ SDP is the protocol used to exchange  media information between SIP endpoints, a
 * Recommendation Algorithms from Microsoft [↫ https://changelog.com/nightly]
 ** https://github.com/Microsoft/Recommenders
 
-=== Go tooling
+=== Go tools
 
 * Building Electron apps with Go
 ** https://github.com/asticode/go-astilectron
@@ -402,22 +437,6 @@ SDP is the protocol used to exchange  media information between SIP endpoints, a
 ** Need to figure out how to convert asciidoctor and markdown files into PDF using this tool first.
 ** Also probably need to figure out how to reliably crawl a content directory and generate a TOC or manifest, or
 ** Read from a TOC/manifest to generate a set of docs.
-
-==== Frances Campoy's Go Tooling Youtube video
-
-@francesc
-Justforfunc: https://www.youtube.com/watch?v=uBjoTxosSys
-Git repo: https://github.com/campoy/go-tooling-workshop
-
-go tools:
-
-[source]
-----
-godoc -http :9999
-go doc <packagename> <exportedVar/Func>
-----
-
-e.g.: ``go doc ethereum/go-ethereum/accounts/abi JSON``
 
 === Python programming
 
