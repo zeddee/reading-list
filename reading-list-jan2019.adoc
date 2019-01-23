@@ -294,6 +294,81 @@ e.g.: ``go doc ethereum/go-ethereum/accounts/abi JSON``
 go vet
 ----
 
+* Unit testing
+** `<filename>_test.go`
++
+[source, go]
+----
+package main
+import "testing"
+func TestHandler(t *testing.T) {
+    // ...test
+}
+----
+
+To create a mock `http.ResponseWriter` in a test:
+
+[source, go]
+----
+import (
+    "net/http/httptest"
+    ...
+)
+
+func TestHandler(t *testing.T) {
+    req, _ := http.NewRequest(http.MethodGet, ... )
+    rec := httptest.NewRecorder()
+    handler(rec, req)
+
+    if rec.Code != http.StatusOK {
+        t.Errorf("expected http status 200; got %d", rec.Code)
+    }
+
+    if !strings.Contains(rec.Body.String(), "substring to test for") {
+        t.Errorf("unexpected body in response: %q", rec.Body.String())
+    }
+}
+----
+
+vscode also has extensive tooling that integrates with `go test`
+
+table driven tests:
+
+[source, go]
+----
+func TestHandler(t *testing.T) {
+    // table driven tests
+    cases := []struct{
+        in, expectedOutput string
+    }{
+        {"what we get", "what we expect"}, // this is case 1
+        {"case 2 input", "what we want for case 2"},
+    }
+
+    for _, c := range cases{
+        req, _ := http.NewRequest(http.MethodGet, "https://localhost:8080" + c.in, nil )
+        rec := httptest.NewRecorder()
+        handler(rec, req)
+
+        if rec.Code != http.StatusOK {
+            t.Errorf("expected http status 200; got %d", rec.Code)
+        }
+
+        if !strings.Contains(rec.Body.String(), c.expectedOutput) {
+            t.Errorf("unexpected body in response: %q", rec.Body.String())
+        }
+    }
+}
+----
+
+performance profiling:
+
+* `import _ "net/http/pprof"` to make available a performance profiler at your application's server: `localhost:8080/debug/pprof`
+* or run `go tool pprof`
+* Other useful tools:
+** go-wrk
+** `github.com/uber/go-torch`
+
 == Cybersecurity by Huawei
 
 Was digging through the govtech blog for another article when I came across this:
