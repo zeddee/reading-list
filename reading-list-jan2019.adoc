@@ -383,6 +383,7 @@ SDP is the protocol used to exchange  media information between SIP endpoints, a
 ** Twilio on gRPC v.s. REST APIs: https://www.youtube.com/watch?v=RoXT_Rkg8LA&t=509s
 ** The Linux Foundation: gRPC and Go: Developing Efficient and Type-Safe Services - Clinton Kitson, {code} https://www.youtube.com/watch?v=J-NTfvYL_OE
 ** Best Practices for (Go) gRPC Services https://www.youtube.com/watch?v=Z_yD7YPL2oE
+
 == Git repositories
 
 === Machine Learning
