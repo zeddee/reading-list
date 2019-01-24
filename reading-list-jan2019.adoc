@@ -697,7 +697,9 @@ transfers etc. Saved me my sanity, and a bucketload of time (wish I'd found it s
 LiveOverFlow's a great youtube channel that walks you through various security things.
 
 This one's pretty easy to digest. In https://www.youtube.com/watch?v=Ry_yb5Oipq0,
-LiveOverFlow goes into an old vulnerability involving malicious zip files.
+LiveOverFlow explains an old vulnerability involving malicious zip files that
+apparently not many developers know about (I didn't know + not a dev, but still fascinating
+to see that this is a thing).
 
 Basically, if you create a zip file that contains a certain combination of paths and files,
 you can replace files on the compromised file system, and on poorly secured systems, run
@@ -707,7 +709,7 @@ This caught my attention
 because I was recently debugging a friend's wordpress installation that got hacked.
 I was going through server directories, and found that the attacker basically
 uploaded a few files onto the wordpress installation (not sure how; not a wp expert and didn't get that far)
-and had it rewrite most of the `php` files to have it redirect to a malicious ad \+
+and had it rewrite most of the `php` files to have it redirect to a malicious ad +
 uploaded an entire HTML/CSS site onto the base `public_html` directory of the server.
 
 All this without hacking the server; just a vulnerability in wordpress that allowed them to do it.
