@@ -1,0 +1,78 @@
+= Writing as a distributed/decentralized team
+:toc: auto
+:sectnums:
+:sectlinks:
+
+== Problem statement
+
+Collaborative writing tools have been disappointing.
+
+Anything that allows simultaneous editing offers the false promise of seamless collaboration,
+when collaboration is a lot more than being able to edit a document simultanously and seeing the
+updates in real-time.
+
+That's why we have meeting minutes, and that's why we take turns to speak.
+Communication has to be artificially ordered and slowed down in order for
+us to work with it. I.e. working on something on-the-fly works, until you need to
+edit, check if you've made a similar edit previously, check who made the last
+editorial decision, check what went into an editorial decision that was made last month
+etc.
+
+Problem with Google docs:
+
+- difficult to pinpoint when an editing pass is over 
+- Comments are difficult to keep track of, because you have a continuous stream of comments that are saved, instead of tying a set of comments to an edit state. 
+
+Editing the same doc at the same time is only useful in a few situations:
+
+- when you’re writing as a group— eg. Pair writing, where two or more Writers are writing and communicating simultaneously. 
+- Live editing sessions
+
+Why don’t you just send documents over email?
+
+- duplicate documents. Final final final final.docx
+
+== Writing on Github
+
+If you haven't noticed already, most of my writing
+is done on or eventually published somewhere on Github.
+It's not just because it's a `hacker` thing to do.
+A lot of what sent me here were the endless issues that
+came with writing in a text box in the browser 
+(WordPress, Medium. et. al),
+having to deal with formatting randomness of Word
+(which has since gotten a lot better) etc.
+That, and the introduction of link:https://daringfireball.net/projects/markdown/[markdown]
+footnote:[Which, I just found out while writing this, also credits link:https://en.wikipedia.org/wiki/Aaron_Swartz[Aaron Swartz] as a significant contributor.].
+
+== Markdown
+
+Markdown is HTML without the pointy brackets.
+Or, more accurately, "a plain text formatting syntax" 
+footnote:[https://daringfireball.net/projects/markdown/]
+that allows you to:
+
+. Write a plain text document.
+. Publish that as a formatted document with as little intervention as possible.
+
+It does that by having a clear and simple syntax for
+indicating what text should be formatted, and how.
+For example, I can write this:
+
+[source, markdown]
+----
+This is *bold*, _italicized_, and `code`.
+----
+
+and get this: This is *bold*, _italicized_, and `code`.
+
+This makes it possible to write without having to care
+about how the end-document looks like, because that's all
+taken care of by another layer. For now, you get to focus on
+just the writing.
+
+NOTE: You might have noticed that this document is _not_ written in markdown.
+It's written in link:https://asciidoctor.org/docs/user-manual/[asciidoctor],
+which is a similar markup language but with more features.
+
+== Managing writers
