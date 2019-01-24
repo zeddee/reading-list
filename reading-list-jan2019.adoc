@@ -692,6 +692,77 @@ Because Cyberduck is made for FTP connections, it handles WebDAV connections lik
 it knows not to keep waiting for it, but breaks the dropped connection and retries, while keeping track of the progress of any file
 transfers etc. Saved me my sanity, and a bucketload of time (wish I'd found it sooner).
 
+== Security: Don't download suspicious zip files!
+
+LiveOverFlow's a great youtube channel that walks you through various security things.
+
+This one's pretty easy to digest. In https://www.youtube.com/watch?v=Ry_yb5Oipq0,
+LiveOverFlow goes into an old vulnerability involving malicious zip files.
+
+Basically, if you create a zip file that contains a certain combination of paths and files,
+you can replace files on the compromised file system, and on poorly secured systems, run
+executables. LiveOverFlow explains this pretty well; go watch that.
+
+This caught my attention
+because I was recently debugging a friend's wordpress installation that got hacked.
+I was going through server directories, and found that the attacker basically
+uploaded a few files onto the wordpress installation (not sure how; not a wp expert and didn't get that far)
+and had it rewrite most of the `php` files to have it redirect to a malicious ad \+
+uploaded an entire HTML/CSS site onto the base `public_html` directory of the server.
+
+All this without hacking the server; just a vulnerability in wordpress that allowed them to do it.
+Pretty sure about this, because everything else was intact: the wordpress SQL database and the original site's
+content files (bar `php` files).
+
+Relevant snippet from http://phrack.org/issues/34/5.html#article
+
+[source]
+----
+***
+*** Technique #3: The -D Archive Hack
+***
+
+     This technique also plays on the openness of WWIV's archive system.  This
+is another method of getting a file into the root BBS directory, or anywhere on
+the hard drive, for that matter.
+
+     First, create a temporary directory on your hard drive.  It doesn't matter
+what it's called.  We'll call it TEMP.  Then, make a sub-directory of TEMP
+called AA. It can actually be called any two-character combination, but we'll
+keep it nice and simple.  Then make a subdirectory of AA called WWIV.
+
+     Place NETWORK.COM or REMOTE.COM or whatever in the directory
+\TEMP\AA\WWIV.  Then from the TEMP directory execute the command:
+
+PKZIP -r -P STUFF.ZIP         <--- The case of "r" and "P" are important.
+
+     This will create a zip file of all the contents of the directories, but
+with all of the directory names recursed and stored.  So if you do a PKZIP -V
+to list the files you should see AA\WWIV\REMOTE.COM, etc.
+
+     Next, load STUFF.ZIP into a hex editor, like Norton Utilities, and search
+for "AA".  When you find it (it should occur twice), change it to "C:".  It is
+probably a good idea to do this twice, once with the subdirectory called WWIV,
+and another with it called BBS, since those are the two most common main BBS
+directory names for WWIV.  You may even want to try D: or E: in addition to C:.
+You could even work backwards, by forgetting the WWIV subdirectory, and just
+making it AA\REMOTE.COM, and changing the "AA" to "..".  This would be
+foolproof.  You could work from there, doing "..\..\DOS\PKZIP.COM" or whatever.
+
+     Then upload STUFF.ZIP (or whatever you want to call it) to the BBS, and
+type "E" to extract it to a temporary directory.  It'll ask you what file.
+Type "STUFF.ZIP".  It'll ask what you want to extract.  Type """-D".  It'll
+then execute:
+
+PKUNZIP STUFF.ZIP ""-D
+
+     It will unzip everything into the proper directory.  Voila.  The quotation
+marks are ignored by PKUNZIP and are only there to trip up WWIV v4.20's check
+for the hyphen.  This method can only be defeated by modifying the source code,
+or taking out the calls to any PKZIP or PKUNZIP programs in INIT, but then you
+lose your archive section.
+----
+
 
 == Git repositories
 
