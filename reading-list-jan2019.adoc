@@ -636,6 +636,15 @@ Antón Román — link:https://webrtchacks.com/anatomy-webrtc-sdp/[Anatomy of a 
 [quote]
 SDP is the protocol used to exchange  media information between SIP endpoints, and it has also been chosen by IETF and W3C to exchange media information in WebRTC. A WebRTC peer uses SDP to inform the other end about which transport protocols, ports, codecs and  other parameters to use in a media session.
 
+=== Other WebRTC Resources
+
+- link:https://twitter.com/webrtchacks[@webrtcHacks] | https://webrtchacks.com/
+- Google's Project Zero: Adventures in Video Conferencing Part 1: The Wild World of WebRTC 
+https://googleprojectzero.blogspot.com/2018/12/adventures-in-video-conferencing-part-1.html
+- https://cogint.ai/google-uses-ai-to-make-phone-calls-interesting-again/ writes about how
+calls parsed by AI can make C2B (consumer-to-business) calls more pleasant for the consumer.
+
+
 == gRPC
 
 * To watch/read:
