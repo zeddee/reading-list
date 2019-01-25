@@ -648,7 +648,7 @@ SDP is the protocol used to exchange  media information between SIP endpoints, a
 https://googleprojectzero.blogspot.com/2018/12/adventures-in-video-conferencing-part-1.html
 - https://cogint.ai/google-uses-ai-to-make-phone-calls-interesting-again/ writes about how
 calls parsed by AI can make C2B (consumer-to-business) calls more pleasant for the consumer.
-
+- Google's "Unified Plan" https://medium.com/@fippo/rolling-out-unified-plan-support-e2f14eea5cf9
 
 == gRPC
 
@@ -777,8 +777,9 @@ marks are ignored by PKUNZIP and are only there to trip up WWIV v4.20's check
 for the hyphen.  This method can only be defeated by modifying the source code,
 or taking out the calls to any PKZIP or PKUNZIP programs in INIT, but then you
 lose your archive section.
-----
+---- 
 
+include::soros-speech-wef-2019.adoc[leveloffset=1]
 
 == Git repositories
 
