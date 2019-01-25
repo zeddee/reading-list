@@ -248,6 +248,11 @@ mimblewimble privacy tech "The underlying protocol fuses transactions together, 
 
 == Misc. Go notes
 
+=== General Software Dependency
+
+(to read) Russ Cox, "Our Software Dependency Problem", posted on link:https://research.swtch.com/[research!rsc] 23 Jan 2019.
+Available: https://research.swtch.com/deps link:/static/russ-cox-dep.pdf[pdf]
+
 === Go modules
 
 * Packages downloaded by `go.mod` are stored in `$GOPATH/pkg/mod/<domain>/<repo_owner>/<pkgname>@<pkgver>`
