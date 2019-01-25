@@ -706,6 +706,30 @@ Because Cyberduck is made for FTP connections, it handles WebDAV connections lik
 it knows not to keep waiting for it, but breaks the dropped connection and retries, while keeping track of the progress of any file
 transfers etc. Saved me my sanity, and a bucketload of time (wish I'd found it sooner).
 
+== Computer Science: Math
+
+Watched another one of LiveOverFlow's CTF videos: https://www.youtube.com/watch?v=EOlddNofKxo
+
+Here, he explains a bit of math that I wish I learned:
+
+* "Multiplication is just fancy addition."
+* **Linear independence** in 2 vectors is when the 2 vectors don't overlap. footnote:[This will be useful when trying to explain contrapositives]
+** From LiveOverFlow's video
+** Linear Dependence: image:/static/liveoverflow-lineardependence.jpg[Vectors that are linearly dependent]
+** Linear Independence: image:/static/liveoverflow-linearindependence.jpg[Vectors that are linearly independent]
+* Galois Field/Finite Fields: Assuming that within a given problem, you are limited to a given range of values that you can not exceed.
+** e.g. a Galois Field of 2 limits you to two values only. It can be '0' and '1' (binary).
+** In GF(2):
++
+[source]
+----
+0+0=0
+0+1=1
+1+0=1
+1+1=0 // Because you cannot exceed the GF limit
+----
+
+
 == Security: Don't download suspicious zip files!
 
 LiveOverFlow's a great youtube channel that walks you through various security things.
