@@ -783,6 +783,7 @@ lose your archive section.
 
 Google's re:work microsite has some great resources on how to grow people: https://rework.withgoogle.com/guides/
 
+// Include full text of soros' speech at the World Economic Forum 2019, Davos.
 include::soros-speech-wef-2019.adoc[leveloffset=1]
 
 == Git repositories

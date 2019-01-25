@@ -34,9 +34,10 @@ Why don’t you just send documents over email?
 
 == Writing on Github
 
-If you haven't noticed already, most of my writing
+Most of my writing
 is done on or eventually published somewhere on Github.
-It's not just because it's a `hacker` thing to do.
+It's not just because it's a `hacker` thing to do —
+it's made me more productive.
 A lot of what sent me here were the endless issues that
 came with writing in a text box in the browser 
 (WordPress, Medium. et. al),
