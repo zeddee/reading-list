@@ -405,8 +405,9 @@ and tend to use variations of the same password.
 *** Users start storing passwords in insecure places.
 ** Also, a short password that uses symbols, alphanumeric characters etc.
 is not as strong as a long password that's just a series of words.
-Relevant: link:https://www.xkcd.com/936/[XKCD: Password Strength] +
-image:/static/xkcd_password_strength.jpg[Password strength. link=https://www.xkcd.com/936/]
+Relevant: link:https://www.xkcd.com/936/[XKCD: Password Strength]
++
+image:/static/xkcd-password-strength.jpg[Password strength. link=https://www.xkcd.com/936/]
 ** Use a password manager. Here are some good ones:
 *** https://buttercup.pw/ [free; win, macos, linux]
 *** https://www.lastpass.com/ [free & paid: win, macos, linux]
@@ -811,6 +812,7 @@ lose your archive section.
 Google's re:work microsite has some great resources on how to grow people: https://rework.withgoogle.com/guides/
 
 // Include full text of soros' speech at the World Economic Forum 2019, Davos.
+
 include::soros-speech-wef-2019.adoc[leveloffset=1]
 
 == Git repositories
