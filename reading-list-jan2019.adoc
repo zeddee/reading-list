@@ -728,6 +728,9 @@ Here, he explains a bit of math that I wish I learned:
 1+0=1
 1+1=0 // Because you cannot exceed the GF limit
 ----
+* Also introduces link:https://www.sagemath.org/[SageMath] 
+(link:https://github.com/sagemath/sage[Github])
+for doing ... math things.
 
 
 == Security: Don't download suspicious zip files!
