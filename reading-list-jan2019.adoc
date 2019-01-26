@@ -582,6 +582,25 @@ Gumroad takes 8.5% + US$0.30 (see link:/static/gumroad-publishing.mp4)[video])
 - *Manual*: Have customers send you an email with proof of paypal/paylah/snailmail payment,
 and you send an email back with promised material.
 
+== Ethics
+
+=== Biometric privacy win
+
+From https://www.eff.org/deeplinks/2019/01/victory-illinois-supreme-court-protects-biometric-privacy
+
+[quote]
+____
+In Rosenbach v. Six Flags, a 14 year old brought a challenge
+against an amusement park for collecting his thumbprint without
+his informed consent, in violation of Illinois law.
+The law in question, the Illinois Biometric Information Privacy Act (BIPA),
+prohibits companies from gathering, using, or sharing biometric information
+without informed opt-in consent.
+EFF, along with ACLU, CDT, the Chicago Alliance Against Sexual Exploitation,
+PIRG, and Lucy Parsons Labs, filed an amicus curiae brief urging the
+Illinois Supreme Court to adopt a robust interpretation of BIPA.
+____
+
 == MIT: The Ethics and Governance of AI
 
 MIT Lecture series: The Ethics and Governance of AI, Feb 2018
