@@ -57,8 +57,9 @@ Also see section below on link:#mit-the-ethics-and-governance-of-ai[The Ethics a
 === Token contract best practices
 
 Best practices by Consensys:
-https://github.com/ConsenSys/Tokens/blob/fdf687c69d998266a95f15216b1955a4965a0a6d/contracts/eip20/EIP20.sol
+- https://github.com/ConsenSys/Tokens/blob/fdf687c69d998266a95f15216b1955a4965a0a6d/contracts/eip20/EIP20.sol
 link:/static/EIP20.sol[also here]
+- https://consensys.github.io/smart-contract-best-practices/
 
 Canonical Token contract guidelines:
 https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs/499c882f3ec123537fc2fccd57eaa29e6032fe4a
@@ -261,6 +262,10 @@ Consensys resources:
 ** https://github.com/zupzup/smart-contracts-with-go/blob/master/main.go
 * Merkling in Ethereum
 ** https://blog.ethereum.org/2015/11/15/merkling-in-ethereum/
+* Metamask light client project: https://github.com/musteka-la/mustekala
+* Good badger project: https://github.com/good-badger/contracts/blob/master/contracts/ERC721Badge.sol
+** Related to idea that you can boost intrinsic motivation by providing virtue signals instead of
+concrete extrinsic reward.
 
 == Misc. Go notes
 
