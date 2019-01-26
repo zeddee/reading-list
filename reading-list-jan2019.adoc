@@ -54,6 +54,15 @@ Also see section below on link:#mit-the-ethics-and-governance-of-ai[The Ethics a
 
 == Ethereum notes
 
+=== Token contract best practices
+
+Best practices by Consensys:
+https://github.com/ConsenSys/Tokens/blob/fdf687c69d998266a95f15216b1955a4965a0a6d/contracts/eip20/EIP20.sol
+link:/static/EIP20.sol[also here]
+
+Canonical Token contract guidelines:
+https://github.com/ethereum/wiki/wiki/Standardized_Contract_APIs/499c882f3ec123537fc2fccd57eaa29e6032fe4a
+
 === Go Ethereum
 
 * Documentation for working with RLP encoded data:
@@ -226,6 +235,13 @@ Halt Execution, Mark for deletion
 === mimblewimble privacy
 
 mimblewimble privacy tech "The underlying protocol fuses transactions together, ensuring they are indecipherable even on a public digital ledger."
+
+=== Consensys resources
+
+Consensys resources: 
+- https://github.com/ConsenSys
+- https://github.com/ConsenSys/ethereum-developer-tools-list
+
 
 === Misc. Blockchain Resources
 
