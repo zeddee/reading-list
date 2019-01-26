@@ -845,6 +845,8 @@ include::soros-speech-wef-2019.adoc[leveloffset=1]
 
 * What it takes to be an expert in Python
 ** https://github.com/austin-taylor/code-vault/blob/master/python_expert_notebook.ipynb
+* Great explaination on `iterators`, `generators`, and `yield`:
+https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
 
 === Javascript/Web dev
 
