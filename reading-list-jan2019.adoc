@@ -811,6 +811,11 @@ lose your archive section.
 
 Google's re:work microsite has some great resources on how to grow people: https://rework.withgoogle.com/guides/
 
+Kate Matsudaira, "Design Patterns for Managing Up",
+published 16 Jan 2019 in _acmqueue_, vol. 16 issue 6.
+Available: https://queue.acm.org/detail.cfm?id=3308563 
+(link:/static/p20-matsudaira.pdf[pdf])
+
 // Include full text of soros' speech at the World Economic Forum 2019, Davos.
 
 include::soros-speech-wef-2019.adoc[leveloffset=1]
