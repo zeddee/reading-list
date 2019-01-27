@@ -151,6 +151,72 @@ lose your archive section.
 
 == Ethics
 
+=== Yet another article on Moral Machines
+
+Caroline Lester, "A Study on Driverless-Car Ethics Offers a Troubling Look into Our Values",
+published 24 Jan 2019 on the New Yorker. 
+Available: https://www.newyorker.com/science/elements/a-study-on-driverless-car-ethics-offers-a-troubling-look-into-our-values
+(link:/static/new-yorker-driverless.pdf[pdf])
+
+More of revealing how poorly equipped and how poorly thought through such research is.
+
+NB: The “demos” Shariff mentions here is Greek, and refers to the general public ie. “demos” in “democracy”
+
+[quote]
+____
+In its discussion, the paper skims over the uglier aspects of the study to
+identify “three strong preferences” that might provide a starting point for
+developing a standardized machine-ethics framework: sparing human lives, sparing
+more lives, and sparing young lives. The paper concludes with a soaring look
+into the future, and recasts machine ethics as a “unique opportunity to decide,
+as a community, what we believe to be right or wrong; and to make sure that
+machines, unlike humans, unerringly follow these moral preferences.” But, when I
+asked Shariff what he thought of the human prejudice shown in the data, he
+laughed and said, “That suggests to us that we shouldn’t leave decisions
+completely in the hands of the demos.”
+
+The U.S. government has clear guidelines for autonomous weapons—they can’t be
+programmed to make “kill decisions” on their own—but no formal opinion on the
+ethics of driverless cars. [...]
+____
+
+and here even more starkly we can see how underequipped the general public, the
+news agencies reporting on this, and the legislative bodies are to deal with the
+topic. they don't even know what the correct question is, and that they're
+missing it. for instance, the new yorker post goes on about the values reflected
+in the: "Players in Eastern-cluster countries were more likely than those in the
+Western and Southern countries to kill a young person and spare an old person
+(represented, in the game, by a stooped figure holding a cane)." but completely
+misses the point of ethical dilemmas — that the exercise is set up such that you
+are forced to pick a side that is the least bad. You lose either way, so you
+might as well pick the choice that, according to your ethical framework,
+minimizes loss in the situation. the correct take away is that we're at level 0
+_across the board_ on autonomous vehicles because we still don't have a viable
+mental framework to even locate autonomous machines of consequence in public
+life. But yet it's still creeping in — delivery bots are already out there, and
+delivery drones are on the way. But still wildly different from bots of
+significance — where "kill decisions" have to be made at a point. And we'll
+never be able to get this right until we get the mental framework right. 
+
+---
+
+on autonomous vehicles, the solutions are actually very simple. Don't programme a
+kill decision into it. Make it very clear that the vehicle is (1) incapable of
+making such a kill decision, and (2) will _never_ be put in such a situation
+where they are (a) _required to_ and/or (b) _they have the autonomy to make_ a
+kill decision. hamstrung? maybe. but it makes the most sense, and guess what,
+we've already imagined it. the autonomous container trucks in the not-wolverine
+movie Logan (2017)? that's it. that's the only way autonomous vehicles and
+machines in general will viably work in public spaces. on very clear
+specifications + guard rails, and very clear consequences for the humans who
+decide to cross them. 
+
+---
+
+(also, dragging up what i've written previously about
+a similar report by VICE:
+https://github.com/zeddee/reading-list/blob/master/moral-machine-draft.md
+
 === EFF's Face Off White Paper
 
 To read: https://www.eff.org/wp/law-enforcement-use-face-recognition
