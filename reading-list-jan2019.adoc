@@ -269,6 +269,21 @@ Interesting to see how this would possibly be at odds with link:#singapore-antic
 // Include full text of soros' speech at the World Economic Forum 2019, Davos.
 include::soros-speech-wef-2019.adoc[tag=body]
 
+=== China: Tracking deadbeat debtors
+
+Zhang Yu, "Hebei court unveils program to expose deadbeat debtors", updated 16 Jan 2019 in CHINADAILY.com.cn. Available: http://www.chinadaily.com.cn/a/201901/16/WS5c3edfb8a3106c65c34e4d75.html (link:/static/deadbeta-debtors.pdf[pdf])
+
+[quote]
+____
+Deadbeat debtors in North China's Hebei province will find it more difficult to abscond as the Higher People's Court of Hebei on Monday introduced a mini-program on WeChat targeting them.
+
+Called "a map of deadbeat debtors", the program allows users to find out whether there are any debtors within 500 meters.
+
+The debtor's information is available to check in the program, making it easier for people to whistle-blow on debtors capable of paying their debts.
+
+"It's a part of our measures to enforce our rulings and create a socially credible environment," said a spokesman of the court.
+____
+
 == General Tech
 
 === Go Programming Language
