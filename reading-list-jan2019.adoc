@@ -48,7 +48,7 @@ and tend to use variations of the same password.
 is not as strong as a long password that's just a series of words.
 Relevant: link:https://www.xkcd.com/936/[XKCD: Password Strength]
 +
-image:/static/xkcd-password-strength.jpg[Password strength. link=https://www.xkcd.com/936/]
+image:/jan2019-assets/xkcd-password-strength.jpg[Password strength. link=https://www.xkcd.com/936/]
 ** Use a password manager. Here are some good ones:
 *** https://buttercup.pw/ [free; win, macos, linux]
 *** https://www.lastpass.com/ [free & paid: win, macos, linux]
@@ -156,7 +156,7 @@ lose your archive section.
 Caroline Lester, "A Study on Driverless-Car Ethics Offers a Troubling Look into Our Values",
 published 24 Jan 2019 on the New Yorker. 
 Available: https://www.newyorker.com/science/elements/a-study-on-driverless-car-ethics-offers-a-troubling-look-into-our-values
-(link:/static/new-yorker-driverless.pdf[pdf])
+(link:/jan2019-assets/new-yorker-driverless.pdf[pdf])
 
 More of revealing how poorly equipped and how poorly thought through such research is.
 
@@ -276,7 +276,7 @@ ____
 === Ethics and Data Governance
 
 https://easaonline.org/downloads/support/EASA%20statement%20on%20data%20governance.pdf?fbclid=IwAR1fbW1xKa7VSycnwZ-leB3qqpQjFCakZ-5VjzNig_1doj3lq8GX-EGZl-c 
-(also link:/static/EASA-statement-on-data-governance.pdf[here])
+(also link:/jan2019-assets/EASA-statement-on-data-governance.pdf[here])
 
 [quote]
 This statement describes some of the core methodical and ethical practices of ethnographic research.
@@ -331,15 +331,15 @@ ____
 === Singapore: Anticipatory services 
 
 - https://www.tech.gov.sg/media/technews/five-key-features-of-the-new-moments-of-life-app
-(link:/static/moments-of-life_govtech.pdf[pdf])
+(link:/jan2019-assets/moments-of-life_govtech.pdf[pdf])
 - https://govinsider.asia/digital-gov/singapore-smart-nation-e-payments-national-digital-identity-anticipatory-services/
-(link:/static/singapore-anticipatory-services_GovInsider.pdf[pdf])
+(link:/jan2019-assets/singapore-anticipatory-services_GovInsider.pdf[pdf])
 - https://govinsider.asia/smart-gov/predictive-services-are-the-future-of-estonias-digital-government/
-(link:/static/estonia-future-services_GovInsider.pdf[pdf])
+(link:/jan2019-assets/estonia-future-services_GovInsider.pdf[pdf])
 - https://govinsider.asia/innovation/new-zealand-launches-predictive-service-for-new-parents/
-(link:/static/new-zealand-new-parents_GovInsider.pdf[pdf])
+(link:/jan2019-assets/new-zealand-new-parents_GovInsider.pdf[pdf])
 - https://govinsider.asia/innovation/new-zealand-end-of-life-service/
-(link:/static/new-zealand-eol_GovInsider.pdf[pdf])
+(link:/jan2019-assets/new-zealand-eol_GovInsider.pdf[pdf])
 
 One of the smart nation initiatives that I have been worrying about.
 We know that adtech has used this badly:
@@ -354,7 +354,7 @@ _whether or not you are aware of the data you are producing_.
 Other developments to watch:
 
 From https://www.tech.gov.sg/media/technews/10-tech-developments-to-look-forward-to-in-2019
-link:/static/10-tech-developments-2019_govtech.pdf[pdf]:
+link:/jan2019-assets/10-tech-developments-2019_govtech.pdf[pdf]:
 
 ----
 8. A smart lamp post near you
@@ -376,7 +376,7 @@ include::soros-speech-wef-2019.adoc[tag=body]
 
 === China: Tracking deadbeat debtors
 
-Zhang Yu, "Hebei court unveils program to expose deadbeat debtors", updated 16 Jan 2019 in CHINADAILY.com.cn. Available: http://www.chinadaily.com.cn/a/201901/16/WS5c3edfb8a3106c65c34e4d75.html (link:/static/deadbeta-debtors.pdf[pdf])
+Zhang Yu, "Hebei court unveils program to expose deadbeat debtors", updated 16 Jan 2019 in CHINADAILY.com.cn. Available: http://www.chinadaily.com.cn/a/201901/16/WS5c3edfb8a3106c65c34e4d75.html (link:/jan2019-assets/deadbeta-debtors.pdf[pdf])
 
 [quote]
 ____
@@ -396,7 +396,7 @@ ____
 ==== General Software Dependency
 
 (to read) Russ Cox, "Our Software Dependency Problem", posted on link:https://research.swtch.com/[research!rsc] 23 Jan 2019.
-Available: https://research.swtch.com/deps link:/static/russ-cox-dep.pdf[pdf]
+Available: https://research.swtch.com/deps link:/jan2019-assets/russ-cox-dep.pdf[pdf]
 
 ==== Go modules
 
@@ -628,8 +628,8 @@ Here, he explains a bit of math that I wish I learned:
 * "Multiplication is just fancy addition."
 * **Linear independence** in 2 vectors is when the 2 vectors don't overlap. footnote:[This will be useful when trying to explain contrapositives]
 ** From LiveOverFlow's video
-** Linear Dependence: image:/static/liveoverflow-lineardependence.jpg[Vectors that are linearly dependent]
-** Linear Independence: image:/static/liveoverflow-linearindependence.jpg[Vectors that are linearly independent]
+** Linear Dependence: image:/jan2019-assets/liveoverflow-lineardependence.jpg[Vectors that are linearly dependent]
+** Linear Independence: image:/jan2019-assets/liveoverflow-linearindependence.jpg[Vectors that are linearly independent]
 * Galois Field/Finite Fields: Assuming that within a given problem, you are limited to a given range of values that you can not exceed.
 +
 [quote, Wikipedia, https://en.wikipedia.org/wiki/Finite_field]
@@ -657,7 +657,7 @@ Cezar Ionescy - What is a Mathematical Property
 - To watch
 - https://www.youtube.com/watch?v=8IhuPi5SbcI
 - https://github.com/ionescu/open_days_2018/blob/master/slides/slides.pdf
-(also link:/static/what-is-a-mathematical-property.pdf[here])
+(also link:/jan2019-assets/what-is-a-mathematical-property.pdf[here])
 
 === Importance of diff tools
 
@@ -821,7 +821,7 @@ ____
 
 === Other ML/AI
 
-OpenAI has a great blogpost on the OpenAI Five AI: https://blog.openai.com/openai-five (link:/static/openai-five.pdf[pdf])
+OpenAI has a great blogpost on the OpenAI Five AI: https://blog.openai.com/openai-five (link:/jan2019-assets/openai-five.pdf[pdf])
 
 * Explains methods and approaches, plus cool interactive infographic to show this.
 * Explains link:https://blog.openai.com/openai-five/#restricted[restrictions].
@@ -832,7 +832,7 @@ OpenAI has a great blogpost on the OpenAI Five AI: https://blog.openai.com/opena
 
 Best practices by Consensys:
 - https://github.com/ConsenSys/Tokens/blob/fdf687c69d998266a95f15216b1955a4965a0a6d/contracts/eip20/EIP20.sol
-link:/static/EIP20.sol[also here]
+link:/jan2019-assets/EIP20.sol[also here]
 - https://consensys.github.io/smart-contract-best-practices/
 
 Canonical Token contract guidelines:
@@ -1048,7 +1048,7 @@ Google's re:work microsite has some great resources on how to grow people: https
 Kate Matsudaira, "Design Patterns for Managing Up",
 published 16 Jan 2019 in _acmqueue_, vol. 16 issue 6.
 Available: https://queue.acm.org/detail.cfm?id=3308563 
-(link:/static/p20-matsudaira.pdf[pdf])
+(link:/jan2019-assets/p20-matsudaira.pdf[pdf])
 
 == Ways to sell stuff online with a PWYW model
 
@@ -1058,9 +1058,9 @@ Publishing online material e.g. zip files, pdfs etc.
 
 - *Itch.io*: https://itch.io/docs/creators/payments Itch.io takes 10%
 (adjustable; see their Open Revenue Sharing model)
-before payment gateway fees (paypal/stripe) (see link:/static/itchio-publishing.mp4[video])
+before payment gateway fees (paypal/stripe) (see link:/jan2019-assets/itchio-publishing.mp4[video])
 - *Gumroad*: https://help.gumroad.com/11162-getting-started/gumroad-fees
-Gumroad takes 8.5% + US$0.30 (see link:/static/gumroad-publishing.mp4)[video])
+Gumroad takes 8.5% + US$0.30 (see link:/jan2019-assets/gumroad-publishing.mp4)[video])
 - *Manual*: Have customers send you an email with proof of paypal/paylah/snailmail payment,
 and you send an email back with promised material.
 
