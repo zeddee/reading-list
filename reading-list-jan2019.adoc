@@ -4,6 +4,15 @@
 :sectnums:
 :source-highlighter: pygments
 
+== General
+
+* Nat Torkington's Four Short Links: https://www.oreilly.com/feed/four-short-links
+** Fantastic resource. Would recommend as browser home page.
+** link:https://www.oreilly.com/ideas/four-short-links-25-january-2019[25th Jan issue]
+features the Singapore PDPC's (Personal Data Protection Commission)
+link:https://www.pdpc.gov.sg/resources/model-ai-gov[_Proposed Model AI Governance Framework_].
+Haven't had time to get into it, but will see how it pans out.
+
 == Security
 
 === Cybersecurity by Huawei
@@ -214,7 +223,7 @@ That's a pretty interesting use of the word "understanding".
 [goes on to explain the Chinese room thought experiment, which I won't repeat here.]
 ____
 
-=== Anticipatory services 
+=== Singapore: Anticipatory services 
 
 - https://www.tech.gov.sg/media/technews/five-key-features-of-the-new-moments-of-life-app
 (link:/static/moments-of-life_govtech.pdf[pdf])
@@ -247,6 +256,13 @@ link:/static/10-tech-developments-2019_govtech.pdf[pdf]:
 
 ST Engineering has been awarded a S$7.5 million contract to give lamp posts in Geylang and Buona Vista an upgrade with *Internet of Things sensors* and *cameras*. These smart lamp posts are part of the government’s efforts to create a Smart Nation Sensor Platform that allows real-time monitoring of not just *road traffic conditions*, but also *pedestrian footfall and environmental parameters such as temperature and humidity. The data collected will help inform urban and transport planning, as well as *enhance security* in Singapore.
 ----
+
+=== Singapore: Proposed Model AI Governance Framework
+
+To read: PDPC's (Personal Data Protection Commission)
+link:https://www.pdpc.gov.sg/resources/model-ai-gov[_Proposed Model AI Governance Framework_]
+
+Interesting to see how this would possibly be at odds with link:#singapore-anticipatory-services[Anticipatory Services] above.
 
 === Soros' speech at World Economic Forum 2019
 
