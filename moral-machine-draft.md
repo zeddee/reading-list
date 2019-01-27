@@ -16,6 +16,8 @@ The VICE headline reads:
 
 https://motherboard.vice.com/en_us/article/evw3w7/driverless-cars-spare-young-people-over-old-in-a-car-accident-moral-machine-survey-finds
 
+[pdf](/jan2019-assets/vice-autonomous.pdf)
+
 ## First: What's wrong with the headline
 
 - No. The conclusion that can be drawn from the survey is that when presented
