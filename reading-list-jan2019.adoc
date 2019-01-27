@@ -209,13 +209,37 @@ we've already imagined it. the autonomous container trucks in the not-wolverine
 movie Logan (2017)? that's it. that's the only way autonomous vehicles and
 machines in general will viably work in public spaces. on very clear
 specifications + guard rails, and very clear consequences for the humans who
-decide to cross them. 
+decide to cross them.
 
----
+why does this work?
+
+because here, we're clearly marking the boundary between entities who
+have a stake in ethical decision making (humans), and the entities that don't (machines).
+This makes sure that all agency _stays_ with the human, who literally has
+skin in the game.
 
 (also, dragging up what i've written previously about
 a similar report by VICE:
-https://github.com/zeddee/reading-list/blob/master/moral-machine-draft.md
+https://github.com/zeddee/reading-list/blob/master/moral-machine-draft.md)
+
+What I haven't address here:
+
+- Ethical capacity of machines — or are machines worth caring about.
+This is a question we have to consider, the closer human augmentation
+(e.g mobile phones as prosthetic brain, cybernetic prosthesis, etc.)
+brings us to sharing physiology with machines,
+and (maybe) AI bringing machines
+closer to sharing human psychology/psychiatry, we have to consider
+all states, intermediate and at the ends of "human" and "machine",
+in relation to ethics and how it applies to them/us.
+- what are the ethics we're talking about. so far, most articles
+that attempt to address machine ethics and AI fail to address this
+question and defer to a vague understanding of kantian deontology + 
+aristotelean do-unto-others + john stuart mill's utilitarianism.
+All of which is insufficient because that just provides the rules
+we know. But here we're moving very quickly and deeply into different
+ethical territory where agency and the ethical subject is being located
+very differently.
 
 === EFF's Face Off White Paper
 
