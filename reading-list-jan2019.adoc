@@ -31,6 +31,62 @@ which has fantastic Python `venv` handling and code completion.
 - https://skymind.ai/wiki/generative-adversarial-network-gan (to read)
 - https://dtransposed.github.io/blog/Best-of-GANs-2018-(Part-1-out-of-2).html (to read)
 
+=== Interesting bits from IBM's use of AI in psychiatry
+
+* Changelog — Practical AI, Episode #27: IBM's AI for detecting neurological state
+with Ajay Royyuru and Guillermo Cecchi from IBM Healthcare
+** https://changelog.com/practicalai/27
+** Transcript: https://github.com/thechangelog/transcripts/blob/master/practicalai/practical-ai-27.md
+
+Takeaways:
+
+* Focus is on augmenting current psychiatric healthcare practitioners, and not replace them:
++
+[quote, Ajay Royyuru]
+____
+The diagnosis and possible help to the patient, whether it is in terms of diagnosing or in terms of treating, is being done by the licensed expert practitioner. So all that we are doing is using this tool we are making sure that the patient's own experience is being captured sufficiently well. Features that are clinically relevant, like the ones that Guillermo was describing are actually being captured and surfaced, and it is on the basis of those features that a trained practitioner would actually then be prompted to do what they are trained to and licensed to do already.
+
+So this is augmentation, it's not attempting to do what the practitioner does already, which is diagnose a treatment. So the report actually has both graphical, as well as numerical and textual form of these features being surfaced, whether they are in a graph, or the disjoint thoughts that Guillermo was talking about can typically be presented in a graph form. So you either have disjoint graphs, or an extremely complex graph that is actually demonstrating the complexity of the word choices in the context that the person is talking about. And a trained psychiatrist is actually then able to look at that, and as they're accustomed to, use those features to actually then be able to make better decisions.
+
+The most easy way in which this might get used is for screening purposes. A psychiatrist in the future might actually be getting this kind of report, just to keep tabs on what is happening in the life of a person who needs to be watched, and you are using that to actually just watch and screen. And when it gets to a threshold of some concern, you're actually indeed intervening; the practitioner at that point is intervening, and doing what they are trained to do, but now you actually have extended the observation to the life of the person, and you're able to observe more thoroughly and act upon it before it becomes catastrophic. I think that's the more likely usage here. Diagnosing and treating by itself is actually the hardest problem, and that we really need to have practitioners do.
+____
+
+* Lots of stuff on how semantics of spoken language are indicators of mental health conditions.
++
+[quote, Guillermo Cecchi]
+____
+On the other side, we study the causes, and one essential component of what defines a psychotic state of a person is what psychiatrists call flight of ideas. That is the notion that these patients maybe are talking about something, and very dramatically jump the topic to something completely unrelated. So what we did there was using NLP techniques create an algorithm that will detect those jumps using another technique called semantic embedding, that is very commonly used in NLP.
+____
+** I know this is present in Lacanian psychoanalysis (mirror stage, alienated subject),
+but it's interesting to see how its quantified and used in contemporary psychiatry
+and in its algorithimic implementation.
+** More details on what kind of language features they look out for (algorithmically, and in psychiatric practice):
++
+[quote, Guillermo Cecchi]
+____
+Absolutely, yes. We work, as Ajay was saying, with either clinical interviews, or speech samples that are gathered having clinical evaluation in mind. We have monologue speech samples, we have written text in some cases, and we also have dialogue in other cases. The context is that we either have semi-structured clinical interviews - those seem to be the most effective; by semi-structured I mean it's not following a very precise structure flow of questions and follow-ups, but trying to nudge the patient into talking about something and expressing themselves.
+
+In other cases we have a monologue with anchor subjects. In some cases it can be very short, and we typically target naturalistic samples. For instance, we ask the patients to talk about a typical day in their life, or how their week was, or where they would like for vacation, because the idea is that with those types of prompts - we can reuse them, as Ajay was saying, on a weekly or even daily basis, so we can monitor their state.
+
+Then what we do with the data is - yeah, of course, in the case of speech we have audio files, and we process them as such. We extract voice features that are very well established in the field of voice processing, we extract features related to, for instance, the pause distribution between words, the phoneme structure, something that's called the "vowel space" -- it's how you pronounce your vowels -- that might be different for instance across different accents even in the same language.
+
+Then on the lexical side we extract the expected low-level features, so we can parse sentences into their grammatical components, so we can understand how verbs and nouns and adjectives are used and where in the sentence; that has shown to be important in certain conditions.
+
+We also extract -- as I was saying, the idea of semantic embedding... That allows us to take a word or a sentence and have a notion of how similar that word is to other words. We can use target words that are of interest for the particular condition, and understand how the patient in their discourse is getting closer in meaning or farther in meaning for certain concepts that are relevant..
+
+And then we also extract higher-level features... Those are more aligned with, as I was saying, concepts from psychiatry. Just to give you an example, we have algorithms that can measure how metaphorical the content of a phrase is, and that is relevant in psychosis because one of the symptoms of psychosis is in disruption of your appreciation of metaphors, both in terms of how you understand them and how you produce them.
+
+That gives you an idea of the full spectrum of features that we analyze, we study, from the audio and from the text side of language.
+
+\[...\]
+
+It comes natural for us humans to do it, but any disruption in the health of your brain will have immediately an effect in language. Like I said, even for conditions that traditionally have been considered motor disorders of Parkinson's, we know and we've found (and we are not the only ones who have found) very clear effects in language, and even in content. Even if you have something that supposedly is a motor dysfunction, the content of what you are producing as you speak is affected.
+
+We can talk about \[unintelligible 00:24:29.00\] a feature that seems to be popping up often. One is the one I mentioned, that we originally developed for psychosis - the idea of measuring flight of ideas as semantic coherence. That seems to be useful to analyze different conditions, and even situations in which, for instance, a patient may take a psychoactive drug like Ecstasy or methamphetamine.
+
+But if I had to answer your question, I would say that every single aspect of language is affected... Of course, differently, but it's affected because again, language is a very complex phenomenon that involves many, many different aspects of brain function. Any tiny disruption will have an effect.
+____
+
 === Other ML/AI
 
 OpenAI has a great blogpost on the OpenAI Five AI: https://blog.openai.com/openai-five (link:/static/openai-five.pdf[pdf])
