@@ -1,5 +1,5 @@
 = Text of Soros' speech at the World Economic Forum 2019 at Davos
-
+# tag::body[] 
 From: https://www.wired.com/story/mortal-danger-chinas-push-into-ai
 
 [source]
@@ -347,3 +347,4 @@ current cycle of conflict between the US and China. It would reestablish
 international cooperation and allow open societies to flourish. That sums up my
 message.
 ----
+# end::body[] 
