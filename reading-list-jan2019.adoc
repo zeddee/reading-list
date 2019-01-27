@@ -151,6 +151,21 @@ lose your archive section.
 
 == Ethics
 
+=== EFF's Face Off White Paper
+
+To read: https://www.eff.org/wp/law-enforcement-use-face-recognition
+
+From their exec summary:
+
+[quote]
+____
+Face recognition is poised to become one of the most pervasive surveillance technologies, and law enforcement’s use of it is increasing rapidly. Today, law enforcement officers can use mobile devices to capture face recognition-ready photographs of people they stop on the street; surveillance cameras boast real-time face scanning and identification capabilities; and federal, state, and local law enforcement agencies have access to hundreds of millions of images of faces of law-abiding Americans. On the horizon, law enforcement would like to use face recognition with body-worn cameras, to identify people in the dark, to match a person to a police sketch, or even to construct an image of a person’s face from a small sample of their DNA.
+
+However, the adoption of face recognition technologies like these is occurring without meaningful oversight, without proper accuracy testing of the systems as they are actually used in the field, and without the enactment of legal protections to prevent internal and external misuse. This has led to the development of unproven, inaccurate systems that will impinge on constitutional rights and disproportionately impact people of color.
+
+Without restrictive limits in place, it could be relatively easy for the government and private companies to build databases of images of the vast majority of people living in the United States and use those databases to identify and track people in real time as they move from place to place throughout their daily lives. As researchers at Georgetown posited in 2016, one out of two Americans is already in a face recognition database accessible to law enforcement.
+____
+
 === Biometric privacy win
 
 From https://www.eff.org/deeplinks/2019/01/victory-illinois-supreme-court-protects-biometric-privacy
