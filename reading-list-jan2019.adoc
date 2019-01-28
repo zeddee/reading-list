@@ -1176,6 +1176,60 @@ Consensys resources:
 ** Related to idea that you can boost intrinsic motivation by providing virtue signals instead of
 concrete extrinsic reward.
 
+== Content Strategy
+
+=== What is content strategy?
+
+Kristina Halvorson, "What is Content Strategy? Connecting the Dots Between Disciplines",
+publisehd on _Brain Traffic_. Available: https://www.braintraffic.com/blog/what-is-content-strategy
+
+Takeways:
+
+* Content strategy connects the dots between:
+** UXD — identifying user needs and how to get it to them effectively. Usability.
+** Editorial strategy — angle, goal, distribution,
+internal content goals e.g. what info we need to put out there that's missing.
+** Content engineering — (first i've seen this term) basically information architecture.
+progressive revelation, findability, wayfinding etc.
+** Content workflow and governance — basically editorial workflow + checks.
+* Macro definitions:
+** Content strategy guides the creation, delivery, and governance of useful, usable content.
+** Content strategy means getting the right content, to the right people, in the right place, at the right time.
+** Content strategy is an integrated set of user-centered, goal-driven choices about content throughout its lifecycle.
+
+=== Marcomm as a Tech Comm person
+
+Becky Smiltneek, "My Experience Creating Marketing Comm as a Tech Comm Professional"
+published 26 Jan 2019.
+Available: http://beckysmiltneek.com/2019/01/tech-comm-my-experience-creating-marketing-comm-as-a-tech-comm-professional/
+
+Takeaways:
+
+* Marcomm and Techcomm are converging.
++
+[quote]
+____
+\[...\] instead of just asking about the accuracy of the information, I also find myself asking questions such as:
+
+- Is this a unique JOA technology?
+- What benefit does this offer our customers?
+- Is this above and beyond what our competitors offer?
+- This is better in comparison to what? How should I phrase that?
+- What should be emphasized here?
+- What is going to make them want to hire JOA?
+- What other flexibility can we offer our customers here? If I advertise this, can we deliver on that?
+____
+
+Not really conscious of the convergence, maybe because
+of my own (brief) background in marketing/advertising.
+Perhaps a good thing — technical writing has a sense of
+structure and rigour (that can be a bit overbearing at times, 
+especially in certain expectations of it), but that's something it can
+bring to marketing to temper some of the
+link:https://en.wikipedia.org/wiki/Puffery[puffery]
+ad/marcomm is wont to have.
+
+
 == Managing people
 
 Google's re:work microsite has some great resources on how to grow people: https://rework.withgoogle.com/guides/
