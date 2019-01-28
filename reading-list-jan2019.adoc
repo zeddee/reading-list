@@ -152,6 +152,77 @@ lose your archive section.
 
 == Ethics
 
+=== Machines as Ethical Subjects
+
+Jonah Engel Bromwich, "Why Do We Hurt Robots?", published 19 Jan 2019 on _The New York Times_.
+Available: https://www.nytimes.com/2019/01/19/style/why-do-people-hurt-robots.html
+(link:/jan2019-assets/nyt-hurt-robots.pdf[pdf])
+
+Cited in article: Frédéric Kaplan,
+"Who is afraid of the humanoid? Investigating cultural differences in the acceptation of robots",
+(Paris, France: Sony Computer Science Laboratory).
+Available: https://www.techfak.uni-bielefeld.de/~rhaschke/lehre/WS04/humanoids/papers/society.pdf
+(link:/jan2019-assets/kaplan-who-is-afraid-of-the-humanoid.pdf[pdf])
+
+Takeaways:
+
+* Projection.
+** Taking out indignance and anger on entities that are the least capable in responding.
+** i.e. Bullying behaviour, punching down.
++
+[quote]
+____
+Why do we act this way? Are we secretly terrified that robots will take our jobs? Upend our societies? Control our every move with their ever-expanding capabilities and air of quiet malice?
+
+Quite possibly. The specter of insurrection is embedded in the word “robot” itself. It was first used to refer to automatons by the Czech playwright, Karel Capek, who repurposed a word that had referred to a system of indentured servitude or serfdom. The feudal fear of peasant revolt was transplanted to mechanical servants, and worries of a robot uprising have lingered ever since.
+____
+
+* Othering tendencies in humans.
+** Literally the playing out of robot hate as portrayed on _Blade Runner 2049_
++
+[quote]
+____
+But Agnieszka Wykowska, a cognitive neuroscientist, researcher at the Italian Institute of Technology and the editor in chief of the International Journal of Social Robotics, said that while human antagonism toward robots has different forms and motivations, it often resembles the ways that humans hurt each other. Robot abuse, she said, might stem from the tribal psychology of insiders and outsiders.
+
+“You have an agent, the robot, that is in a different category than humans,” she said. “So you probably very easily engage in this psychological mechanism of social ostracism because it’s an out-group member. That’s something to discuss: the dehumanization of robots even though they’re not humans.”
+____
+
+* "We see ourselves in the mirror of the machines that we can build"
+** Referring to the Lacanian concept of the mirrored/alienated self?
+That only by disavowing the reflection, by explicit and voilent exclusion of
+_that_ image can we ground securely our own sense of self + existence.
+** I.e. that this robot hate is existential rather than grounded in
+socio-economic realities.
+** (but what's the difference?)
++
+[quote]
+____
+In his paper “Who is afraid of the humanoid?” Frédéric Kaplan, the digital humanities chair at École Polytechnique Fédérale de Lausanne in Switzerland, suggested that Westerners have been taught to see themselves as biologically informed machines — and perhaps, are unable to separate the idea of humanity from a vision of machines. The nervous system could only be understood after the discovery of electricity, he wrote. DNA is necessarily explained as an analog to computer code. And the human heart is often understood as a mechanical pump. At every turn, Mr. Kaplan wrote, “we see ourselves in the mirror of the machines that we can build.”
+____
+
+* Giving robots names reduce harm to robots in specific contexts.
+** Assimilation.
++
+[quote]
+____
+“That went on until the point that the caregiver started giving names to the robots. So the robots suddenly were not just robots but Andy, Joe and Sally. At that moment, the brutal behavior stopped. So, its very interesting because again its sort of like giving a name to the robot immediately puts it a little closer to the in-group.”
+____
+
+Similarly:
+
+* https://www.npr.org/2017/07/10/536424647/can-robots-teach-us-what-it-means-to-be-human
+* Richard Fisher, "Is it OK to torture or murder a robot?", published 27 Nov 2013 on _BBC Future_.
+Available: http://www.bbc.com/future/story/20131127-would-you-murder-a-robot
+(link:/jan2019-assets/bbc-ok-to-kill-robots.pdf[pdf])
++
+[quote]
+____
+Kate Darling likes to ask you to do terrible things to cute robots. At a workshop she organised this year, Darling asked people to play with a Pleo robot, a child’s toy dinosaur. The soft green Pleo has trusting eyes and affectionate movements. When you take one out of the box, it acts like a helpless newborn puppy – it can’t walk and you have to teach it about the world.
+
+Yet after an hour allowing people to tickle and cuddle these loveable dinosaurs, Darling turned executioner. She gave the participants knives, hatchets and other weapons, and ordered them to torture and dismember their toys. What happened next “was much more dramatic than we ever anticipated,” she says.
+____
+
+
 === Yet another article on Moral Machines
 
 Caroline Lester, "A Study on Driverless-Car Ethics Offers a Troubling Look into Our Values",
