@@ -314,6 +314,68 @@ we know. But here we're moving very quickly and deeply into different
 ethical territory where agency and the ethical subject is being located
 very differently.
 
+(found an article on VICE by
+link:https://motherboard.vice.com/en_us/article/j5a8d3/self-driving-car-policy-uber[Brett Frishmann]
+that gets into some of this)
+
+=== More more Moral Machines
+
+Brett Frischmann, "How Self-Driving Car Policy Will Determine Life, Death and Everything In-Between",
+published 23 Mar 2018 on VICE.
+Available: https://motherboard.vice.com/en_us/article/j5a8d3/self-driving-car-policy-uber
+(link:{assetdir}/frischmann-self-driving-policy.pdf[pdf])
+
+Frischmann gets a lot right in his VICE article, which I just found:
+
+[quote]
+____
+Who should get decision-making power? Should it be politicians? The market? Insurance companies? Automotive executives? Technologists? Should consumers be allowed to customize the moral dashboard of their cars so that their vehicles execute moral decisions that are in line with their own preferences?
+
+Don’t be fooled when people talk about AI as if it alleviates the need for human beings to make these moral decisions, as if AI necessarily will take care of everything for us. Sure, AI can be designed to make emergent, non-transparent, and even inexplicable decisions. But since the shift from human drivers to passive passengers in self-driving cars shifts decision-making from drivers to designers and programmers, governance remains essential. It’s only a question of which form of governance gets adopted.
+____
+
+Takeaways:
+
+* We need more specifics re: consequences.
+Frischmann gets into some of this in his article by:
+** Listing and making explicit the "moral priorit[ies]" that the Moral Machines experiment assumes.
++
+[quote]
+____
+How, then, should it determine moral priority?
+
+Consider the following possibilities:
+
+* Your car should stay in its lane and absorbs the damage, thereby making it likely that you’ll die.
+* Your car should save your life by swerving into the left lane and hitting the car there, sending the passengers to their deaths—passengers known, according to their big data profiles, to have several small children.
+* Your car should save your life by swerving into the right lane and hit the car there, sending the lone passenger to her death—a passenger known, according to her big data profile, to be a scientist who is coming close to finding a cure for cancer.
+* Your car should save the lives worth the most, measured according to amount of money paid into a new form of life assurance insurance. Assume that each person in a vehicle could purchase insurance against these types of rare but inevitable accidents, and then, smart cars would prioritize based on their ability and willingness to pay.
+* Your car should save your life and embrace a neutrality principle in deciding among the means for doing so, perhaps by flipping a simulated coin and swerving to the right if heads comes up and swerving to the left if its tails.
+* Your car shouldn’t prioritize your life and should embrace a neutrality principle by randomly choosing among the three options.
+* Your car should execute whatever option most closely matches your personal value system and the moral choices you would have made if you were capable of doing so. Assume that when you first purchased your car, you took a self-driving car morality test consisting of a battery of scenarios like this one and that the results “programmed” your vehicle.
+
+There’s no value-free way to determine what the autonomous car should do. **The choice presented by options 1–7 shouldn’t be seen as a computational problem that can be “solved” by big data, sophisticated algorithms, machine learning, or any form of artificial intelligence.** These tools can help evaluate and execute options, but **ultimately, someone -- some human beings -- must choose and have their values baked into the software.**
+____
+** Listing accidents that don't result in death, but cause bodily harm. He asks how are these accounted for by policy?
++
+[quote]
+____
+Let’s focus on accidents. Self-driving cars will reduce the number of accidents, but again, do not be fooled by the siren’s call of perfection. There still will be accidents that cause:
+
+- considerable bodily loss, such as the loss of limbs, but not death;
+- considerable bodily damage that disables the injured person for 24 months;
+- considerable mental damage that limits the injured person's ability to ride in an automobile and forces the person to use less efficient modes of transportation;
+- considerable damage to the person's vehicle; or
+- damage and delays.
+____
+
+And a brilliant kicker:
+
+[quote]
+____
+Traffic management is a form of social planning. Decisions that get made in any single instance of solving the trolley problem, or any of the other scenarios we’ve noted, reflect broader governing principles and ethical logics embedded in technology. These decisions aggregate and over time become social patterns. So, don’t be fooled when engineers hide behind technical efficiency and proclaim to be free from moral decisions. “I’m just an engineer” isn’t an acceptable response to ethical questions. When engineered systems allocate life, death and everything in between, the stakes are inevitably moral.
+____
+
 === EFF's Face Off White Paper
 
 To read: https://www.eff.org/wp/law-enforcement-use-face-recognition
