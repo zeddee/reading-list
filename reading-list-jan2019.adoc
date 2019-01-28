@@ -1,4 +1,5 @@
 = Reading List for Jan 2019
+Zed Tan <zed@shootbird.work>
 :toc: auto
 :sectlinks:
 :sectnums:
