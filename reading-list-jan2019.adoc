@@ -1264,6 +1264,26 @@ bring to marketing to temper some of the
 link:https://en.wikipedia.org/wiki/Puffery[puffery]
 ad/marcomm is wont to have.
 
+== Design
+
+=== Brain interfaces
+
+Larry Hardesty, 'Computer system transcribes words users “speak silently”',
+published 4 Apr 2018 on _MIT News_.
+Available: http://news.mit.edu/2018/computer-system-transcribes-words-users-speak-silently-0404
+
+Accessibility; bodily interfaces
+
+[quote]
+____
+The system consists of a wearable device and an associated computing system. Electrodes in the device pick up neuromuscular signals in the jaw and face that are triggered by internal verbalizations — saying words “in your head” — but are undetectable to the human eye. The signals are fed to a machine-learning system that has been trained to correlate particular signals with particular words.
+
+[...]
+
+“We basically can’t live without our cellphones, our digital devices,” says Pattie Maes, a professor of media arts and sciences and Kapur’s thesis advisor. “But at the moment, the use of those devices is very disruptive. If I want to look something up that’s relevant to a conversation I’m having, I have to find my phone and type in the passcode and open an app and type in some search keyword, and the whole thing requires that I completely shift attention from my environment and the people that I’m with to the phone itself. So, my students and I have for a very long time been experimenting with new form factors and new types of experience that enable people to still benefit from all the wonderful knowledge and services that these devices give us, but do it in a way that lets them remain in the present.”
+____
+
+ethical implications
 
 == Managing people
 
@@ -1301,6 +1321,13 @@ and you send an email back with promised material.
 ** https://github.com/Microsoft/Recommenders
 * CS231 Convolutional Neural Networks for Visual Recognition: http://cs231n.github.io/
 
+* Facebook's image transcoding libraries: https://github.com/facebookincubator/spectrum
+
+=== Go
+
+* Simple broadcasting mechanism using go channels: https://github.com/ugjka/messenger
+* Bill Kennedy on Escape Analysis: https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-escape-analysis.html
+
 === Go tools
 
 * Building Electron apps with Go
@@ -1312,6 +1339,7 @@ and you send an email back with promised material.
 ** Need to figure out how to convert asciidoctor and markdown files into PDF using this tool first.
 ** Also probably need to figure out how to reliably crawl a content directory and generate a TOC or manifest, or
 ** Read from a TOC/manifest to generate a set of docs.
+* Go unit test framework: https://github.com/stretchr/testify
 
 === Python programming
 
@@ -1323,3 +1351,8 @@ https://stackoverflow.com/questions/231767/what-does-the-yield-keyword-do
 === Javascript/Web dev
 
 * Swup page transitions: https://github.com/gmrchk/swup
+
+=== Community Tools
+
+* Modern USENET for OSS devs (in development): https://gitlab.com/hathi-social/hathi-server
+* ...a crm for your personal life? https://github.com/monicahq/monica
