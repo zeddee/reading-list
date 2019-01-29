@@ -526,6 +526,12 @@ ____
 
 == General Tech
 
+=== Open Source CS degree
+
+https://github.com/ForrestKnight/open-source-cs
+
+Be sure to watch the author's youtube video on the design rationale behind this.
+
 === Go Programming Language
 
 ==== General Software Dependency
@@ -1327,6 +1333,7 @@ and you send an email back with promised material.
 
 * Simple broadcasting mechanism using go channels: https://github.com/ugjka/messenger
 * Bill Kennedy on Escape Analysis: https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-escape-analysis.html
+* Domain driven design with Go: https://github.com/marcusolsson/goddd
 
 === Go tools
 
