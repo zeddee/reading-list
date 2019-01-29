@@ -856,7 +856,20 @@ distributed consensus.
 
 cockroachDB uses it https://www.youtube.com/watch?v=hWNwI5q01gI
 
-== Digital Materiality
+== Mediated Spaces
+
+=== MIT Media Labs: This City is a Classroom
+
+Avery Normandin and Devora Najjar, Sculpting Evolution group,
+"This city is a classroom", published 29 Jan 2019 on _MIT Media Lab_.
+Available: https://medium.com/mit-media-lab/this-city-is-a-classroom-38bd40aaf279
+
+I love the epigraph they selected:
+
+[quote, Anne Whiston Spirn, The Language of Landscape (1998)]
+____
+Children’s textbooks, from science to history, show no nearby scenes, suggest or demand no firsthand knowing, just formulas and far-off people and places, as if numbers and language had no local meaning, as if their present had no past, no future, the student a vessel not an actor.
+____
 
 === MIT: Neri Oxman/Mediated Matter, MIT Media Lab
 
