@@ -149,7 +149,21 @@ marks are ignored by PKUNZIP and are only there to trip up WWIV v4.20's check
 for the hyphen.  This method can only be defeated by modifying the source code,
 or taking out the calls to any PKZIP or PKUNZIP programs in INIT, but then you
 lose your archive section.
----- 
+----
+
+=== Device recovery via hacking
+
+Ken Westin, "DEF CON 23: Confessions of a Professional Cyber Stalker – Ken Westin",
+published 18 Sep 2015 on YouTube.
+Available: https://www.youtube.com/watch?v=zVJGY2bZ-Ko&feature=youtu.be
+
+=== How people get caught on TOR
+
+Adrian Crenshaw, "How Tor Users Got Caught - Defcon 22", published by DEFCONConference,
+29 Dec 2014 on YouTube.
+Available: https://www.youtube.com/watch?v=eQ2OZKitRwc(link:https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf[slides])
+
+
 
 == Ethics
 
