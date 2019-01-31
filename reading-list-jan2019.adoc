@@ -189,6 +189,8 @@ link:https://www.scmp.com/topics/us-china-trade-war[trade war] with China.
 - The Trump administration
 link:https://www.nytimes.com/2018/12/19/us/politics/sanctions-oleg-deripaska-russia-trump.html[lifted sanctions] against Deripaska,
 against the advice of his own officials.
+
+[start=1]
 * Post-hoc:
 ** China arrested
 link:https://www.nytimes.com/2018/12/14/world/canada/china-detained-spavor-kovrig.html[Canadian businesspersons].
