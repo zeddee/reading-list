@@ -1,0 +1,140 @@
+= Reading List for Feb 2019
+Zed Tan <zed@shootbird.work>
+:toc: auto
+:sectlinks:
+:sectnums:
+:source-highlighter: pygments
+:assetdir: /feb2019-assets
+
+== General Tech
+
+== Elasticsearch
+
+- Hugo + Elasticsearch utility: https://github.com/clarketm/hugo-elasticsearch
+
+=== WebRTC
+
+ICE footnote:[Interactive Connectivity Establishment] is a protocol
+that relies on STUN footnote:[Session Traversal Utilities for NAT
+footnote:[Network Address Translation; how networks manage a single public IP address across several devices in an internal network]]
+and TURN footnote:[Traversal Using Relay NAT] servers to
+perform magic that finds out which devices want to communicate with each other.
+
+TURN servers can also host STUN services.
+You can deploy one physical server that hosts TURN and STUN services.
+
+STUN allows webrtc services to find your public IP address.
+TURN relays the media/data to be transmitted.
+
+Resource: https://bloggeek.me/webrtc-basics-1-missing-servers/
+
+Plain language take (?):
+
+- ICE: WebRTC connectivity protocol
+- TURN: Media relay server
+- STUN: Device name resolution server
+
+Aside: The acronyms don't make sense and are difficult to remember.
+Plus the acronyms picked are not neutral i.e. carries baggage from
+their literal meanings. Would have been better to use abbreviations
+which are usually neutral e.g. NAT.
+ICE connotes stasis and is also the name of the US Immigrations and Customs Enforcement agency.
+TURN makes the most sense. STUN also indicates statis and doesn't
+bring to mind dynamic name resolution.
+
+When you hear ICE described as a server, they might be referring to
+a single STUN and TURN server. See https://github.com/pion/webrtc/rtciceserver.go
+
+Google appears to have a public STUN server available here: `stun.l.google.com:19302` footnote:[https://github.com/pion/webrtc/examples/save-to-disk]
+
+== Journalism
+
+=== Pressers in Germany are held by the press
+
+Christoph Droesser, "In Germany, the press hosts the press briefings", published 29 Jan 2019 in _Columbia Journalism Review_.
+Avail: https://www.cjr.org/analysis/germany-press-briefings.php
+(link:{assetdir}/germany-pressers.pdf[pdf])
+
+[quote]
+____
+Journalists as the hosts, not the guests, of press briefings is a long-held tradition in Germany. It was exactly a hundred years ago, after Germany lost World War I, that the Berlin correspondents of the major newspapers decided they didn’t want to keep depending on misleading government communiqués that the emperor had provided during the war. Those were revolutionary times, and this revolution was one of the few that stuck. Until 1933, when Hitler’s minister of propaganda, Joseph Goebbels, liquidated the so-called Reichspressekonferenz.
+
+But after World War II, on the day that West Germany’s parliament elected the first chancellor, Konrad Adenauer, a group of journalists got together and founded a new organization, the BPK. Adenauer was their first guest, and today no leading politician can afford not to expose themselves to the unfiltered and sometimes irreverent questioning of the press corps at least a couple of times a year. “The public image of a politician depends at least in part on whether they are prepared to confront our questions,” says Gregor Mayntz.
+____
+
+== Game studies
+
+=== General Resources
+
+Quick survey/collection of resources I've collected on Game Studies over the years.
+
+* MIT Press's titles on game studies: https://mitpress.mit.edu/topics/game-studies
+* 
+
+My stuff:
+
+* Guest lecture I gave on documentaries, games + narratives: https://www.zeddee.com/pdfs/CS4026-Documentaries-Games-and-Narratives.pdf
+* My one and only published piece on games: https://killscreen.com/articles/what-time-got-wrong-about-last-us/
+* Brief essay on navigational space in games: https://www.zeddee.com/posts/why-i-play-the-binding-of-isaac/
+* My transcription of Ian Bogost's Wired talk "A Game Designer Explains the Counterintuitive Secret to Fun": https://www.zeddee.com/posts/ian-bogost-on-the-design-of-fun/
+
+=== Cheating in games
+
+* https://www.techradar.com/news/gaming/cheating-in-games-the-good-the-bad-and-the-entirely-necessary-653045
+* https://feross.org/cheating-in-video-games/
+* https://mindtheethos.com/2016/08/14/the-psychology-of-cheating-why-do-people-cheat-in-multiplayer-games/
+* Mia Consalvo, author of the book Cheating: Gaining Advantage in Videogames
+
+Value judgement of cheating is not straightforward in video games, because:
+
+* One can say that cheating would be contravening the rules of play.
+* But in video games, it is possible to interpret "rules of play" as
+what is literally written as code in the game.
+That is, rules of play are literally codified as code/engine in the game.
+* This is sometimes referred to as the game "engine",
+and playing in predefined situations and computer-generated opponents
+is commonly referred to as "PvE" or "Player versus Engine" type of gameplay.
+* But this disregards the social layer that sits on top of the game engine,
+which has its own rules.
+* Another layer of complexity is whether the player is engaging in the game "as is",
+i.e. as the game designers intended, or is the game itself the game as a programmatic entity
+meant to be tweaked, hacked, etc. Good example of these games are the CTFs common in
+programming communities.
+** Also, this sort of "cheating" is used prevalently in meta-games, e.g. %any speedruns and their variants.
+* But the deeper we delve into this, the more we can see that the further we get into
+how the definition of cheating is malleable enough to get around any technical constraint,
+the more we can see that the social layer is important in defining the shape of cheating.
+
+
+== Mediated Spaces
+
+=== Context collapse
+
+https://www.theatlantic.com/international/archive/2015/04/the-abuse-of-satire/390312/
+
+fail state of "clever" is "asshole".
+
+== Links
+
+=== Learning stuff
+
+- Academic torrents: http://academictorrents.com/
+
+=== Cryptography
+
+- Stenography tools: https://0xrick.github.io/lists/stego/
+
+=== Design
+
+- Great posters from gov.uk on various public service things: https://github.com/alphagov/govdesign.git
+
+== Glossary
+
+=== Machine Learning/AI
+
+==== Neuromorphic engineering
+
+[quote, https://en.wikipedia.org/wiki/Neuromorphic_engineering]
+____
+Neuromorphic engineering, also known as neuromorphic computing,[1][2][3] is a concept developed by Carver Mead,[4] in the late 1980s, describing the use of very-large-scale integration (VLSI) systems containing electronic analog circuits to mimic neuro-biological architectures present in the nervous system.[5] In recent times, the term neuromorphic has been used to describe analog, digital, mixed-mode analog/digital VLSI, and software systems that implement models of neural systems (for perception, motor control, or multisensory integration). The implementation of neuromorphic computing on the hardware level can be realized by oxide-based memristors,[6], spintronic memories,[7] threshold switches, and transistors.[8]
+____
