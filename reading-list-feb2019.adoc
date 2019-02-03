@@ -6,6 +6,38 @@ Zed Tan <zed@shootbird.work>
 :source-highlighter: pygments
 :assetdir: /feb2019-assets
 
+== AI/ML
+
+=== Deepmind Starcraft AI cheats
+
+Rob Beschizza, "Looks like the Deepmind Starcraft AI relied on superhuman speed after all", published 27 Jan 2019 on _boingboing_.
+Avail: https://boingboing.net/2019/01/27/looks-like-the-deepmind-starcr.html
+
+Rob reports that Deepmind was found by Aleksi Pietikäinen, a psych student, who made the case that AlphaStar won
+Starcraft 2 players because of "its inability to unlearn the human players’ tendency to spam click."
+footnote:[https://blog.usejournal.com/an-analysis-on-how-deepminds-starcraft-2-ai-s-superhuman-speed-could-be-a-band-aid-fix-for-the-1702fb8344d6]
+
+One of the things that Aleksi points out is that DeepMind's way of measuring play speed is by comparing APM (actions per minute),
+while there's another measure that they should have used, which is EPM (effective APM).
+The DeepMind paper link:https://deepmind.com/blog/alphastar-mastering-real-time-strategy-game-starcraft-ii/[claims]
+that the mean APM of AlphaStar being significantly lower than human players
+— 280, compared to 390 and 678 recorded by the human players it played against.
+But Aleksi notes that if we were to convert this to EPM, AlphaStar's EPM would effectively be 100% of the clicks it makes,
+while it would be a fraction of the humans' APM.
+
+The second thing that Aleksi points out about this is that the metrics recorded by DeepMind
+don't take into account how long each player (human and non-human) can sustain high APM rates.
+Aleksi notes that AlphaStar appears to be able to sustain an APM of 1500 over 5 seconds —
+while a human would be hard pressed to sustain an APM of 500.
+
+There's lots of other stuff that I won't get into here, such as how when APM spikes occur,
+and the role of spam clicking which artificially inflates APM for human players.
+But we can see here how DeepMind makes certain mistakes in their claims that
+boil down to:
+
+. Misreading the relation between human behaviour and human psychology, and
+. Assuming that it is possible to make hardware behave like wetware.
+
 == General Tech
 
 == Elasticsearch
