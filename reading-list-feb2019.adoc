@@ -38,6 +38,47 @@ boil down to:
 . Misreading the relation between human behaviour and human psychology, and
 . Assuming that it is possible to make hardware behave like wetware.
 
+=== Google publishes whitepaper on AI governance
+
+Tom Simonite, "GOOGLE SAYS IT WANTS RULES FOR THE USE OF AI—KINDA, SORTA", published 2 Feb 2019 on _Wired: Business_.
+Avail: https://www.wired.com/story/google-says-wants-rules-ai-kinda-sorta
+
+[quote]
+____
+Google’s paper is much broader in scope than Microsoft’s proposals on facial recognition, and considers more AI uses and concerns. It’s also more cautious, and doesn’t strongly advocate for specific new regulations. The search company champions self-regulation, highlighting how it has chosen not to offer a general-purpose facial recognition service—as Microsoft and Amazon do—due to concerns it could be used to “carry out extreme surveillance.” The paper also says Google has limited some of the AI research code it has released, to reduce the risk of misuse.
+____
+
+The writer ostensibly wants to cast doubt on Google's attempt to be a good citizen in the
+AI biosphere, but I think it's always prudent to be cautious about recommending
+or acceding to new regulation. What most overlook when talking about regulation is
+that it is inherently violent, rigid, and unsympathetic by design.
+
+To read: the whitepaper itself, which can be found here: 
+https://www.blog.google/outreach-initiatives/public-policy/engaging-policy-stakeholders-issues-ai-governance/
+(link:{assetdir}/perspectives-on-issues-in-ai-governance.pdf[pdf])
+
+=== Amazon's face recognition tech is still flawed and still being used by law enforcement
+
+Bryan Menegus, "Defense of Amazon's Face Recognition Tool Undermined by Its Only Known Police Client",
+published 31 Jan 2019 on _Gizmodo_.
+Avail: https://gizmodo.com/defense-of-amazons-face-recognition-tool-undermined-by-1832238149
+
+[quote]
+____
+Faced with two independent studies that found its facial recognition software returns inaccurate or biased results, Amazon has repeatedly claimed that the researchers failed to use the software, called Rekognition, in the way the company has instructed police to use it.
+
+However, the only law enforcement agency Amazon has acknowledged as a client says it also does not use Rekognition in the way Amazon claims it recommends, Gizmodo has learned. In doing so, the law enforcement agency undermines the very argument Amazon uses to discredit critical research about Rekognition.
+
+\[...]
+
+Amazon’s documentation states that law enforcement clients may “use a similarity threshold lower than 99% for scenarios that benefit from a larger set of potential matches [such as] finding missing persons,” but according to a source with knowledge of the WCSO’s Rekognition setup and usage who asked to remain anonymous for fear of retribution, the software is deployed in cases ranging from theft to homicide.
+____
+
+Documenting an allowed use-case, and building such important restrictions into your application,
+and _then_ blaming your customer when your software is not used as per spec is a _design cop-out_
+and irresponsible. It's like saying you've designed a car that only works if you're stepping on the
+gas pedal at a specific angle of 62–69º.
+
 == General Tech
 
 == Elasticsearch
