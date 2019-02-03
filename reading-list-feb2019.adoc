@@ -62,6 +62,40 @@ Journalists as the hosts, not the guests, of press briefings is a long-held trad
 But after World War II, on the day that West Germany’s parliament elected the first chancellor, Konrad Adenauer, a group of journalists got together and founded a new organization, the BPK. Adenauer was their first guest, and today no leading politician can afford not to expose themselves to the unfiltered and sometimes irreverent questioning of the press corps at least a couple of times a year. “The public image of a politician depends at least in part on whether they are prepared to confront our questions,” says Gregor Mayntz.
 ____
 
+=== Seattle Times is incentivizing reporters to grow subscriptions
+
+Max Willens, "How the Seattle Times is empowering reporters to drive subscriber growth", published 31 Jan 2019 in _Digiday UK_.
+Avail: https://digiday.com/media/seattle-times-empowering-reporters-drive-subscriber-growth/
+
+In the aftermath of the "pivot to video"
+link:https://slate.com/technology/2018/10/facebook-online-video-pivot-metrics-false.html[fallout],
+and newsrooms at link:https://www.nytimes.com/2019/01/23/business/media/buzzfeed-layoffs.html[Buzzfeed]
+and link:https://variety.com/2019/digital/news/vice-media-layoffs-250-employees-1203125890/[Vice]
+reporting massive layoffs,
+a glimmer of hope comes from the Seattle Times which
+says its digital subscriptions grew by 38 percent because it changed its metrics from clicks to subscriptions.
+
+It's also reassuring to know that the old wisdom still holds true:
+KPIs are terrible because they can be easily gamed —
+focusing instead on long term and sustainable gains is the better business strategy.
+
+[quote]
+____
+Over the past year, the news publisher, which grew its digital subscriber base 38 percent to 40,000 in 2018, has been trying to get small teams of reporters to think more entrepreneurially about driving subscriptions. It wants them to not just monitor which kinds of content visitors read on their way to paying but also to experiment with new content and packaging formats designed to keep readers engaged.
+
+In 2017, the Times gave its newsroom staff access to a dashboard that showed reporters which stories they published were driving subscriptions. Next, the Times’ executive editor, Don Shelton, formed several teams, called mini-publishers, which paired editorial staffers with members of the paper’s digital audience, product and business intelligence teams to figure out what kinds of content the audience likes, how to make more of it, and so on. The first two teams, which focused on local politics and the University of Washington’s football team, launched in 2017. But in 2018, it expanded that effort to more topics the Times knows are big subscription drivers, including the Seattle Seahawks and Mariners, opinion, real estate, outdoor and travel, and local food and drink.
+
+\[...]
+
+In other cases, the data helped teams adapt their coverage strategies. A team of reporters working on a large series about orca whales in the Puget Sound started publishing more quick-hit, breaking news pieces because they noticed immense audience interest in the topic, Gawlowski said.
+
+The Times does not have a hard number of subscriptions it can attribute to these efforts. But Gawlowski sees the change in culture and thinking as a key element in subscriber growth, though one that’s hard to separate from the efforts of the publisher’s business teams. “The performance of our stories is increasing, but it’s a group effort between the newsroom and and the business side,” he said.
+
+\[...]
+
+“You need to think about things where the readers have given you a clear signal that they like it,” said Gren Manuel, a London-based media and publishing consultant. “I still just see so many stories where I ask, ‘Who was this written for?’”
+____
+
 == Game studies
 
 === General Resources
