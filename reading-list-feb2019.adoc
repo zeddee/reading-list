@@ -6,6 +6,14 @@ Zed Tan <zed@shootbird.work>
 :source-highlighter: pygments
 :assetdir: /feb2019-assets
 
+== Security
+
+=== Device recovery via hacking
+
+Ken Westin, "DEF CON 23: Confessions of a Professional Cyber Stalker – Ken Westin",
+published 18 Sep 2015 on YouTube.
+Available: https://www.youtube.com/watch?v=zVJGY2bZ-Ko&feature=youtu.be
+
 == AI/ML
 
 === Deepmind Starcraft AI cheats

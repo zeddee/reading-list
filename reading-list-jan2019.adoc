@@ -154,12 +154,6 @@ or taking out the calls to any PKZIP or PKUNZIP programs in INIT, but then you
 lose your archive section.
 ----
 
-=== Device recovery via hacking
-
-Ken Westin, "DEF CON 23: Confessions of a Professional Cyber Stalker – Ken Westin",
-published 18 Sep 2015 on YouTube.
-Available: https://www.youtube.com/watch?v=zVJGY2bZ-Ko&feature=youtu.be
-
 === How people get caught on TOR
 
 Adrian Crenshaw, "How Tor Users Got Caught - Defcon 22", published by DEFCONConference,
