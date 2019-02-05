@@ -79,6 +79,84 @@ and _then_ blaming your customer when your software is not used as per spec is a
 and irresponsible. It's like saying you've designed a car that only works if you're stepping on the
 gas pedal at a specific angle of 62–69º.
 
+=== China: Face anti-graft face-recognition too efficient?
+
+Stephen Chen, "Is China’s corruption-busting AI system ‘Zero Trust’ being turned off for being too efficient?",
+published 4 Feb 2019 on _South China Morning Post_.
+Avail: https://www.scmp.com/news/china/science/article/2184857/chinas-corruption-busting-ai-system-zero-trust-being-turned-being
+
+Takeaways:
+
+* Anti-graft AI system dubbed "Zero trust".
+* Resistance by gov officials to wide-reaching anti-graft "data experiment".
+* Extensive tracking of government employees:
++
+[quote]
+____
+Beijing has been developing a nationwide facial recognition system using surveillance cameras capable of identifying any person, anywhere, around the clock within seconds. In Guizhou, a cloud system tracks the movements of every policeman with a live status report.
+____
+* Participation by private contractors:
++
+[quote]
+____
+Major Chinese telecommunication companies such as ZTE have won government contracts to develop blockchain technology to prevent the modification of government data by unauthorised people or organisations.
+____
++
+[quote]
+____
+Jointly developed and deployed by the Chinese Academy of Sciences and the Chinese Communist Party’s internal control institutions to monitor, evaluate or intervene in the work and personal life of public servants, the system can access more than 150 protected databases in central and local governments for cross-reference.
+____
+* Still a black box — zero explainability:
++
+[quote]
+____
+“AI may quickly point out a corrupt official, but it is not very good at explaining the process it has gone through to reach such a conclusion,” the researcher said. “Although it gets it right in most cases, you need a human to work closely with it.”
+____
+* *Presumption of guilt* upon identification by the system:
++
+[quote]
+____
+Once its suspicions have been raised it will calculate the chances of the action being corrupt. If the result exceeds a set marker, the authorities are alerted.
+
+A computer scientist involved in the programme who asked not to be named said that at that stage a superior could then contact the person under scrutiny and perhaps help him avoid “going down the road of no return with further, bigger mistakes”.
+____
+* Some regions have chosen to shut the "experiment" down:
++
+[quote]
+____
+Still, some governments – including Mayang county, Huaihua city and Li county in Hunan – have decommissioned the machine, according to the researchers, one of whom said they “may not feel quite comfortable with the new technology”.
+____
+* Again, presumption of guilt, but at the same time admits that human interference and verification is required (lip service?):
++
+[quote]
+____
+“It is not easy … we are under enormous pressure,” he said, insisting that the main purpose of the programme was not to punish officials but to “save them” at an “early stage of corruption”.
+
+“We just use the machine’s result as reference,” Zhang said. “We need to check and verify its validity. The machine cannot pick up the phone and call the person with a problem. The final decision is always made by humans.”
+____
+* Government officials reluctant to cooperate with programme, either evidence of guilt or they know how this info can be easily used against them:
++
+[quote]
+____
+A party disciplinary official in Xiushui county, Jiangxi, who took part in the Zero Trust project said no government officials were willing to provide the necessary data.
+
+“But they usually comply with a bit of pressure,” said the official, who asked not to be named because of the sensitivity of the technology.
+____
+* No official sanction or decree to use the system:
++
+[quote]
+____
+The system is still running in Xiushui, but its fate is uncertain. Some officials have questioned the machine’s right to access a sensitive database because there is neither a law nor regulation authorising a computer or robot to do so.
+____
+* Aside:
++
+[quote]
+____
+Last month, a court in Shanghai became the first ever in China to use an AI assistant at a public hearing, Xinhua reported.
+
+The machine, code-named “206”, has the ability to record conversations, show evidence such as surveillance camera footage when mentioned by lawyers, and compare testimonies to help judges spot discrepancies, the report said.
+____
+
 == General Tech
 
 == Elasticsearch
@@ -222,6 +300,13 @@ https://www.theatlantic.com/international/archive/2015/04/the-abuse-of-satire/39
 fail state of "clever" is "asshole".
 
 == Links
+
+=== Managing people
+
+Objectives and Key Results (OKRs), an alternative to KPIs:
+
+* https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/
+* https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/avoid-OKR-writing-mistakes/
 
 === Learning stuff
 
