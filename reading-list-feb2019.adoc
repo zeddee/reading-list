@@ -14,6 +14,68 @@ Ken Westin, "DEF CON 23: Confessions of a Professional Cyber Stalker – Ken Wes
 published 18 Sep 2015 on YouTube.
 Available: https://www.youtube.com/watch?v=zVJGY2bZ-Ko&feature=youtu.be
 
+(snippets taken from youtube transcripts; so they may not be 100% grammar checked or accurate)
+
+Takeaways:
+
+* Ken Weston specializes in device recovery.
+* Has been writing tracking software, even before "Find my device" functionality by Apple and Google's services.
+* Software ethics:
++
+[quote, Black Hat Review Board]
+____
+"I think you should reflect on the ethical implications of the technology that you're happily distributing."
+____
+* Intent was to write secure tracking software that can be used ethically:
++
+[quote]
+____
+\[...] you can
+probably imagine some of the work I do
+has its critics — it's usually from folks
+who don't understand the intentions or
+the background of the tools. The fact is
+there are incredibly there tools that
+are much more invasive that are
+available to do more nefarious things
+such as rats a lot of malware out there
+that people can use if they actually
+want to spy on someone you know.
+____
+* Most tracking software are intrusive and dangerous to the user:
++
+[quote]
+____
+Actually investigating some of the other
+theft recovery tools that were out there,
+I found a lot of them actually had
+backdoors into the systems. They would
+actually gather more data than they
+really needed, and so I tried to develop
+a tool that was both useful for law
+enforcement investigations but also
+balance the privacy implications as well.
+____
+* Autorun is evil.
+* Rando USB devices are bad.
+* IP addresses are bad for pinning activity to identity:
++
+[quote]
+____
+So one thing I learned is
+that the trouble with getting the IP
+address \[...] you know it's very very difficult to use
+for attribution. One thing I found is
+that law enforcement doesn't like
+paperwork. So when you're dealing
+with IP addresses, they have to do a lot
+of filing: they have to go through to get
+a court order to get that information
+from an ISP, and you know some of this
+processes can take anywhere from two weeks
+to three months.
+____
+
 == AI/ML
 
 === Deepmind Starcraft AI cheats
@@ -306,6 +368,24 @@ the more we can see that the social layer is important in defining the shape of 
 https://www.theatlantic.com/international/archive/2015/04/the-abuse-of-satire/390312/
 
 fail state of "clever" is "asshole".
+
+== Wierd
+
+=== Biology of Baboushka Dolls
+
+https://worldbuilding.stackexchange.com/questions/138133/russian-dolls-how-do-they-reproduce
+
+[quote, OP "chasly from UK"]
+____
+I believe that Russian Dolls reproduce asexually. They are born pregnant. At the time of birth, the outer doll dies. What is now the outer doll grows until it reaches full size at which point it gives birth and dies. The birth process is simple - the outer doll simply splits in half around its middle. A new inner doll forms at the same time.
+____
+
+p.s.w.g. points out that the Volvox, a type of freshwater algae, reproduces just as OP describes:
+
+[quote, wikipedia, https://en.wikipedia.org/wiki/Volvox]
+____
+Individual volvox cells, a kind of freshwater algae, reproduce in the conventional way (more or less), however, they also collect into spherical colonies (called volvocates, I think) with a tiny opening at one end. These spheres can reproduce by internal budding, with immature spheres growing within the body of the 'mother' sphere. Then at some point, the mother turns itself inside-out by inverting itself through the opening, releasing the 'daughter' spheres into the wild. The point where the daughter sphere connected with this interior of the mother becomes the opening of the daughter sphere (sort of like a navel in mammals). The cells that formerly composed the mother sphere don't simply die, however. Most of them are absorbed by one of the daughter spheres.
+____
 
 == Links
 
