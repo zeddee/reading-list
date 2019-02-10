@@ -1,0 +1,96 @@
+= Tutorials to get through
+:toc: auto
+:sectnums:
+:sectlinks:
+
+== Economics
+
+- *Rethinking Capitalism* https://boingboing.net/2019/01/17/innovation-and-public-purpose.html
+
+== Web
+
+- Flexbox: https://scrimba.com/g/gflexbox
+- PWA: https://codelabs.developers.google.com/codelabs/your-first-pwapp/#1
+
+== General Computer Science
+
+- *Coding the matrix* http://codingthematrix.com/
+- Professional programming https://github.com/charlax/professional-programming
+
+== Security
+
+- GCHQ Boiling Frogs: https://github.com/gchq/BoilingFrogs
+
+=== Mutillidae
+
+- https://www.irongeek.com/i.php?page=mutillidae/mutillidae-deliberately-vulnerable-php-owasp-top-10
+- OWASP Mutillidae 2 Project: https://www.owasp.org/index.php/OWASP_Mutillidae_2_Project
+
+[quote]
+____
+The Mutillidae are a family of more than 3,000 species of wasps whose wingless females resemble large, hairy ants. Their common name velvet ant refers to their dense pile of hair, which most often is bright scarlet or orange, but may also be black, white, silver, or gold. Black and white specimens are sometimes known as panda ants due to their hair coloration resembling that of the giant panda. Their bright colors serve as aposematic signals. They are known for their extremely painful stings, (the sting of the species Dasymultila klugii rated a 3 on the Schmidt pain index and lasts up to 30 minutes),[1] hence the common name cow killer or cow ant. However, mutillids are not aggressive and sting only in defense. In addition, the actual toxicity of their venom is much lower than that of honey bees or harvester ants.[2] Unlike true ants, they are solitary, and lack complex social systems.[3]
+____
+
+=== Blogs
+
+- https://leonjza.github.io/page/2/
+
+
+=== Honeydocs
+
+- https://github.com/ahhh/HoneyTags
+- https://github.com/jqreator/honeydoc
+- https://lockboxx.blogspot.com/2015/09/honeytags-opensource-honeydocs-project.html
+- Canary tokens/honeydocs: https://leonjza.github.io/blog/2015/09/10/canarytokens---the-maybe-not-so-obvious/
+- https://www.ghacks.net/2013/09/12/deploy-honeypot-documents-find-unauthorized-access/
+- http://www.wncinfosec.com/tag/honeydocs/
+
+== Go
+
+=== General
+
+- Learn about error types with tests: https://quii.gitbook.io/learn-go-with-tests/questions-and-answers/error-types
+- advanced testing with go: https://hackernoon.com/advanced-testing-in-go-tutorial-28b89d3a813
+- microservices in golang: https://ewanvalentine.io/microservices-in-golang-part-1/
+- go for mobile: https://github.com/golang/go/wiki/Mobile
+- graphql tutorial: https://tutorialedge.net/golang/go-graphql-beginners-tutorial/
+- sending email with go and mailgun: https://tutorialedge.net/golang/sending-email-using-go-and-mailgun/
+- developing angular and golang apps: https://auth0.com/blog/developing-golang-and-angular-apps-part-1-backend-api
+
+=== webrtc
+
+- Pions webrtc: https://github.com/pions/webrtc
+
+=== GRPC
+
+- Protobuf: https://developers.google.com/protocol-buffers/docs/gotutorial
+- grpc go code reference: https://grpc.io/docs/reference/go/generated-code.html
+- grpc go basic: https://grpc.io/docs/tutorials/basic/go.html
+- grpc go quickstart: https://grpc.io/docs/quickstart/go.html
+
+
+== ML/AI
+
+- *brainjs* https://scrimba.com/p/pVZJQfg/cd4awSM
+- fast.ai practical deep learning for coders: https://course.fast.ai/#using-a-gpu
+- google developer's machine learning: https://developers.google.com/machine-learning/guides/text-classification/step-2
+- markov chains: https://towardsdatascience.com/introduction-to-markov-chains-50da3645a50d
+
+=== Statistics
+
+- Regression methods: https://newonlinecourses.science.psu.edu/stat501/node/276/
+- Regression methods — best fitting line: https://newonlinecourses.science.psu.edu/stat501/node/252/
+- Learning curves: https://www.dataquest.io/blog/learning-curves-machine-learning/
+
+=== Projects
+
+- https://towardsdatascience.com/build-develop-and-deploy-a-machine-learning-model-to-predict-cars-price-using-gradient-boosting-2d4d78fddf09
+- Predicting airbnb prices: https://www.dataquest.io/blog/machine-learning-tutorial/
+
+== Ethereum
+
+- https://hackernoon.com/getting-deep-into-ethereum-how-data-is-stored-in-ethereum-e3f669d96033
+- https://hackernoon.com/consensus-mechanisms-explained-pow-vs-pos-89951c66ae10
+- https://medium.com/gitcoin/commit-reveal-scheme-on-ethereum-25d1d1a25428
+- https://beta.kauri.io/article/3bb9fee637a540d7b1e027cba121ab14/v1/claiming-your-dns-on-ens-via-web-(33:-the-code)
+
