@@ -10,7 +10,7 @@ Zed Tan <zed@shootbird.work>
 
 === Device recovery via hacking
 
-Ken Westin, "DEF CON 23: Confessions of a Professional Cyber Stalker – Ken Westin",
+Ken Weston, "DEF CON 23: Confessions of a Professional Cyber Stalker – Ken Westin",
 published 18 Sep 2015 on YouTube.
 Available: https://www.youtube.com/watch?v=zVJGY2bZ-Ko&feature=youtu.be
 
