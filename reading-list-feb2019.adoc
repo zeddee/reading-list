@@ -295,6 +295,26 @@ Last month, a court in Shanghai became the first ever in China to use an AI assi
 The machine, code-named “206”, has the ability to record conversations, show evidence such as surveillance camera footage when mentioned by lawyers, and compare testimonies to help judges spot discrepancies, the report said.
 ____
 
+=== Automated fact checking with ExFaKT framework
+
+Adrian Coyler blogs about this automated fact checking framework:
+https://blog.acolyer.org/2019/02/11/exfakt-a-framework-for-explaining-facts-over-knowledge-graphs-and-text/
+
+Paper in question: link:{assetdir}/ExFaKT_preprint.pdf[mirror]/link:https://people.mpi-inf.mpg.de/~gadelrab/WSDM2019/ExFaKT_preprint.pdf[pdf]
+
+Am always skeptical of automated value-judegements. Yes, fact checking is a form of value judgement
+because evaluating a source for reliability is a large factor if you should trust the
+"facts" that it presents. Especially if what is being presented is original research.
+Facts also cannot be "atomized", because presentation plays a large role in how the "fact"
+is ultimately interpreted.
+
+Coyler also points out:
+
+[quote]
+____
+One of the things I wondered when working through the paper is that the system seems very vulnerable to confirmation bias. I.e., it deliberately goes looking for confirming facts, and declares the candidate true if it finds them. But maybe there is an overwhelming body of evidence to the contrary, which the system is going to ignore? The answer to this puzzle is found in section 4.5, where the authors evaluate the use of ExFaKT in automated fact checking. For each candidate fact ExFaKT is used to generate two sets of supporting explanations: one set confirming the fact, and one set refuting it. By scoring the evidence presented (roughly, the trust level of the sources used, over the depth of the explanation) it’s possible to come to a judgement as to which scenario is the more likely.
+____
+
 == General Tech
 
 == Elasticsearch
