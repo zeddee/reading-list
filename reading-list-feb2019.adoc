@@ -101,6 +101,47 @@ ____
 “Replica is a perfect example of surveillance capitalism, profiting from information collected from and about us as we use the products that have become a part of our lives,” said Brenda McPhail, director of the Canadian Civil Liberties Association’s Privacy, Technology, and Surveillance Project. “We need to start asking, as a society, if we are going to continue to allow business models that are built around exploiting our information without meaningful consent.”
 ____
 
+_Nature_ paper (referenced in article) about how deanonymizing location data is practically ineffective:
+
+de Montjoye, Yves-Alexandre, Hidalgo, César A., Verleysen, Michel, Blondel, Vincent D.,
+"Unique in the Crowd: The privacy bounds of human mobility", _Scientific Reports_ volume 3, Article number: 1376 (2013).
+Avail: https://www.nature.com/articles/srep01376
+(link:{assetdir}/srep01376.pdf[pdf])
+
+=== Unique in the Crowd: The privacy bounds of human mobility
+
+de Montjoye, Yves-Alexandre, Hidalgo, César A., Verleysen, Michel, Blondel, Vincent D.,
+"Unique in the Crowd: The privacy bounds of human mobility", _Scientific Reports_ volume 3, Article number: 1376 (2013).
+Avail: https://www.nature.com/articles/srep01376
+(link:{assetdir}/srep01376.pdf[pdf])
+
+[quote]
+____
+Derived from the Latin Privatus, meaning “withdraw from public life,” the notion of privacy has been foundational to the development of our diverse societies, forming the basis for individuals' rights such as free speech and religious freedom1. Despite its importance, privacy has mainly relied on informal protection mechanisms. For instance, tracking individuals' movements has been historically difficult, making them de-facto private. For centuries, information technologies have challenged these informal protection mechanisms. In 1086, William I of England commissioned the creation of the Doomsday book, a written record of major property holdings in England containing individual information collected for tax and draft purposes2. In the late 19th century, de-facto privacy was similarly threatened by photographs and yellow journalism. This resulted in one of the first publications advocating privacy in the U.S. in which Samuel Warren and Louis Brandeis argued that privacy law must evolve in response to technological changes3.
+
+Modern information technologies such as the Internet and mobile phones, however, magnify the uniqueness of individuals, further enhancing the traditional challenges to privacy. Mobility data is among the most sensitive data currently being collected. Mobility data contains the approximate whereabouts of individuals and can be used to reconstruct individuals' movements across space and time. Individual mobility traces T [Fig. 1A–B] have been used in the past for research purposes4,5,6,7,8,9,10,11,12,13,14,15,16,17,18 and to provide personalized services to users19. A list of potentially sensitive professional and personal information that could be inferred about an individual knowing only his mobility trace was published recently by the Electronic Frontier Foundation20. These include the movements of a competitor sales force, attendance of a particular church or an individual's presence in a motel or at an abortion clinic.
+____
+
+[quote]
+____
+A simply anonymized dataset does not contain name, home address, phone number or other obvious identifier. Yet, if individual's patterns are unique enough, outside information can be used to link the data back to an individual. For instance, in one study, a medical database was successfully combined with a voters list to extract the health record of the governor of Massachusetts27. In another, mobile phone data have been re-identified using users' top locations28. Finally, part of the Netflix challenge dataset was re-identified using outside information from The Internet Movie Database29.
+____
+
+Other tidbits:
+
+* Only 12 points are required to uniquely identify a human fingerprint.
+* "Mobility trace" is data collected that traces a person's movement that can uniquely identify them.
+* "Spatio-temporal points" are data points that contains locative and temporal data,
+where each locative data point has a bijective relationship to a temporal data point
+i.e. each recorded location for a subject also has a recorded time.
+
+kicker:
+
+[quote]
+____
+We showed that the uniqueness of human mobility traces is high, thereby emphasizing the importance of the idiosyncrasy of human movements for individual privacy. Indeed, this uniqueness means that little outside information is needed to re-identify the trace of a targeted individual even in a sparse, large-scale, and coarse mobility dataset. Given the amount of information that can be inferred from mobility data, as well as the potentially large number of simply anonymized mobility datasets available, this is a growing concern.
+____
+
 == AI/ML
 
 === Deepmind Starcraft AI cheats
@@ -443,3 +484,9 @@ Objectives and Key Results (OKRs), an alternative to KPIs:
 ____
 Neuromorphic engineering, also known as neuromorphic computing,[1][2][3] is a concept developed by Carver Mead,[4] in the late 1980s, describing the use of very-large-scale integration (VLSI) systems containing electronic analog circuits to mimic neuro-biological architectures present in the nervous system.[5] In recent times, the term neuromorphic has been used to describe analog, digital, mixed-mode analog/digital VLSI, and software systems that implement models of neural systems (for perception, motor control, or multisensory integration). The implementation of neuromorphic computing on the hardware level can be realized by oxide-based memristors,[6], spintronic memories,[7] threshold switches, and transistors.[8]
 ____
+
+=== Math
+
+- Injective
+- Surjective
+- Bijective
