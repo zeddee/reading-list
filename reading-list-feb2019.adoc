@@ -76,6 +76,31 @@ processes can take anywhere from two weeks
 to three months.
 ____
 
+=== Google SideWalk intends to sell de-identified location data
+
+Ava Kofman, "GOOGLE’S SIDEWALK LABS PLANS TO PACKAGE AND SELL LOCATION DATA ON MILLIONS OF CELLPHONES",
+published 28 Jan 2019 on _The Intercept_. 
+Avail: https://theintercept.com/2019/01/28/google-alphabet-sidewalk-labs-replica-cellphone-data/
+
+[quote]
+____
+This is why Sidewalk Labs has instituted significant protections to safeguard privacy, before it even begins creating a synthetic population. Any location data that Sidewalk Labs receives is already de-identified (using methods such as aggregation, differential privacy techniques, or outright removal of unique behaviors). Bowden explained that the data obtained by Replica does not include a device’s unique identifiers, which can be used to uncover someone’s unique identity.
+
+However, some urban planners and technologists, while emphasizing the elegance and novelty of the program’s concept, remain skeptical about these privacy protections, asking how Sidewalk Labs defines personally identifiable information. Tamir Israel, a staff lawyer at the Canadian Internet Policy & Public Interest Clinic, warns that re-identification is a rapidly moving target. If Sidewalk Labs has access to people’s unique paths of movement prior to making its synthetic models, wouldn’t it be possible to figure out who they are, based on where they go to sleep or work? “We see a lot of companies erring on the side of collecting it and doing coarse de-identifications, even though, more than any other type of data, location data has been shown to be highly re-identifiable,” he added. “It’s obvious what home people leave and return to every night and what office they stop at every day from 9 to 5 p.m.” A landmark link:https://www.nature.com/articles/srep01376[study] uncovered the extent to which people could be re-identified from seemingly-anonymous data using just four time-stamped data points of where they’ve previously been.
+
+There are also lingering questions about how Sidewalk Labs sets limits about the type and quality of consent obtained. As the past year’s tsunami of privacy breaches has shown, many users do not understand how closely they are being tracked and how often their data is being resold to advertisers or third parties or programs like Replica. “We need to do a better job in ensuring the type of express consent commensurate with sensitivity of data is actually being enforced when data is collected,” Israel noted. Consent has historically been defined by broad and vague terms of service, leveraging companies’ knowledge of intricate technical details at the expense of users too pressed for time to read — let alone understand — their jargon-laden privacy policies. The Times investigation found, for instance, that “the explanations people see when prompted to give permission are often incomplete or misleading.” Even while they may retain a broad right to sell or share location data in an opaque privacy policy, many apps do not explicitly tell their users that they are doing so.
+____
+
+So much of data is being sold under a paper agreement that is
+_de jure_ just about hoping that whomever buys it doesn't mess around with it.
+
+Kicker from article:
+
+[quote]
+____
+“Replica is a perfect example of surveillance capitalism, profiting from information collected from and about us as we use the products that have become a part of our lives,” said Brenda McPhail, director of the Canadian Civil Liberties Association’s Privacy, Technology, and Surveillance Project. “We need to start asking, as a society, if we are going to continue to allow business models that are built around exploiting our information without meaningful consent.”
+____
+
 == AI/ML
 
 === Deepmind Starcraft AI cheats
