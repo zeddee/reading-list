@@ -115,6 +115,8 @@ de Montjoye, Yves-Alexandre, Hidalgo, César A., Verleysen, Michel, Blondel, Vin
 Avail: https://www.nature.com/articles/srep01376
 (link:{assetdir}/srep01376.pdf[pdf])
 
+tldr: your location data is like a fingerprint.
+
 [quote]
 ____
 Derived from the Latin Privatus, meaning “withdraw from public life,” the notion of privacy has been foundational to the development of our diverse societies, forming the basis for individuals' rights such as free speech and religious freedom1. Despite its importance, privacy has mainly relied on informal protection mechanisms. For instance, tracking individuals' movements has been historically difficult, making them de-facto private. For centuries, information technologies have challenged these informal protection mechanisms. In 1086, William I of England commissioned the creation of the Doomsday book, a written record of major property holdings in England containing individual information collected for tax and draft purposes2. In the late 19th century, de-facto privacy was similarly threatened by photographs and yellow journalism. This resulted in one of the first publications advocating privacy in the U.S. in which Samuel Warren and Louis Brandeis argued that privacy law must evolve in response to technological changes3.
