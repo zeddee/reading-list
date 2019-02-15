@@ -469,6 +469,30 @@ the more we can see that the social layer is important in defining the shape of 
 
 == Mediated Spaces
 
+=== Lessig, Massively Multiplayer Online Games, and governance
+
+"LAWRENCE LESSIG ON WHAT MMOS CAN TEACH US ABOUT REAL LIFE POLITICS",
+https://seed-project.io/context/2019/1/25/lawrence-lessig-on-what-mmos-can-teach-us-about-real-life-politics
+
+Lawrence Lessig is a known tech/freedoms activist, and appears to be embarking on
+another social experiment to figure out governance.
+
+Simulations are _de facto_ method for scientific experimentation, falsifying
+hypotheses, and just getting to "what works".
+
+But again, I'm always skeptical of these attempts at trying to model governance
+in a simulation, and then generalizing those findings to the real world.
+
+Plus, these social experiments have been around for ages. Of note: World of Warcraft,
+which has been running since 2004 and has had countless academic work done around it
+re: digital games as a phenomenon, culture, and how these experiences map onto the
+flesh-and-bone world and, most importantly, vice-versa.
+
+The questions that the Seed Project seem to be attempting to answer
+echo lots of what political philo has already established — but I guess
+the technologists still want to figure things out by themselves
+instead.
+
 === Context collapse
 
 https://www.theatlantic.com/international/archive/2015/04/the-abuse-of-satire/390312/
