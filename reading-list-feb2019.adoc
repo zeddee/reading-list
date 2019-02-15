@@ -317,6 +317,24 @@ ____
 
 == General Tech
 
+== How to decide to use a new tech or not
+
+Kellan Elliott-McCrea, published 5 Feb 2019, https://kellanem.com/notes/new-tech
+
+[quote]
+____
+- What problem are we trying to solve? (Tech should never be introduced as an end to itself)
+- How could we solve the problem with our current tech stack? (If the answer is we can’t, then we probably haven’t thought about the problem deeply enough)
+- Are we clear on what new costs we are taking on with the new technology? (monitoring, training, cognitive load, etc)
+- What about our current stack makes solving this problem in a cost-effective manner (in terms of money, people or time) difficult?
+- If this new tech is a replacement for something we currently do, are we committed to moving everything to this new technology in the future? Or are we proliferating multiple solutions to the same problem? (aka “Will this solution kill and eat the solution that it replaces?”)
+- Who do we know and trust who uses this tech? Have we talked to them about it? What did they say about it? What don’t they like about it? (if they don’t hate it, they haven’t used it in depth yet)
+- What’s a low risk way to get started?
+- Have you gotten a mixed discipline group of senior folks together and thrashed out each of the above points? Where is that documented?
+____
+
+A reminder that not everything can be solved by jumping at the next shiny thing.
+
 == Elasticsearch
 
 - Hugo + Elasticsearch utility: https://github.com/clarketm/hugo-elasticsearch
