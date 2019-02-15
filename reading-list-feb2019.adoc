@@ -497,6 +497,22 @@ ____
 Children’s textbooks, from science to history, show no nearby scenes, suggest or demand no firsthand knowing, just formulas and far-off people and places, as if numbers and language had no local meaning, as if their present had no past, no future, the student a vessel not an actor.
 ____
 
+Salient points:
+
+* "As climate change increasingly tightens its grip on developed and undeveloped territories alike, rational and resilient ecological design becomes increasingly necessary. Working with a cohort of neurodiverse Boston-area students, we sought to explore new forms of design thinking, employing a systems-level, nature-conscious, and playful approach in order to further understand local urban ecology and how to create more resilient cities."
+* Urban ecology becoming increasingly important as human-designed spaces not only encroach on natural environments
+* but moves into a (more) symbiotic relationship where urban and natural ecologies co-exist and co-produce new ecologies
+* shift emerges out of new understanding of urban/natural ecologies, but also an attitudinal shift in ecological research
+* Also emerges out of the knowledge that we can design _for_ nature rather than mowing it over in favour of artificial structures
+** NOT JUST *HUMAN-CENTERED DESIGN*
+** perhaps, (singaporean) cases in point: supertrees, "eco" parks, green corridor etc.
+** nb: i still cannot get past the irony of decimating a natural environment to build an artificially "eco-friendly" one
+
+Takeaway:
+
+- No tested and proven approach yet. No proof of significant impact on natural environments.
+Just a hopeful educational endeavour (which is always good).
+
 === Lessig, Massively Multiplayer Online Games, and governance
 
 "LAWRENCE LESSIG ON WHAT MMOS CAN TEACH US ABOUT REAL LIFE POLITICS",
