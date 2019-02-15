@@ -317,6 +317,21 @@ ____
 
 == General Tech
 
+== Another example of poorly worded regulation that makes things painful for everybody
+
+Rainey Reitman, "SEC’s Action Against Decentralized Exchange Raises Constitutional Questions",
+published 12 Feb 2019 on _Electronic Freedom Foundation_.
+Avail: https://www.eff.org/deeplinks/2019/02/secs-action-against-decentralized-exchange-raises-constitutional-questions
+
+[quote]
+____
+The SEC wrote:
+
+    A system uses established non-discretionary methods if it provides a trading facility or sets rules.  For example, an entity that provides an algorithm, run on a computer program or on a smart contract using blockchain technology, as a means to bring together or execute orders could be providing a trading facility. As another example, an entity that sets execution priorities, standardizes material terms for digital asset securities traded on the system, or requires orders to conform with predetermined protocols of a smart contract, could be setting rules. Additionally, if one entity arranges for other entities, either directly or indirectly, to provide the various functions of a trading system that together meet the definition of an exchange, the entity arranging the collective efforts could be considered to have established an exchange.
+
+The SEC’s broad language about “an entity that provides an algorithm” could include cryptographic researchers and coders who are publishing ideas or code for debate and discussion, and working to develop systems that could benefit the public. Even if the individuals never deployed the code and never actively maintained or promoted a decentralized exchange, this overly broad language implies the SEC could well expect people merely writing and publishing code to register as a national securities exchange or face liability.
+____
+
 == How to decide to use a new tech or not
 
 Kellan Elliott-McCrea, published 5 Feb 2019, https://kellanem.com/notes/new-tech
