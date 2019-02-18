@@ -317,6 +317,44 @@ ____
 
 == General Tech
 
+=== Unicode adventures
+
+Gojko Adzic, "Five things everyone should know about Unicode", published 7 Nov 2017.
+Avail: https://gojko.net/2017/11/07/five-things-about-unicode.html
+
+Adzic makes an easy-to-parse case for paying more attention to Unicode than you already are.
+
+In brief, Unicode is the thing that helps computers decide what characters to display
+when it has to render text. It, of course, gets more complicated when we move beyond
+the characters you have on the US keyboard.
+
+To summarize Adzic's article:
+
+* Unicode characters are:
+** 8 byte code points,
+** represented by 'U+' followed by 4 hexadecimal characters (0-9a-f), and
+** usually looks like 'U+DE4D' or '\uDE4D'
+* 1. Many Unicode points are not visible
+** There exists: zero-width code points, white-space code points, etc.
+* 2. Many code points look very similar
+** Compare the Latin character set ('a') and the "mathematical" character set ('𝖺')
+* 3. Normalisation isn’t that normal
+** Upper and lower case characters for the Latin character set are usually separated by 20 unicode points.
+** E.g. 'a' is 'U+0041', and 'A' is 'U+0061'
+** But not all uppercase/lowercase forms are 20 code points apart.
+** E.g. 'ä' is 'U+00C4', and 'Ä' is 'U+00E4', which places them 32 unicode points apart.
+* 4. There is no relationship between screen display length and memory size
+** i.e. there is no fixed relationship between the screen size of the character displayed
+and the size of the displayed character in memory.
+** Adzic explains this pretty clearly, but I'd like to add the following tidbits:
+** Chinese characters tend to be 2 code points long e.g. 'U+XXXX U+XXXX' instead of 1 code point, which means that they take up less space on screen but twice the amount of memory.
+** Korean characters can take up to 3 code points.
+** Some western characters can be written as separate unicode code points. For example,
+'Ä' can be one code point ('U+00E4'), or two separate code points '¨' ('U+00A8') + 'A' ('U+0061') together (so, 'U+00A8 U+0061').
+** You can see how this is possible when you type this on a mac by hitting `alt+u` and then `shift+a` to type 'Ä'.
+* 5. Unicode is more than just passive data
+** This I didn't know. Neat!
+
 === Another example of poorly worded regulation that makes things painful for everybody
 
 Rainey Reitman, "SEC’s Action Against Decentralized Exchange Raises Constitutional Questions",
