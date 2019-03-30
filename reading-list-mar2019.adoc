@@ -1,0 +1,118 @@
+= Reading List for Feb 2019
+Zed Tan <zed@shootbird.work>
+:toc: auto
+:sectlinks:
+:sectnums:
+:source-highlighter: pygments
+:assetdir: /mar2019-assets
+
+== WebRTC
+
+Video, voice, data channel streaming.
+
+* *The five make-or-break WebRTC challenges you need to address*
+** https://bloggeek.me/five-webrtc-challenges/
+
+=== Electron WebRTC
+
+https://github.com/mappum/electron-webrtc
+
+Because using browser implementations of WebRTC can be challenging:
+
+- Chrome and Firefox are set to automatically update by default; difficult to lock version for your application
+
+Bloggeek.me
+
+- https://bloggeek.me/webrtc-electron-implementations/
+- https://bloggeek.me/webrtc-plugin-vs-electron-webrtc-app/
+
+
+== Go programming language
+
+* *A guide to Golang e-commerce*: 
+** https://morioh.com/p/3d1f6febc8b4/a-guide-to-golang-e-commerce
+** Headless CMS with Ponzu
+** Still requires snipcart account
+* *A visual guide to Go Memory Allocator from scratch (Golang)*
+** Looks promising, with illustrations to explain how memory allocation — usually obscured from the dev — works in Go.
+** https://blog.learngoprogramming.com/a-visual-guide-to-golang-memory-allocator-from-ground-up-e132258453ed
+
+== Tech writing
+
+=== Masters in Technical Writing at Mercers
+
+Tom Johnson interviewed Pam Brewer, director of the Master of Science in Technical Communication Management (MSTCM) program at Mercers.
+
+An interesting takeaway from the conversation is how technical writers are typically
+positioned very well to initiate and drive change in an organization:
+
+[quote]
+____
+Technical writers are uniquely poised in organizations to facilitate organizational change. They have access to information, they know how to analyze target audiences, and they design communication tools that encourage specific actions from those audiences. If technical writers can better understand how to identify organizational problems, analyze opportunities, and deploy solutions, they can become leaders of change in their organizations.
+
+I can give you a few examples. When we work on advanced technical communication skills, we incorporate change management. We ask our students to identify opportunities for process change in their organizations, do a feasibility analysis of solutions, and propose a feasible solution(s). Many of our alums have reported significant changes that benefit their organizations at a process management level.
+
+One of our alums, who works for a medical company, updated the communication process between levels of the organization, pitched it to management, and earned a new management position to implement the changes.
+
+As another example, we teach usability assessment as a tool for process or product improvement. In the usability class I teach, students are encouraged to identify an opportunity to assess an emerging product or technology in their organizations, make the case for inserting a usability assessment, and then conduct the assessment. This assignment enables them to initiate and implement change through management channels.
+____
+
+
+== Decentralized communication
+
+=== Scuttlebutt.nz
+
+Scuttlebutt is a decentralized social network that uses the Gossip Protocol to allow peers to comunicate.
+
+Pretty interesting implementation of a P2P social network, with a great introductory video.
+
+- https://www.scuttlebutt.nz/concepts/gossip
+- https://github.com/ssbc/ssb-server/wiki/Pub-Servers
+- https://www.consul.io/docs/internals/gossip.html
+
+== AI
+
+=== Estonia uses AI in making legal judgements
+
+Eric Niiler, "CAN AI BE A FAIR JUDGE IN COURT? ESTONIA THINKS SO", published 25 Mar 2019 in _Wired_.
+Avail: https://www.wired.com/story/can-ai-be-fair-judge-court-estonia-thinks-so
+(link:{assetdir}/wired-estonia-aijudge.pdf[pdf])
+
+Estonia is bent on being at the bleeding edge of digital governance:
+
+- Implementing secure electronic IDs that essentially act as a private key in PKI
+- Using electronic IDs to digitally sign gov-related transactions
+- More than 40% of votes cast via e-voting
+
+Headline is a bit click-baity, given that AI here is used in relatively straightforward cases, e.g.:
+
+* Using AI to determine if farmers qualify for subsidies given for cutting their hay fields in summer
+** AI crunches satellite imagery to see if given plots of hay fields have been trimmed during a given period of time.
+** If they have, then the AI awards the farmer who owns that plot of land the subsidy.
+** "Cattle grazing or partial cutting can throw off the image processing; in those cases, an inspector still drives out to check."
+** "Two weeks before the mowing deadline, the automated system notifies farmers via text or email that includes a link to the satellite image of their field.", presumably so that farmers can appeal the decision if necessary.
+** "The system saved €665,000 ($755,000) in its first year because inspectors made fewer site visits and focused on other enforcement actions, according to Velsberg."
+** So here, the AI decision-making process is transparent and readily remediable.
+* Second example is having a database of laid-off workers who are, with an AI system, matched with jobs in a database. "About 72 percent of workers who gain a new job through the system are still on the job after six months, up from 58 percent before the computer-matching system was deployed."
+* Third: Automatic enrolment of children into schools at birth.
+** This is a bit tricky for me ethically because it's close to
+what the Singapore government's proposed 
+link:file:///Users/zeddee/working/sites/reading-list/reading-list-jan2019.html#_singapore_anticipatory_services[anticipitory services]
+which I wrote about in Jan's reading list.
+** My stance is that anticipatory services are by default intrusive and unethical,
+but if they are (1) readily remediable, and (2) applied to uncontroversial things,
+it could work.
+** Here, Estonia has shown an affinity for providing digital services while allowing citizens
+to keep their personal information private
+(unlike Singapore, which in a very Sinophilic way is intent on monitoring their citizenry's every move
+for ease of governance).
+** Also, choice of schools seems uncontroversial (unlike in Singapore, where this would not fly at all).
+* Fourth, and the meat of the article:
+small claims of less than €7000 are delegated to an AI judge, with a pilot focusing on contract disputes.
+
+Quote from the current Estonian president is encouraging:
+
+[quote]
+____
+For now, though, Estonian officials like the idea of an AI robot solving simple disputes, leaving more time for human judges and lawyers to solve tougher problems. Deploying more AI in government services "will allow us to specialize in something the machines can never do,” President Kersti Kaljulaid noted at the recent North Star AI conference in Tallinn. “I want to specialize in being a warm compassionate human being. For that we need the AI to be safe, and demonstrably safe."
+____
