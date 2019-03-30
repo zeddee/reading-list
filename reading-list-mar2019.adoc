@@ -116,3 +116,8 @@ Quote from the current Estonian president is encouraging:
 ____
 For now, though, Estonian officials like the idea of an AI robot solving simple disputes, leaving more time for human judges and lawyers to solve tougher problems. Deploying more AI in government services "will allow us to specialize in something the machines can never do,” President Kersti Kaljulaid noted at the recent North Star AI conference in Tallinn. “I want to specialize in being a warm compassionate human being. For that we need the AI to be safe, and demonstrably safe."
 ____
+
+Misc note:
+
+- Programmatic governance is an opportunity to encode behaviour into user interactions.
+// - Thinking of how adding a call feature into eg tinder where you have the option to ask for permission to call your match eg. send a request: “would you be comfortable if I called you?” While hiding contact information by routing calls through the app. 
