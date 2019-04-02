@@ -1,0 +1,11 @@
+= Reading List for Apr 2019
+Zed Tan <zed@shootbird.work>
+:toc: auto
+:sectlinks:
+:sectnums:
+:source-highlighter: pygments
+:assetdir: /apr2019-assets
+
+== Design
+
+- Cool gradient tools: https://github.com/webkul/coolhue
