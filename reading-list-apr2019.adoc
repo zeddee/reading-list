@@ -9,3 +9,5 @@ Zed Tan <zed@shootbird.work>
 == Design
 
 - Cool gradient tools: https://github.com/webkul/coolhue
+- Stackoverflow had a great april fool's version of their site: +
+image:{assetdir}/stackoverflow-2019aprilfool.gif[Stackoverflow's 2019 April Fool's]
