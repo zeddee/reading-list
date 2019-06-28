@@ -5,3 +5,38 @@ Zed Tan <zed@shootbird.work>
 :sectnums:
 :source-highlighter: pygments
 :assetdir: /jun2019-assets
+
+== Labour
+
+=== MADISON AVENUE MUST REDISCOVER THE CULT OF PERSONALITY
+
+Avi Dan, "MADISON AVENUE MUST REDISCOVER THE CULT OF PERSONALITY", _AdAge_ 25 June 2019. Available: https://adage.com/article/opinion/madison-avenue-must-rediscover-cult-personality/2179821
+
+* First, the subhead:
++
+____
+Advertising has become a business of cubicles and 'pizza Fridays.' If we want to bring back the talent, we must first bring back the swagger
+____
+* Writer's argument seems to be that the advertising industry must return to harnessing the creative force of uniquely talented individuals, clearly nostalgic for the _Mad Men_ era of advertising.
+* Which is
+. A clear misreading of the state of the advertising industry. The industry is bleeding talent because it has become clear that advertising is less effective at solving problems and, essentially, changing the world for better/worse, than what the writer purports to be its nemesis: Facebook and Google.
+. Writer also blames "corporatization" of ad agencies for this sad state of affairs, which he alleges has turned agencies "faceless". My question would be: then how did Facebook/Google/and especially (and most amazingly) Microsoft survive that process of "corporatization", while advertising does not?
+
+It's not that Madison Avenue "lacks a clear voice" — it's that the industry as a whole has stopped being a place where solutions to problems are found. Advertising has for too long gotten away with engaging products and customers at the level of impression and image; for too long, advertising as an industry has gotten away with being _distant_ from the product. Back then, they could communicate at arm's length about a product that they did not own, barely knew about, and could somehow sell by _creating_ impressions of the product that would move dollars.
+
+I see here two clear failures:
+
+. A failure to get close to the product. The whole of the last twenty to thirty years has been a movement where the ones who create effective "impressions" move closer and closer to the product. Advertising has failed to catch up and catch on.
+.. This closeness includes:
+... Physical proximity — as in the case of "influencers" endorsing a product that they hold.
+... Apprehensive proximity — e.g. "influencers" using a product and giving their impressions.
+... Involved proximity — e.g. a party that is involved in the development of the product, as with link:https://medium.com/google-developers/the-core-competencies-of-developer-relations-f3e1c04c0f5b[DevRel roles]. 
+.. By refusing to move away from the structure of the agency that is already creaking at the seams, the agency limits its own ability to get close to the product in the above ways, cutting off their ability to compete in this field at its knees.
+.. There are instances where agencies succeed in navigating these three proximities (non-exhaustive and hastily named), but I have yet to see an advertising agency successfully attempt it.
+. Failure to accept that "creativity" is not and cannot be a black box.
+.. I the "creative rockstar" myth was something that I imagined, but now at least I know that I'm not the only one who thinks it exists, albeit from the other end of the ideological dinner table.
+.. Working with and perpetuating this myth of a "creative rockstar" effectively wraps the team's, and if we extend the metaphor, the company's ability to generate creative work inside a black box.
+.. This means that all the knowledge and capacity to create work is siloed inside single individuals. They hold the keys to the castle. As a counterpoint, work in tech firms like Facebook and Google are rigorously documented and shared (at least internally within teams), so that as teams and teams of teams, they work better.
+.. The advertising world seems absolutely afraid of this, and as such, traps itself by failing to share what goes into their sausage and thus making it difficult for teamwork to organically occur. Instead, they must rely on whomever of their rockstars are left, and try to find more.
+.. Crucially, following this model this means that all the team functions as is *as an amplifier for a single personality*. This means that instead of a cooperative mode where each team member functions as a multiplier for any other given member of the team, forming a cooperative mesh, each team member must focus on being a force-multiplier for the "creative rockstar", severely limiting the effect of the multiplier and stunting the breadth and depth with which the team can solve problems.
+
