@@ -11,3 +11,77 @@ Zed Tan <zed@shootbird.work>
 - Cool gradient tools: https://github.com/webkul/coolhue
 - Stackoverflow had a great april fool's version of their site: +
 image:{assetdir}/stackoverflow-2019aprilfool.gif[Stackoverflow's 2019 April Fool's]
+- Once again, how learning how to write well is the most important design skill: https://medium.com/nyc-design/why-i-write-or-how-writing-makes-you-a-better-designer-1440d2085e92
+
+== Technical writing
+
+* Amruta Ranade Cockroach Labs writes about her experience interviewing for a position as a technical writer: https://www.cockroachlabs.com/blog/navigating-tech-writer/
+
+== Computer Science
+
+=== Golang data structures
+
+Ilija Eftimov, "Golang Datastructures: Trees", published 13 Feb 2019.
+Avail: https://ieftimov.com/post/golang-datastructures-trees/
+
+* Trees are non-linear data structures
+** "Linear" data structures have a start and an end, e.g. arrays, lists, queues, stacks.
+** Trees are also known as hierarchical data structures.
+** From wiki:
++
+[quote]
+____
+A tree is a data structure made up of nodes or vertices and edges without having any cycle. The tree with no nodes is called the null or empty tree. A tree that is not empty consists of a root node and potentially many levels of additional nodes that form a hierarchy.
+____
+** "no cycle" means that terminal nodes in a tree are unique, and don't have more than one parent.
+** HTML is a document format that uses a tree data structure called the DOM (document object model) to organize data.
+
+BFS:
+
+* Breadth First Search
+** Traverses a tree by exploring the nodes "in width" first.
+** This searches a tree by stepping through each level in a tree and vists each node in that level before moving to the next level.
+** Example code that performs BFS:
++
+[source, go]
+====
+func findById(root *Node, id string) *Node {
+        queue := make([]*Node, 0)
+        queue = append(queue, root)
+        for len(queue) > 0 {
+                nextUp := queue[0]
+                queue = queue[1:]
+                if nextUp.id == id {
+                        return nextUp
+                }
+                if len(nextUp.children) > 0 {
+                        for _, child := range nextUp.children {
+                                queue = append(queue, child)
+                        }
+                }
+        }
+        return nil
+}
+====
+
+DFS:
+
+* Correspondingly, DFS is a Depth First Search, where searching a tree will pick a node and visit the first unexplored child of each node it encounters, until it reaches a terminal node. When it reaches a terminal node, it returns to the top of the tree, and repeats the process.
+** Example implementation of DFS traversal:
++
+[source, go]
+====
+func findByIdDFS(node *Node, id string) *Node {
+        if node.id == id {
+                return node
+        }
+
+        if len(node.children) > 0 {
+                for _, child := range node.children {
+                        findByIdDFS(child, id)
+                }
+        }
+        return nil
+}
+====
+
