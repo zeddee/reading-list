@@ -1,0 +1,7 @@
+= Reading List for Jun 2019
+Zed Tan <zed@shootbird.work>
+:toc: auto
+:sectlinks:
+:sectnums:
+:source-highlighter: pygments
+:assetdir: /jun2019-assets
