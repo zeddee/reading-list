@@ -16,3 +16,11 @@ https://www.wired.com/story/this-robot-fish-powers-itself-with-fake-blood
 - Robert Shepherd: “In our fluid, we're transmitting force and we're transmitting electrical power.”
 - > Thus the fluid energizes the fish. But it also acts as a traditional hydraulic fluid, in that it transmits force in the tail and pectoral fins. When the pumps push the fluid to the fins, they bend back and forth to propel the robot. The pectoral fins work in the same way to steer the fish left and right.
 - Robert Katzschmann, whose team built a Lithium ion robot fish: “The power density is about 30 to 150 times less in what they're showing compared to what a lithium ion battery can do,”
+
+== Encryption
+
+### x.509
+
+Writing this down so I'll remember better.
+
+The `openssl x509` command generates an X.509 certificate. X.509 is an ITU-T standard (https://en.wikipedia.org/wiki/X.509) and is also described in IETF [RFC 4158](https://tools.ietf.org/html/rfc4158).
