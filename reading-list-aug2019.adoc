@@ -1,0 +1,84 @@
+= Reading List for Aug 2019
+Zed Tan <zed@shootbird.work>
+:toc: auto
+:sectlinks:
+:sectnums:
+:source-highlighter: pygments
+:assetdir: /aug2019-assets
+
+== Computer Science
+
+=== C
+
+Had a job interview go like this:
+
+[source]
+----
+Me: I haven't done extensive API documentation, but I've worked with devs to
+document a C++ API.
+Them: Sends an assignment to document a 'classic' C library.
+Me: !['huh'](shocked_pikachu.jpg)
+----
+
+So I spent a good portion of the week trawling through StackOverflow and
+digging through of Kernighan & Ritchie's "The C Programming Language"
+to at least understand some of what I was looking at.
+
+Saved some notes for myself and anyone who accidentally finds themselves
+inadvertently elbow-deep in a C library for some reason or another:
+
+https://gist.github.com/zeddee/05ed70cff06094974aedcee4e22257fb
+
+=== Pointers
+
+Which brings me to `pointers`.
+
+=== YAML woes
+
+Never liked YAML as a format, because it uses whitespace as a delimiter, and lets vendors do weird stuff like this:
+
+[source, docker-compose]
+----
+# Example docker-compose.yml section from https://gist.github.com/usmansaleem/bb47064f406c105fdfa69716544b7b8e
+
+environment:
+    SERVER_NAME: "myserver.doma.in" 
+    # Dummy key, cert
+    SSL_KEY: |-
+        -----BEGIN RSA PRIVATE KEY-----
+        MIICXQIBAAKBgQD272jYrLm8Ph5QpMWFcWUO9Ua1EviykalP+tkMIg12yZ3GvezF
+        y8aayxdztB5vu68jqMeg6mOJlscWqFUhmAxj4mDknYenVzVX2CKzCgHlGninTKxY
+        61rXDaDZVpSZ+XIESJkaB0z9HHYtrSLr0coKmq4cT5TRptOnkpDlJxIRaQIDAQAB
+        AoGATcTYoGTFmiN2KK+8BWrRCQT2X9C5woNdb3LxKIEQ/HhC2HS4PRMQWW/c0vPH
+        IilZ30EoneUztAFochpRtWLNg4lJoLy04X/eNjEiC/imp0KSwWXmnuLhDcWcb0+M
+        slddvzHAAfK1jzIk8zEvcFnhuRoR/L3yWLQp3dIkG07h5IECQQD7xdyhfYMKiYZ7
+        HIq9mU0oNaC7UvxHTw3HB4rT3yvqVZXW15JvR64qCe+sOn9xJEesGDkUUxghV+dd
+        0GFOODPb2trQ1NGyKzus72JvO61pVpIhT6kVQo3xC543/+1FvU+albjtmqKe1MjZ
+        32B6VtNdlgA4VzMC7qrZXwU+oD83WbG6s1GKQa/rXB8wo9moOGcNPP7PmXovDr6F
+        zIVbekIj0YuTQdo31aKPNmrTVqd+iOk0LGaUC5zMi0OgDaKKDuP1Ou6ANVTcBXcF
+        BnJRQ7XYtjs0oSmvA7bgbTfN4IMJxJ4hYybF1pURh/o4QW4FUytLaF8zghuTc0aP
+        yKIsFLzi5ZT34KLVNGAEA44FsG71hOajFkA4c2I/SwU+
+        -----END RSA PRIVATE KEY-----
+----
+
+where the pipe (`|`) character is used to start a multiline environment variable, which
+then **becomes** an environment variable that can **only** be defined in a `docker-compose.yml`
+file, and not in a standard `.env` file.
+
+This becomes especially infuriating because in the above case, we'll want to store the `docker-compose.yml`
+file without, in the example above, the RSA private key. That's kind of the point of `.env`
+files — to allow you to store secrets securely (albeit secure insofar as the local system is secure)
+and locally.
+
+But that's all just brain vomit.
+Martin Tournoij/link:https://arp242.net[arp242]'s article better articulates my frustrations with the format/language:
+
+Martin Tournoij/arp242, "YAML: probably not so great after all", updated 15 Apr 2019 on arp242.net. Available: https://arp242.net/yaml-config.html
+
+Summary:
+
+* Insecure/unsafe by default, esp. re: default implementations by languages
+* Difficult to parse because of its strict indentation format. Python is comparatively readable because you can delimit blocks with extra `\n`s, whereas yaml tends to come in a single large chunk.
+* Complex (? can't speak to this; Martin is writing re: specs)
+* Surprising behaviour. The example brought up by Martin is more of a dynamic-typed language issue i.e. `013: Tilburg` is parsed as `11: 'Tilburg'` because `013` is interpreted as an octal number. Most of the 'surprising' behaviour I've encountered are usually related to me expecting whitespace to be parsed one way, and yaml behaving in another.
+* Not portable. Basically, the yaml spec tries to dictate implementations that are not practical for mainstream languages, and to me, don't make sense re: language conventions. It's also one of my main complaints: yaml just tries to do lots of weird stuff that becomes uneccessarily complex.
