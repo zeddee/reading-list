@@ -6,6 +6,36 @@ Zed Tan <zed@shootbird.work>
 :source-highlighter: pygments
 :assetdir: /aug2019-assets
 
+== Security
+
+=== SSL things
+
+
+==== Automagically start a HTTPS web server in Go
+
+link:https://github.com/mholt/[mholt], the maker of the magical link:https://caddyserver.com[Caddy] web server,
+has released an automagical tool for standing up a HTTPS web server: https://github.com/mholt/certmagic
+
+[source, go]
+----
+package main
+// Automagically start a TLS webserver
+import (
+    //...
+    "github.com/mholt/certmagic"
+)
+
+func main(){
+    mux := http.NewServeMux()
+    // mux.HandleFunc...
+
+    // instead of http.ListenAndServe(":80", mux)
+    if err := certmagic.HTTPS([]string{"example.com","www.example.com"}, mux); err != nil {
+        log.Fatal(err)
+    }
+}
+----
+
 == Computer Science
 
 === C
