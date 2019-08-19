@@ -1,6 +1,7 @@
 = Reading List for Aug 2019
 Zed Tan <zed@shootbird.work>
 :toc: auto
+:toclevels: 3
 :sectlinks:
 :sectnums:
 :source-highlighter: pygments
