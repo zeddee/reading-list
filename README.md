@@ -6,6 +6,8 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 ----
 
+![Zed Reads](assets/reading-list.png)
+
 This repository holds the random stuff I pick up on the internet
 and some of my half-formed thoughts. They're neither
 100% correct nor 100% accurate, so read/use with care.
