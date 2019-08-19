@@ -140,6 +140,10 @@ func dereferencer(input *string){
 ** ``(*p).member`` resolves to ... well, ``(*p).member``
 * The `*` operator can be used as both a **dereferencing** operator, and as an operator used to **assign** a pointer variable. (still not sure what this means tho)
 
+More:
+
+- Bill Kennedy's article on pointers in Go: https://www.ardanlabs.com/blog/2014/12/using-pointers-in-go.html
+
 === YAML woes
 
 Never liked YAML as a format, because it uses whitespace as a delimiter, and lets vendors do weird stuff like this:
