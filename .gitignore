@@ -1,2 +1,3 @@
 /whatis
 *.html
+**/*.pxd/
