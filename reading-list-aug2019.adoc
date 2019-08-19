@@ -33,6 +33,43 @@ https://gist.github.com/zeddee/05ed70cff06094974aedcee4e22257fb
 
 Which brings me to `pointers`.
 
+Have always had a vague understanding of pointers i.e.:
+
+- A pointer is a reference to a memory address where information is stored.
+
+But it's also an understanding that falls apart the moment I try to work with anything more complex than
+having to make sure that I'm mutating the same block of data across multiple functions/method calls.
+
+So having to grok a low-level language like link:#C[C] forced me to reckon with pointers again.
+
+More detailed notes are found in https://gist.github.com/zeddee/05ed70cff06094974aedcee4e22257fb#pointer-operations (the same Gist as above),
+but here are a few brief points I've gleaned from grappling with pointers (for reference and to clarify the thoughts floating in my head):
+
+* `&` is a reference operator. This always get the address of the variable it's referencing.
+** Getting the reference or address of a variable is useful when you want to:
+*** **Pass-by-reference**: When subsequent operations _dereference_ the reference to get or manipulate the value stored at that memory address. But in order for a reference to be "used", it _must_ be dereferenced by the function using it. For example:
++
+[source, go]
+----
+package main
+
+import "fmt"
+
+func main(){
+    p := "this is a string"
+    dereferencer(&p)
+}
+
+// dereferencer prints value of p to stdout
+func dereferencer(input *string){
+    fmt.Println(*input) // this resolves to *(&p)
+}
+----
+* When attempting to retrieve or call members of a pointer, you have to put the pointer in parenthesis because of the order of resolution.
+** ``*p.member`` resolves to ``*(p.member)``
+** ``(*p).member`` resolves to ... well, ``(*p).member``
+* The `*` operator can be used as both a **dereferencing** operator, and as an operator used to **assign** a pointer variable. (still not sure what this means tho)
+
 === YAML woes
 
 Never liked YAML as a format, because it uses whitespace as a delimiter, and lets vendors do weird stuff like this:
