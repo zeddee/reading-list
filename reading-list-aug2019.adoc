@@ -10,6 +10,46 @@ Zed Tan <zed@shootbird.work>
 
 === SSL things
 
+==== WordPress and Cloudflare
+
+Cloudflare provides a link:https://www.cloudflare.com/integrations/wordpress/[free WordPress plug-in]
+that sets up HTTPS on any hosted WordPress site for free.
+
+This is 100% great, given that setting up HTTPS has always been a ordeal for laypersons
+working with their hosting providers, which has made them easy prey for SSL providers
+who charge for basic TLS encryption. LetsEncrypt has made this free and very much pain-free,
+but still requires wrangling that the non-developer (and me) balks at.
+
+So this free plug-in by Cloudflare is fantastic. But, of course, with a few caveats which they make clear in the docs,
+but may not be obvious to anyone unfamiliar with TLS.
+
+First, a rudimentary diagram of how Cloudflare's plug-in works:
+
+[source]
+----
+ ---------           ------------           -----------
+| User's  | <-(a)-> | Cloudflare | <-(b)-> | Your      |
+| Browser |         | Servers    |         | WordPress |
+ ---------           ------------           -----------
+----
+
+. When your WordPress instance uses the Cloudflare plug-in,
+it allows the plug-in to send your content to Cloudflare's CDN services,
+which Cloudflare in turn serves to users.
+. Cloudflare provides a secured TLS connection at `(a)`, making sure that traffic to-and-from the user's browser. This is **very important**.
+. Traffic at `(b)` is **not automatically secured** by the plug-in. You're going to have to set up SSL on your WordPress server to get that done.
+
+So if you're using the free "Flexible SSL" option available in the WordPress Cloudflare plug-in,
+your traffic is only TLS encrypted **between Cloudflare and your users**,
+and is still **unsecured** between your WordPress server and Cloudflare.
+
+This is sufficient for most use-cases, but is definitely open to exploitation e.g.
+you can correlate traffic on (a) and (b) to figure out who is retrieving what
+from your WordPress server, and traffic going _to_ your WordPress server is
+in the clear and open to MITM manipulation.
+
+My recommendation is getting that TLS set up on the WordPress server's end as well
+by either using link:https://certbot.eff.org[certbot] or just buying a cert off your hosting provider.
 
 ==== Automagically start a HTTPS web server in Go
 
