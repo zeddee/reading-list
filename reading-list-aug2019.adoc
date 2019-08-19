@@ -7,6 +7,32 @@ Zed Tan <zed@shootbird.work>
 :source-highlighter: pygments
 :assetdir: /aug2019-assets
 
+== China
+
+=== Twitter disclosure re: PRC state-funded campaign
+
+Twitter Safety made a statement disclosing, in their words, that they found a
+'state-backed information operation focused on the situation in Hong Kong'.
+
+Statement can be found here: https://blog.twitter.com/en_us/topics/company/2019/information_operations_directed_at_Hong_Kong.html
+
+AFAIK this is the first time they've made a public statement re: state-funded operations from China.
+I remember they also made a disclosure re: information operations somewhere in Africa (sorry, I know Africa's
+humongous but that's the limit of what I remember).
+
+The disclosure includes a dataset made public re: the Twitter posts and accounts in question,
+and a very interesting statement:
+
+[quote]
+====
+As Twitter is blocked in PRC, many of these accounts accessed Twitter using VPNs. However, some accounts accessed Twitter from specific unblocked IP addresses originating in mainland China.[…]
+====
+
+The datasets provided are massive CSV files (~800MB each) containing tweets (but presumably leaves out images and videos tweeted).
+
+As a side-note, there's a surprisingly detailed wikipedia page re: the HK anti-extradition bill protests: https://en.wikipedia.org/wiki/2019_Hong_Kong_anti-extradition_bill_protests
+link:{assetdir}/2019_Hong_Kong_anti-extradition_bill_protests.pdf[[pdf\]]
+
 == Security
 
 === SSL things
