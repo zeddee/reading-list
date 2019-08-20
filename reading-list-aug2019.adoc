@@ -73,7 +73,12 @@ you can correlate traffic on (a) and (b) to figure out who is retrieving what
 from your WordPress server, and traffic going _to_ your WordPress server is
 in the clear and open to MITM manipulation.
 
-My recommendation is getting that TLS set up on the WordPress server's end as well
+[sidebar]
+--
+[edit: needed to clarify things for the hypothetical reader and myself] To be clear, any content that has been cached already by Cloudflare's CDN should only trigger traffic at (a). What happens when you're retrieving content that's not already cached by Cloudflare is something I'm not entirely clear about: does Cloudflare then begin caching the content requested, and then deliver it to the user from the CDN (likely)? Or does it transparently proxy traffic to the WordPress server, and then cache it for future requests? There are also use cases where the Cloudflare CDN is always skipped altogether, such as in the case of submitted forms, which needs to send data back to whatever server is handling the form submission.
+--
+
+I recommend getting that TLS set up on the WordPress server's end as well
 by either using link:https://certbot.eff.org[certbot] or just buying a cert off your hosting provider.
 
 ==== Automagically start a HTTPS web server in Go
