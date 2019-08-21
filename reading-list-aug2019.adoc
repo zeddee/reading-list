@@ -335,6 +335,7 @@ given that they're riding on _a lot_ of open source software.
 Additional resources:
 
 - Don't modify `dovecot.conf` in cPanel: https://forums.cpanel.net/threads/dovecot-configuration-different-between-cpanel-and-dovecot-conf.639077/
+- Configuring dovcot + mariadb from scratch: https://www.linode.com/docs/email/postfix/email-with-postfix-dovecot-and-mariadb-on-centos-7/
 
 == Text
 
@@ -345,16 +346,3 @@ link:https://github.com/zeddee/reading-list[reading-list] exists).
 
 [quote, Italo Calvino, If On A Winter's Night A Traveller]
 Don't be amazed if you see my eyes always wandering. In fact, this is my way of reading, and it is only in this way that reading proves fruitful to me. If a book truly interests me, I cannot follow it for more than a few lines before my mind, having seized on a thought that the text suggests to it, or a feeling, or a question, or an image, goes off on a tangent and springs from thought to thought, from image to image, in an itinerary of reasonings and fantasies that I feel the need to pursue to the end, moving away from the book until I have lost sight of it. The stimulus of reading is indispensable to me, and of meaty reading, even if, of every book, I manage to read no more than a few pages. But those few pages already enclose for me whole universes, which I can never exhaust.
-- - 
-- The downside being that I can't explain how to manage it to anyone else except another admin with the same skillset or better
-(which isn't a very high bar; I just know how to google stuff, `apt-get install`, and run docker).
-- So when I have to diagnose, oil, maintain, and fix a system that doesn't belong to me, that aversion to cPanel kicks me in the 
-ass because I have absolutely no idea what goes on inside it.
-- For instance, I spent half an hour with a support agent trying to wrangle out of them the answer to
-"what mailserver does <insert company name>'s shared hosting services use, and what happens to it when I migrate to a VPS?'"
-- At the end of it, it was obvious that (1) they had no idea what the answer was,
-and (2) it would somehow automagically work once the migration was done.
-- So my guess was that they would be using one of the standard mailservers that either come with CentOS 7, or that cPanel was packing a mailserver.
-- The latter guess was correct: cPanel packs it's own mailserver (or at least that's what I can tell from 
-link:https://features.cpanel.net/topic/mail-only-version-of-cpanel-whm[this feature request for a dedicated mail-only cPanel distro]
-, and this entry in the manual)
