@@ -80,6 +80,21 @@ Available: https://www.youtube.com/watch?v=tj03NRM6SP8&feature=youtu.be
 ** Not for Federation: Taking the answer to the question of "who you are" and reusing that answer in another security domain.
 ** Not _really_ for authorization: Not good for figuring out what someone is allowed to do.
 
+Other useful links referenced in the video:
+
+- Deep Dive into OAuth and OpenID Connect: https://nordicapis.com/api-security-oauth-openid-connect-depth/
+- How To Control User Identity Within Microservices: https://nordicapis.com/how-to-control-user-identity-within-microservices/
+- Equipping Your API With The Right Armor: https://nordicapis.com/api-security-equipping-your-api-with-the-right-armor/
+- The Four Defenses of the API Stronghold: https://nordicapis.com/api-security-the-4-defenses-of-the-api-stronghold/
+- Techniques and Technologies to Increase API Security: https://nordicapis.com/building-a-secure-api/
+- Envisioning The Entire API Lifecycle: https://nordicapis.com/envisioning-the-entire-api-lifecycle/
+- API Lifecycle Analysis Stage: Preparing Your Prelaunch API Strategy: https://nordicapis.com/api-lifecycle-analysis-stage-preparing-your-api-strategy-pre-launch/
+- API Lifecycle Development Stage: Deploying Your API: https://nordicapis.com/api-lifecycle-development/
+- API Lifecycle Operations Stage: Marketing Your API: https://nordicapis.com/api-lifecycle-operations-stage-marketing-your-api/
+- API Lifecycle Retirement Stage: A History of Major Public API Retirements: https://nordicapis.com/api-lifecycle-retirement-stage-a-history-of-major-public-api-retirements/
+
+
+
 
 === How to intercept HTTP requests
 
