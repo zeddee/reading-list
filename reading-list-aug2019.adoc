@@ -80,6 +80,7 @@ Available: https://www.youtube.com/watch?v=tj03NRM6SP8&feature=youtu.be
 ** Not for Federation: Taking the answer to the question of "who you are" and reusing that answer in another security domain.
 ** Not _really_ for authorization: Not good for figuring out what someone is allowed to do.
 
+
 === How to intercept HTTP requests
 
 - MDN (Mozilla Developer Network) is an excellent resource for web development.
@@ -442,3 +443,4 @@ List of links that I have open re: philosophy/algorithms/etc that I have no time
 ** OWASP authentication cheat sheet: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md
 ** OWASP REST security cheat sheet: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/REST_Security_Cheat_Sheet.md
 ** OWASP threat modeling cheat sheet: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Threat_Modeling_Cheat_Sheet.md
+* (this is way over my head) Christopher Rackauckas, The Essential Tools of Scientific Machine Learning (Scientific ML), The Winnower 6:e156631.13064 (2019). DOI: 10.15200/winn.156631.13064. Available: http://www.stochasticlifestyle.com/the-essential-tools-of-scientific-machine-learning-scientific-ml/
