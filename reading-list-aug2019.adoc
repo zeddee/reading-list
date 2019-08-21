@@ -40,6 +40,67 @@ Initial analyses:
 
 == Security
 
+=== API security — keys and tokens
+
+Travis Spencer (CEO of Twobo and Nordic APIs), "The Nuts and Bolts of API Security: Protecting Your Data at All Times", YouTube video, published 20 May 2018 by "Nordic APIs".
+Available: https://www.youtube.com/watch?v=tj03NRM6SP8&feature=youtu.be
+
+* Thesis: API Security != API Keys
+* API access keys are essentially passwords i.e. symmetric keys. Does not solve the problem of impersonation and identity management.
+* API keys are "revokable, non-expiring, bearer access tokens".
+* OAuth is a black box, so is problematic as a solution by itself.
+* Defense in depth:
+. Authorization
+. Delegated Access (e.g. via OAuth 2)
+. Federation (e.g. via OpenID Connect)
+. Identities (e.g. JSON identity suite): Need a way of encoding digital identity; represent that in a way to easily consume. JSON allows this to be platform/language agnostic.
+. Provisioning (e.g. SCIM (System for Cross-domain Identity Management))
+. Authentication (e.g. U2F (Universal second factor e.g. Yubi keys))
+* OAuth is essentially a meta- authentication protocol.
+* OAuth Components:
+** Resource owner (RO): end user.
+** Client: Usually application
+** Authorization server (AS): also security token service.
+** Resource server (RS): present token to resource server to get resource. May validate token with Authorization Server.
+* Two kinds of tokens:
+** **Access tokens** are like sessions: used to secure API calls
+** **Refresh tokens** are like passwords: used to get/grant new access tokens
+* Different token profiles:
+** **Bearer token**: Like cash/legal tender. You can use it as long as you are holding it.
+** **Holder of Key (HOK)**: Like credit cards; only the identity that it is issued for can use it.
+* JWT (JSON web token); pronounced 'jot'
+** Lightweight JSON-formatted tokens passed in HTTP headers &or query strings.
+** Like SAML (security assertion markup language) tokens
+* OAuth doesn't specify what goes into a token (strangely enough)
+* Can create a **by value** token or a **by reference** token.
+** A 'by value' token contains data identifying the user.
+** A 'by reference' token contains data that points you to where you can get information about the user. Allows the receiver of that data to dereference the token and get to the correct data.
+* OAuth is:
+** Not for Authentication: identifying who somebody is; comparing information you know with information that is presented to you.
+** Not for Federation: Taking the answer to the question of "who you are" and reusing that answer in another security domain.
+** Not _really_ for authorization: Not good for figuring out what someone is allowed to do.
+
+=== How to intercept HTTP requests
+
+- MDN (Mozilla Developer Network) is an excellent resource for web development.
+- Trying to grok what and what shouldn't be passed as a HTTP header
+when sending requests to REST API endpoints, and came across this: https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Intercept_HTTP_requests
+- Of course, the caveat is that you need to get malicious JS to run on a site that you want to intercept requests on, but it's trivially possible with extensions (as shown by the MDN docs)
+- This means API keys shared via HTTP headers are vulnerable to being stolen, so it's important for all API access to have some sort of Bearer/Access token mechanism instead
+(See above: link:#api-security-keys-and-tokens[API Security — keys and tokens]).
+
+=== GNU claims that Google is malware
+
+- GNU operating system has a page that lists all the ways that Google's software, web + android + etc other assets, are all malware: https://www.gnu.org/proprietary/malware-google.html
+link:{assetdir}/google-malware.pdf[[pdf\]]
+- This is quite a bold accusation.
+- Reading this list, you get the sense of how radically anarchist/left the organization leans.
+- For example, the last claim in the article is that Google "made Android phones that are tyrants", which I take to mean that they're locked to prevent modification.
+- Other claims are more legitimate, such as "Android has a link:https://www.theverge.com/platform/amp/2018/9/14/17861150/google-battery-saver-android-9-pie-remote-settings-change[back door for remotely changing \“user” settings.\"]", which is one of the reasons why I stay off the Android platform altogether.
+- This I also find pretty disgusting: "Google can also link:https://jon.oberheide.org/blog/2010/06/25/remote-kill-and-install-on-google-android/[forcibly and remotely install apps through GTalkService]. This is not equivalent to a universal back door, but permits various dirty tricks."
+- Whenever someone asks me for a phone recommendation, I always tell the story of that time my Xiaomi phone sent me a notification that literally just said "test" from a built-in Xiaomi browser app that I've never opened or been aware of.
+- Haven't had the time to look too closely at the list, but it's something I'll be keeping filed away in my head.
+
 === SSL things
 
 ==== WordPress and Cloudflare
@@ -353,3 +414,31 @@ link:https://github.com/zeddee/reading-list[reading-list] exists).
 
 [quote, Italo Calvino, If On A Winter's Night A Traveller]
 Don't be amazed if you see my eyes always wandering. In fact, this is my way of reading, and it is only in this way that reading proves fruitful to me. If a book truly interests me, I cannot follow it for more than a few lines before my mind, having seized on a thought that the text suggests to it, or a feeling, or a question, or an image, goes off on a tangent and springs from thought to thought, from image to image, in an itinerary of reasonings and fantasies that I feel the need to pursue to the end, moving away from the book until I have lost sight of it. The stimulus of reading is indispensable to me, and of meaty reading, even if, of every book, I manage to read no more than a few pages. But those few pages already enclose for me whole universes, which I can never exhaust.
+
+== Philosophy
+
+=== Thinking through buildings
+
+- I'm parking this under "philosophy" because I firmly believe that the architectural is intractably phenomenological.
+- e-flux is link:https://www.e-flux.com/architecture/positions/280199/editorial-thinking-through-buildings/[starting a series] where they 'publish one "review" of one building a week', in a bid to map out a way of "thinking through buildings" and architecture.
+
+[quote, Nick Axe and Nikolaus Hirsch, "Editorial—Thinking Through Buildings, 20 Aug 2019 e-flux architecture: Positions. Available: https://www.e-flux.com/architecture/positions/280199/editorial-thinking-through-buildings/"]
+____
+In line with Positions’ ethos of experimentation, we want to rediscover what it can mean to write about buildings. This invariably touches upon a larger issue facing the discipline of architecture, that is, the state of architectural criticism today. Refusing to idealize a past that never was, or similarly lament something that was never lost, we believe in the potential of writing about architecture. A “review” can not only change the way we perceive and think about architecture, but also about the city and society at large.
+
+Architects contribute to the built environment from a unique position of agency, with a distinct set of tools, and with a particular understanding of time. We seek to cast a wide net so as not to represent a position on writing about architecture, but rather to present a field of positions, of ways to think through buildings. We hope to demonstrate the vibrancy and diversity of architecture there is to engage with, and the creativity of means in doing so. But not all buildings, not all architecture is created equal. We wish to take care and reflect upon the buildings being engaged with, and as such the relevance of writing about architecture today.
+____
+
+== Braindump
+
+List of links that I have open re: philosophy/algorithms/etc that I have no time to get into (yet):
+
+* Algorithms:
+** Sieve of Eratosthenes: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
+** Lisp Algorithms & data structures: https://lisp-univ-etc.blogspot.com/2019/08/programming-algorithms-data-structures.html
+** JS data structures: https://github.com/amejiarosario/dsa.js-data-structures-algorithms-javascript/blob/master/book/content/part01/algorithms-analysis.asc
+* Security:
+** OWASP authorization testing automation: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authorization_Testing_Automation.md
+** OWASP authentication cheat sheet: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Authentication_Cheat_Sheet.md
+** OWASP REST security cheat sheet: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/REST_Security_Cheat_Sheet.md
+** OWASP threat modeling cheat sheet: https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Threat_Modeling_Cheat_Sheet.md
