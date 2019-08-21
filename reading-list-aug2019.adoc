@@ -358,7 +358,9 @@ DO has a good guide on how to use string formatters here: https://www.digitaloce
 
 I really want to get into it, but have to resign to being too time-starved to really dig into it. For now, above syntax is just magic to me.
 
+=== Notes on Kaggle's intro to machine learning
 
+Here: https://gist.github.com/zeddee/824cfa865bd2944057a49bf2fd6e4b65
 
 === Counting bits and bytes
 
@@ -430,6 +432,8 @@ link:https://github.com/zeddee/reading-list[reading-list] exists).
 
 [quote, Italo Calvino, If On A Winter's Night A Traveller]
 Don't be amazed if you see my eyes always wandering. In fact, this is my way of reading, and it is only in this way that reading proves fruitful to me. If a book truly interests me, I cannot follow it for more than a few lines before my mind, having seized on a thought that the text suggests to it, or a feeling, or a question, or an image, goes off on a tangent and springs from thought to thought, from image to image, in an itinerary of reasonings and fantasies that I feel the need to pursue to the end, moving away from the book until I have lost sight of it. The stimulus of reading is indispensable to me, and of meaty reading, even if, of every book, I manage to read no more than a few pages. But those few pages already enclose for me whole universes, which I can never exhaust.
+
+**_Casus belli_**: Latin; lit. "an occasion of war". Was reading a piece about how in post-structuralism, discourse is _casus belli_ in phenomenon and the other way round. Guess it stuck with me because (1) my visceral reaction was to reject this outright, and (2) on further thought, that statement is correct — it pissed me off because I've been reading phenomenology as an extension of post-structuralism, and have been working at the reverse of this accusation for a long while.
 
 == Philosophy
 
