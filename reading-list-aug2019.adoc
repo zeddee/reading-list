@@ -31,6 +31,13 @@ The datasets provided are massive CSV files (~800MB each) containing tweets (but
 As a side-note, there's a surprisingly detailed wikipedia page re: the HK anti-extradition bill protests: https://en.wikipedia.org/wiki/2019_Hong_Kong_anti-extradition_bill_protests
 link:{assetdir}/2019_Hong_Kong_anti-extradition_bill_protests.pdf[[pdf\]]
 
+Initial analyses:
+
+* By Chua Chin Hon (former journalist): https://towardsdatascience.com/target-hk-a-quick-dive-into-chinas-disinformation-campaign-on-twitter-2b64ab9feb1a
+* By @AirMovingDevice:
+** https://twitter.com/AirMovingDevice/status/1163997731041361921
+** https://twitter.com/AirMovingDevice/status/1163633959441354753
+
 == Security
 
 === SSL things
