@@ -228,6 +228,114 @@ Summary:
 * Surprising behaviour. The example brought up by Martin is more of a dynamic-typed language issue i.e. `013: Tilburg` is parsed as `11: 'Tilburg'` because `013` is interpreted as an octal number. Most of the 'surprising' behaviour I've encountered are usually related to me expecting whitespace to be parsed one way, and yaml behaving in another.
 * Not portable. Basically, the yaml spec tries to dictate implementations that are not practical for mainstream languages, and to me, don't make sense re: language conventions. It's also one of my main complaints: yaml just tries to do lots of weird stuff that becomes uneccessarily complex.
 
+== Data
+
+=== Forcing Pandas/Python to display raw numbers instead of scientific notation
+
+I was trying to work with the above link:#twitter-disclosure-re-prc-state-funded-campaign[Twitter dataset]
+using what little I knew about Python/Pandas, and immediately hit a snag: Python was displaying all numbers in scientific notation.
+
+[source]
+----
+>>> data = pd.read_csv("data/china_082019_1_tweets_csv_hashed.csv", low_memory=False)
+>>> data.describe()
+tweetid  follower_count  following_count  in_reply_to_tweetid  quoted_tweet_tweetid  retweet_tweetid   quote_count   reply_count    like_count  retweet_count
+count  1.906831e+06    1.906831e+06     1.906831e+06         1.785020e+05          9.513300e+04     3.579360e+05  1.888906e+06  1.888906e+06  1.888906e+06   1.888906e+06
+mean   7.206899e+17    2.444543e+04     1.350040e+04         5.869991e+17          8.621642e+17     6.013256e+17  7.288346e-03  8.859573e-02  4.557506e-02   1.496379e-01
+std    2.729179e+17    2.948863e+04     9.531729e+03         3.471806e+17          8.568681e+16     2.745685e+17  4.159671e-01  9.644296e-01  1.644062e+00   3.454932e+00
+min    8.126727e+08    0.000000e+00     0.000000e+00         8.237374e+08          1.847925e+15     1.792600e+04  0.000000e+00  0.000000e+00  0.000000e+00   0.000000e+00
+25%    5.789587e+17    1.089500e+04     9.050000e+03         2.715412e+17          8.376187e+17     4.314172e+17  0.000000e+00  0.000000e+00  0.000000e+00   0.000000e+00
+50%    8.170222e+17    1.355300e+04     1.359200e+04         6.053735e+17          8.417812e+17     5.771102e+17  0.000000e+00  0.000000e+00  0.000000e+00   0.000000e+00
+75%    8.716381e+17    1.890000e+04     1.460600e+04         9.028863e+17          8.525281e+17     8.528084e+17  0.000000e+00  0.000000e+00  0.000000e+00   0.000000e+00
+max    1.154216e+18    1.701550e+05     3.175200e+04         1.153504e+18          1.154193e+18     1.154179e+18  1.930000e+02  3.260000e+02  1.159000e+03   3.344000e+03
+----
+
+I _could_ suck it up and try to read it, but it's a lot easier to just work with plain
+decimal notation especially when we want to get a visual sense of how
+large a number is compared to the rest of the values in a table.
+
+Looked it up, and 
+link:https://stackoverflow.com/a/38691325/6042590[Sergey Bushmanov's answer]
+on stackoverflow says there are 2 ways to go about it:
+
+[cols="2*", options="header"]
+|====
+| Pandas/Python
+| Description
+
+| `pd.set_option('display.precision',4)`
+| Forces pandas to display floats to a given precision.
+
+|`pd.options.display.float_format = '{:.2f}'.format`
+|(as far as i can tell) Tells pandas to push displayed results through a `str.format()` call.
+|====
+
+DO has a good guide on how to use string formatters here: https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3
+
+I really want to get into it, but have to resign to being too time-starved to really dig into it. For now, above syntax is just magic to me.
+
+
+
+=== Counting bits and bytes
+
+- Counting in Computer has never been my strong point, so the point of this section is more of
+just giving me a space to be an idiot and write down the obvious so my brain can process it:
+- 1 bit -> 2 possibilities, 0/1
+- 8 bits -> 2^8 possibilities -> 256 possibilities -> 1 byte
+- In UTF8, a 1 byte character can be represented in hexadecimal notation using `U+0000` to `U+007F`, 7F in hex being 127 in decimal (because this is zero-indexed i.e. starts from 0).
+- The standard ASCII character set (i.e. latin, english alphabet) requires only one byte.
+- 2 bytes -> 256^2 possibilities -> 65536 possibilties -> 16 bits
+
+Useful table from
+link:https://en.wikipedia.org/wiki/UTF-8[wikipedia re: UTF-8] code points:
+
+[cols="*", options="header"]
+|====
+| #bytes | Bits for code point | First code point | Last code point | Byte 1 | Byte 2 | Byte 3 | Byte 4
+| 1 | 7 | `U+0000` | `U+007F` | `0xxxxxxx` |  |  | 
+| 2 | 11 | `U+0080` | `U+07FF` | `110xxxxx` | `10xxxxxx` |  | 
+| 3 | 16 | `U+0800` | `U+FFFF` | `1110xxxx` | `10xxxxxx` | `10xxxxxx` | 
+| 4 | 21 | `U+10000` | `U+10FFFF` | `11110xxx` | `10xxxxxx` | `10xxxxxx` | `10xxxxxx`
+|====
+
+So the letter `m` would be represented by `U+006D`, or character 
+no. 109 in the link:https://www.asciitable.com/[ASCII table].
+
+== Other tech things
+
+=== cPanel and email
+
+- **WHM**: Web Hosting Management
+- Have never liked working with cPanel because of old memories of wrestling with it back in ... probably 2010 or so.
+- Granted it's changed a lot, but I like being able to work with the server directly
+i.e. installing, configuring, and managing Linux and software directly.
+- It means I know exactly what's running and what isn't, and how to fix stuff when it breaks.
+- The downside being that I can't explain how to manage it to anyone else except another admin with the same skillset or better
+(which isn't a very high bar; I just know how to google stuff, `apt-get install`, and run docker).
+- So when I have to diagnose, oil, maintain, and fix a system that doesn't belong to me, that aversion to cPanel kicks me in the 
+ass because I have absolutely no idea what goes on inside it.
+- For instance, I spent half an hour with a support agent trying to wrangle out of them the answer to
+"what mailserver does <insert company name>'s shared hosting services use, and what happens to it when I migrate to a VPS?'"
+- At the end of it, it was obvious that (1) they had no idea what the answer was,
+and (2) it would somehow automagically work once the migration was done.
+- So my guess was that they would be using one of the standard mailservers that either come with CentOS 7, or that cPanel was packing a mailserver.
+- The latter guess was correct: cPanel packs it's own mailserver (or at least that's what I can tell from 
+link:https://features.cpanel.net/topic/mail-only-version-of-cpanel-whm[this feature request for a dedicated mail-only cPanel distro]
+, and the link:https://documentation.cpanel.net/display/82Docs/Mailserver+Configuration[Mailserver Configuration]
+entry in the docs)
+- Digging for this info also brought me to cPanel's link:https://documentation.cpanel.net/display/82Docs/WHM+Features+List#d331819474d144a185fd0f59a016df25[feature list], which tbh is quite impressive.
+- still not something i'd spend US$15 a month (minimum) on though.
+- sidenote: it also looks like they're hosting their documentation on a confluence instance, because search brings up a panel that mentions "spaces". interesting choice, and it looks like it's working well for them.
+
+**Conclusion**: It looks like cPanel is using link:https://www.dovecot.org/[**Dovecot**] as their link:https://documentation.cpanel.net/display/82Docs/Mailserver+Configuration[mailserver].
+Finding out was not fun, and I wish both <insert hosting company name here> and cPanel
+were more up front about the software they deliver as part of their paid packages,
+given that they're riding on _a lot_ of open source software.
+
+Additional resources:
+
+- Don't modify `dovecot.conf` in cPanel: https://forums.cpanel.net/threads/dovecot-configuration-different-between-cpanel-and-dovecot-conf.639077/
+
 == Text
 
 A quote about reading that I found via BooksActually's Facebook 
@@ -237,3 +345,16 @@ link:https://github.com/zeddee/reading-list[reading-list] exists).
 
 [quote, Italo Calvino, If On A Winter's Night A Traveller]
 Don't be amazed if you see my eyes always wandering. In fact, this is my way of reading, and it is only in this way that reading proves fruitful to me. If a book truly interests me, I cannot follow it for more than a few lines before my mind, having seized on a thought that the text suggests to it, or a feeling, or a question, or an image, goes off on a tangent and springs from thought to thought, from image to image, in an itinerary of reasonings and fantasies that I feel the need to pursue to the end, moving away from the book until I have lost sight of it. The stimulus of reading is indispensable to me, and of meaty reading, even if, of every book, I manage to read no more than a few pages. But those few pages already enclose for me whole universes, which I can never exhaust.
+- - 
+- The downside being that I can't explain how to manage it to anyone else except another admin with the same skillset or better
+(which isn't a very high bar; I just know how to google stuff, `apt-get install`, and run docker).
+- So when I have to diagnose, oil, maintain, and fix a system that doesn't belong to me, that aversion to cPanel kicks me in the 
+ass because I have absolutely no idea what goes on inside it.
+- For instance, I spent half an hour with a support agent trying to wrangle out of them the answer to
+"what mailserver does <insert company name>'s shared hosting services use, and what happens to it when I migrate to a VPS?'"
+- At the end of it, it was obvious that (1) they had no idea what the answer was,
+and (2) it would somehow automagically work once the migration was done.
+- So my guess was that they would be using one of the standard mailservers that either come with CentOS 7, or that cPanel was packing a mailserver.
+- The latter guess was correct: cPanel packs it's own mailserver (or at least that's what I can tell from 
+link:https://features.cpanel.net/topic/mail-only-version-of-cpanel-whm[this feature request for a dedicated mail-only cPanel distro]
+, and this entry in the manual)
