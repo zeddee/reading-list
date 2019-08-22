@@ -169,7 +169,7 @@ So why, when let's say accessing the WordPress login page, does the web site sti
 I recommend getting that TLS set up on the WordPress server's end as well
 by either using link:https://certbot.eff.org[certbot] or just buying a cert off your hosting provider.
 
-==== Automagically start a HTTPS web server in Go
+=== Automagically start a HTTPS web server in Go
 
 link:https://github.com/mholt/[mholt], the maker of the magical link:https://caddyserver.com[Caddy] web server,
 has released an automagical tool for standing up a HTTPS web server: https://github.com/mholt/certmagic
