@@ -9,6 +9,12 @@ Zed Tan <zed@shootbird.work>
 
 == China
 
+=== ELAB
+
+Writing this down because I keep forgetting:
+
+- ELAB == Extradition Law Amendment Bill.
+
 === Twitter disclosure re: PRC state-funded campaign
 
 Twitter Safety made a statement disclosing, in their words, that they found a
