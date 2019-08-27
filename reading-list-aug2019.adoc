@@ -395,6 +395,22 @@ no. 109 in the link:https://www.asciitable.com/[ASCII table].
 
 == Other tech things
 
+=== Get first 12 characters of a hash
+
+[source, bash]
+----
+echo "724e72a3f91b21fd821bc4f0cca7af4d486b6966af6fae242b752e32229a3bb4" | head -c 12
+
+# Generate a hash and then get first 12 characters
+echo "wordpress-test" | shasum -a 256 | head -c 12
+
+# Conversely works with 'tail', but beware trailing characters.
+# You would have to trim those off with sed
+# weirdly enough, can never get the offset correct e.g. need to tail -c 13 to get last 12 chars
+# even with the following sed expr: sed -e "s/[^a-zA-Z0-9\s\t\r\n]*$//"
+echo "wordpress-test" | shasum -a 256 | sed -e "s/[^a-zA-Z0-9\s\t\r\n]*$//" | tail -c 13
+----
+
 === cPanel and email
 
 - **WHM**: Web Hosting Management
