@@ -495,6 +495,11 @@ In line with Positions’ ethos of experimentation, we want to rediscover what i
 Architects contribute to the built environment from a unique position of agency, with a distinct set of tools, and with a particular understanding of time. We seek to cast a wide net so as not to represent a position on writing about architecture, but rather to present a field of positions, of ways to think through buildings. We hope to demonstrate the vibrancy and diversity of architecture there is to engage with, and the creativity of means in doing so. But not all buildings, not all architecture is created equal. We wish to take care and reflect upon the buildings being engaged with, and as such the relevance of writing about architecture today.
 ____
 
+== Design Resources
+
+- Free link:https://en.wikipedia.org/wiki/Delaunay_triangulation[delaunay triangle] SVG generator: https://msurguy.github.io/triangles/
+
+
 == Braindump
 
 List of links that I have open re: philosophy/algorithms/etc that I have no time to get into (yet):
