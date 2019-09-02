@@ -102,3 +102,26 @@ seems a bit too mechanical for my own taste
 On a separate note, a todo app that I've been using since 2014 has stopped syncing on iCloud,
 so I really need to figure out a better way to sync all my thoughts
 the links that I collect on a daily basis. May need to actually build my own.
+
+== Philosophy
+
+=== Desire without lack
+
+https://ndpr.nd.edu/news/malebranche-theological-figure-being-2/
+
+Reviewed by Ed Pluth, California State University, Chico.
+Alain Badiou, Malebranche: Theological Figure, Being 2,
+Jason E. Smith and Susan Spitzer (trs.), Columbia University Press, 2019, 193pp., ISBN 9780231174787.
+
+Not really interested in Badiou, but I found this snippet particularly interesting:
+
+[quote]
+____
+Consistent with not having a doctrine of the event, Malebranche also has to puzzle out a way in which God can desire, but still not lack.
+
+> Malebranche's big problem will be how to think desire without lack. Glory, as we shall see, is ultimately a category of God's desire: what God desires is his own glory. This goes without saying, because if he didn't desire it, he wouldn't make anything, and especially not the world. (85)
+
+Glory is the object of God's desire, and the Church is its instrument, that which is bringing it about. Insofar as the Church spreads itself over existence, God is glorifying himself. And "the world must be as nil as possible" in order for the glory of God, thanks to the Church's work, to be as great as possible: the more destitute and contemptible the world is, the more remarkable its reworking (148). Contra Leibniz, for Malebranche "this world is the most abject of worlds. This explains why this world is the most abject world possible, both materially (it is wretched) and spiritually (it is humiliated)" (89).
+____
+
+Also very curious of what an "event-less" ontology is, but probably won't have time to dig into it (hence filing it here).
