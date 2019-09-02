@@ -6,3 +6,50 @@ Zed Tan <zed@shootbird.work>
 :sectnums:
 :source-highlighter: pygments
 :assetdir: /sep2019-assets
+
+== Human things
+
+=== The Human Log
+
+In a related article or tweet that I cannot remember the source for (will update when I do),
+someone described journaling as a "diagnostic socket" for the human brain,
+a metaphor that I am quite partial to given how much I'm accused of being
+very much like a machine (and how much I prefer interacting with them rather than humans).
+
+In a similar vein,
+link:neilkakkar.com[Neil Kakkar]
+writes a longer post about how humans also,
+like computers and other systems, need a log:
+https://neilkakkar.com/the-human-log.html
+
+I enjoy in particular his opening grafs on the nautical origins of the term "log"
+(I am quite fond of ships and the sea):
+
+[quote]
+____
+The log is an interesting invention. It began with 16th century ships – surrounded with water, no land in sight, no sense of direction, and no sense of speed. What did you have to compare your speed with anyway?
+
+The sailors were ingenious. They used a log - a real piece of wood - attached to a string. They’d throw it in the water and use it to measure speed1. Then they’d track this speed over time, in a logbook.
+
+That’s the origin story of log books, now known as logs.
+
+Over time, the logs grew to track even more information. The sailors felt that tracking their speed wasn’t enough. They filled gaps in their measurements - the weather, incidents, and the last time someone cleaned the toilet.
+
+The idea? If you have a log, you can figure out what went wrong. You can figure out where you made mistakes. If the ship crashes, you know the last state it was in, thanks to the logs.
+____
+
+Other noteworthy points:
+
+* "[...] logs serve two main purposes. (1) Crash resolution and (2) Behaviour detection."
+* "Every important system has logs since they’re necessary to improve the system over time."
+* Human logs as  means to detect "micro-crashes", and derive diagnostic value from them.
+* Micro-crashes are things like headaches, sleep-irritation i.e. minor ailments that may signal deeper issues.
+* Nakkar suggests quite a list of things that should go into a human log …
+which forms what I can see is a useful baseline but
+seems a bit too mechanical for my own taste
+(plus that's a lot of work) e.g. daily weight, _bowel movements_ etc.
+* Data-driven journaling.
+
+On a separate note, a todo app that I've been using since 2014 has stopped syncing on iCloud,
+so I really need to figure out a better way to sync all my thoughts
+the links that I collect on a daily basis. May need to actually build my own.
