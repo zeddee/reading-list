@@ -9,6 +9,55 @@ Zed Tan <zed@shootbird.work>
 
 == Human things
 
+=== The Missing Body of the Machine
+
+Ben Medlock, "The body is the missing link for truly intelligent machines",
+published 21 Aug 2019 on _Sinapticas_.
+Available: https://sinapticas.com/2019/08/21/the-body-is-the-missing-link-for-truly-intelligent-machines
+
+[quote]
+____
+I understand the appeal of this view, because I co-founded SwiftKey,
+a predictive-language software company that was bought by Microsoft.
+Our goal is to emulate the remarkable processes by which
+human beings can understand and manipulate language.
+We’ve made some decent progress: I was pretty proud of the
+elegant new communication system we built for the physicist
+Stephen Hawking between 2012 and 2014. But despite encouraging results,
+most of the time I’m reminded that we’re nowhere near achieving human-like AI.
+Why? Because the layered model of cognition is wrong.
+Most AI researchers are currently missing a central piece of the puzzle: embodiment.
+____
+
+* This is a thought that's been put forward constantly by Hubert Dreyfus,
+who argued that embodiment is necessary for a human understanding of the world.
+* It's also a train of thought that uses as a premise that human intelligence is the de facto goal of machine intelligence.
+* Once you remove that premise, you free up the possiblity of machines that are
+intelligent by a different metric than humans are intelligent.
+* E.g. humans will never be able to compete with a machine within the bounds of a closed and known system
+e.g. Go, Dota 2 etc.
+* A useful analogue would be how we consider and measure animal intelligence by basically
+imposing a set of human standards e.g. a dog is intelligent if it can be trained to accomplish a series of tasks
+* It's been shown that animal intelligence exceeds those bounds once we think past
+this imposition of human standards, e.g. a dog is intelligent if it displays self-directedness instead of submitting
+itself to a human imposed goal, like breaking out of a cage to get to a bag of food on a shelf, rather than knowing
+how to roll over and play dead.
+* (I also think that animal training is an inherently colonial and unethical impulse, but that's another story altogether)
+
+[quote]
+____
+This means that when a human approaches a new problem, most of the hard work has already been done.
+In ways that we’re only just beginning to understand, our body and brain,
+from the cellular level upwards, have already built a model of the world
+that we can apply almost instantly to a wide array of challenges.
+But for an AI algorithm, the process begins from scratch each time.
+There is an active and important line of research, known as ‘inductive transfer’,
+focused on using prior machine-learned knowledge to inform new solutions.
+However, as things stand, it’s questionable whether this approach will be
+able to capture anything like the richness of our own bodily models.
+____
+
+
 === The Human Log
 
 In a related article or tweet that I cannot remember the source for (will update when I do),
