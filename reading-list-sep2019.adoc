@@ -105,7 +105,7 @@ the links that I collect on a daily basis. May need to actually build my own.
 
 == Disinformation
 
-=== Ignorance and Stupidity as apparatus of governance
+=== Ignorance and Stupidity and Misinformation
 
 Source: danah boyd, founder and president at Data & Society. "Agnotology and Epistemological Fragmentation", talk given at  the Digital Public Library of America conference (DPLAfest) on 17 apr 2019. https://points.datasociety.net/agnotology-and-epistemological-fragmentation-56aa3c509c6b
 
@@ -247,7 +247,7 @@ ____
 === Agnotology in China
 
 This is a continuation of the previous section: 
-link:#_ignorance_and_stupidity_as_apparatus_of_governance[Ignorance and Stupidity as apparatus of governance]
+link:#_ignorance_and_stupidity_and_misinformation[Ignorance and Stupidity and Misinformation]
 
 I'm just noting that the approach we have to take when attempting
 to apply similar ideas of disinformation to China has to
@@ -300,7 +300,7 @@ ____
 
 * disinformation is not just false information.
 * disinformation usually layers true information with false, with the goal of
-link:#ignorance-and-stupidity-as-apparatus-of-governance[epistemological fragmentation].
+link:#_ignorance_and_stupidity_and_misinformation[epistemological fragmentation].
 * disinformation does not necessarily propogate through bots or agents/paid 'trolls'
 * effective disinformation campaigns involve diverse participants, including 'unwitting agents',
 creating a dessimination vector that is difficult to categorize and identify as a result
