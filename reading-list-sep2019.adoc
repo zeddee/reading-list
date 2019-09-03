@@ -359,3 +359,9 @@ https://stackoverflow.com/questions/50598243/how-to-geth-init-and-start-geth-min
 * **Math for game programmers**: http://www.mathforgameprogrammers.com
 
 
+== Glossary
+
+* link:https://en.wikipedia.org/wiki/Mantissa[**Mantissa**]: 
+The fractional part of the common (base-10) logarithm;
+or the significand, the significant digits of a number in scientific notation or a floating-point number.
+Spotted here: https://golang.org/doc/go1.13
