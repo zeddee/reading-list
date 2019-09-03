@@ -268,6 +268,63 @@ actually part of the state apparatus, being used explicitly
 to subjugate and to assimilate public thought into the party
 agenda. This was a strategy already in use during the Maoist Cultural Revolution. 
 
+=== Misconceptions about disinformation leaves us vulnerable to manipulation
+
+Kate Starbird, "Disinformation’s spread: bots, trolls and all of us", published 24 July 2019 on _nature_.
+Available: https://www.nature.com/articles/d41586-019-02235-x link:{assetDir}/d41586-019-02235-x.pdf[[pdf\]]
+
+* "[…] disinformation is not as cut-and-dried as most people assume:
+those behind disinformation campaigns purposely entangle orchestrated action with organic activity."
+* "When my lab studied the online activism around #BlackLivesMatter, the conspiracy theories that crop up after crises, and the Syrian conflict, we uncovered disinformation campaigns promoting multiple, often conflicting, views."
+
+[quote]
+____
+Perhaps the most common misconception is that disinformation is simply false information.
+If it were, platforms could simply add ‘true’ and ‘false’ labels,
+a tactic that has often been suggested.
+But disinformation often layers true information with false —
+an accurate fact set in misleading context,
+a real photograph purposely mislabelled.
+The key is not to determine the truth of a specific post or tweet,
+but to understand how it fits into a larger disinformation campaign.
+
+Another misconception is that disinformation stems mainly from agents
+producing false content (paid ‘trolls’) and automated accounts (‘bots’)
+that promote it.
+But effective disinformation campaigns involve diverse participants;
+they might even include a majority of ‘unwitting agents’
+who are unaware of their role,
+but who amplify and embellish messages that polarize communities
+and sow doubt about science, mainstream journalism and Western governments.
+____
+
+* disinformation is not just false information.
+* disinformation usually layers true information with false, with the goal of
+link:#ignorance-and-stupidity-as-apparatus-of-governance[epistemological fragmentation].
+* disinformation does not necessarily propogate through bots or agents/paid 'trolls'
+* effective disinformation campaigns involve diverse participants, including 'unwitting agents',
+creating a dessimination vector that is difficult to categorize and identify as a result
+of a campaign.
+
+Some of this is new to me:
+
+[quote]
+____
+This strategy goes back decades.
+It was laid out most explicitly by Lawrence Martin-Bittman,
+who defected from Czechoslovakia to the West in 1968 and
+became a prominent academic (L. Bittman The KGB and Soviet Disinformation; 1985).
+Historically, manipulating journalists was a primary strategy.
+Now, social-media platforms have given voice to new influencers
+and expanded the range of targets.
+We see authentic members of online communities become active
+contributors in disinformation campaigns,
+co-creating frames and narratives.
+One-way messages from deliberate actors would be relatively easy to identify and defuse.
+Recognizing the role of unwitting crowds is a
+persistent challenge for researchers and platform designers. So is deciding how to respond.
+____
+
 == Philosophy
 
 === Desire without lack
