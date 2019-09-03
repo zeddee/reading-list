@@ -105,6 +105,170 @@ the links that I collect on a daily basis. May need to actually build my own.
 
 == Philosophy
 
+=== Ignorance and Stupidity as apparatus of governance
+
+Source: danah boyd, founder and president at Data & Society. "Agnotology and Epistemological Fragmentation", talk given at  the Digital Public Library of America conference (DPLAfest) on 17 apr 2019. https://points.datasociety.net/agnotology-and-epistemological-fragmentation-56aa3c509c6b
+
+As I work through this article, I am thinking of Bernard Stiegler's
+_States of Shock: Stupidity and Knowledge in the 21st Century_ (Cambridge: Polity Press, 2015),
+where he writes about the _immaturity_ (in the sense of "not reaching maturity", as in "age of maturity")
+of the voting populace. He specifically selects the term "_bêtise_" to describe
+this behaviour, demonstrated and perpetuated by institutions in particular.
+
+Going to be quoting lots of snippets from danah boyd's talk because it's
+dense and full of important stuff.
+
+On "agnotology":
+
+[quote]
+____
+Epistemology is the term that describes how we know what we know.
+Most people who think about knowledge think about the processes of obtaining it.
+Ignorance is often assumed to be not-yet-knowledgeable.
+But what if ignorance is strategically manufactured?
+What if the tools of knowledge production are perverted to enable ignorance?
+In 1995, Robert Proctor and Iain Boal coined the term “agnotology”
+to describe the strategic and purposeful production of ignorance.
+In an edited volume called Agnotology, Proctor and Londa Schiebinger
+collect essays detailing how agnotology is achieved.
+Whether we’re talking about the erasure of history or the undoing of scientific knowledge,
+agnotology is a tool of oppression by the powerful.
+____
+
+This one is a punch in the gut because it's so true:
+
+[quote]
+____
+Many people who are steeped in history and committed to evidence-based decision-making are experiencing a collective sense of being gaslit […]
+How do you process a black conservative commentator testifying before the
+House that the Southern strategy never happened and that white nationalism
+is an invention of the Democrats to “scare black people”?
+Keep in mind that this commentator was intentionally
+trolled by the terrorist in Christchurch;
+she responded to this atrocity with tweets containing “LOL” and “HAHA.”
+____
+
+More:
+
+[quote]
+____
+**This terrorist understood the vulnerabilities of both social media and news media.**
+The message he posted on 8chan announcing his intention included links to his manifesto and other sites,
+but it did not include a direct link to Facebook;
+he didn’t want Facebook to know that the traffic came from 8chan.
+The video included many minutes of him driving around,
+presumably to build audience but also, quite likely,
+**in an effort to evade any content moderators that might be looking**.
+He titled his manifesto with a well-known white nationalist call sign,
+knowing that the news media would cover the name of the manifesto,
+which in turn, would prompt people to search for that concept.
+And when they did, they’d find a treasure trove of anti-Semitic and white nationalist propaganda.
+**This is the exploitation of what’s called a “data void.”**
+He also trolled numerous people in his manifesto,
+knowing full well that the media would shine a spotlight on
+them and create distractions and retractions and more news cycles.
+**He produced a media spectacle.**
+And he learned how to do it by exploiting the information ecosystem we’re currently in.
+Afterwards, every social platform was inundated with millions
+and millions of copies and alterations of the video uploaded
+through a range of fake accounts, either to burn the resources
+of technology companies, shame them, or test their guardrails for future exploits.
+____
+
+This:
+
+[quote]
+____
+What’s at stake right now is not simply about hate speech vs. free speech
+or the role of state-sponsored bots in political activity.
+It’s much more basic.
+**It’s about purposefully and intentionally seeding doubt to fragment society.**
+To fragment epistemologies. This is a tactic that was well-honed by propagandists.
+____
+
+The problem:
+
+[quote]
+____
+Herein lies the problem.
+One of the best ways to seed agnotology is to make sure that doubtful
+and conspiratorial content is easier to reach than scientific material
+____
+
+Tactics used to seed ignorance/epistemological fragmentation:
+
+* Exploiting 'data voids' like the Christchurch shooter did, illustrated above.
+* Co-opting and re-purposing existing terms, twisting their meaning to communicate a spurious idea.
+* (To boyd, this is seems the most important) Producing terms that are
+"**strategically created to achieve epistemological fragmentation**".
++
+[quote]
+____
+In the 1990s, Frank Luntz was the king of doing this with terms 
+like partial-birth abortion, climate change, and death tax. Every 
+week, he coordinated congressional staffers and told them to 
+focus on the term of the week and push it through the news media. 
+All to create a drumbeat.
+____
+
+This strategic manufacture of terms entails:
+
+* A shifting of objectives.
+Instead of focusing on gaining media attention,
+the goal instead is to "create a world of content
+and then to push the term through to the news media".
+* By twisting an existing term or inventing one,
+or simply selecting a term that is not known to
+the general public, they exploit a data void that
+funnels internet traffic to these prepared content pots
+where they are free to further undermine
+the ability for actual facts to appear reliable.
+* "**Media manipulators are also very good at messing with structure. **"
++
+[quote]
+____
+YouTube has great scientific videos about the value of vaccination, but countless anti-vaxxers have systematically trained YouTube to make sure that people who watch the Center for Disease Control and Prevention’s videos also watch videos asking questions about vaccinations or videos of parents who are talking emotionally about what they believe to be the result of vaccination. They comment on both of these videos, they watch them together, they link them together. This is the structural manipulation of media.
+____
+
+This one is particularly painful:
+
+[quote]
+____
+Journalists often get caught up in telling “both sides,” but the creation of sides is a political project.
+____
+
+Kicker:
+
+[quote]
+____
+You will not achieve an informed public simply by making sure that high quality content is publicly available and presuming that credibility is enough while you wait for people to come find it. 
+____
+
+=== Agnotology in China
+
+This is a continuation of the previous section: 
+link:#_ignorance_and_stupidity_as_apparatus_of_governance[Ignorance and Stupidity as apparatus of governance]
+
+I'm just noting that the approach we have to take when attempting
+to apply similar ideas of disinformation to China has to
+very carefully consider the vastly different
+information climates that pervade China internally,
+and the information posture that they project externally.
+
+For instance, the baseline posture for news media in China is
+assumed to be propagandist/disinformation by default,
+even by their own populace. This has led to a shadow
+information economy (and even so, one that is not very in
+the shadows but sort of sanctioned by the state through
+it being allowed to exist as part of the massive
+social credit/ewallet system).
+
+Epistemological fragmentation then can be said to be
+actually part of the state apparatus, being used explicitly
+to subjugate and to assimilate public thought into the party
+agenda. This was a strategy already in use during the Maoist Cultural Revolution. 
+
+
 === Desire without lack
 
 https://ndpr.nd.edu/news/malebranche-theological-figure-being-2/
@@ -131,4 +295,9 @@ Also very curious of what an "event-less" ontology is, but probably won't have t
 Another set of links that I want to get into but have to deprioritize.
 
 * Shashank, **"Everything You Ever Wanted To Know About The Stock Market But Were Too Afraid To Ask"**, published 27 Jul 2019. http://shashankr.me/2019/07/27/everything-you-ever-wanted-to-know-about-the-stock-market-but-were-too-afraid-to-ask.html
+* **"How to `geth init` and start geth mining with Docker-compose?"**
+https://stackoverflow.com/questions/50598243/how-to-geth-init-and-start-geth-mining-with-docker-compose
+* **Typescript guide**: https://basarat.gitbooks.io/typescript/content/docs/project/tsconfig.html
+* **Math for game programmers**: http://www.mathforgameprogrammers.com
+
 
