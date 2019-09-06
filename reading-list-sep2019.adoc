@@ -9,6 +9,14 @@ Zed Tan <zed@shootbird.work>
 
 == Human things
 
+=== 39 bits/s is all we can process
+
+Interesting bit of trivia: the human brain can only process human speech at 39 bits per second.
+
+For reference, that's the size of ~8 latin characters displayed on a page (8 bits per character).
+
+https://www.sciencemag.org/news/2019/09/human-speech-may-have-universal-transmission-rate-39-bits-second
+
 === The Missing Body of the Machine
 
 Ben Medlock, "The body is the missing link for truly intelligent machines",
