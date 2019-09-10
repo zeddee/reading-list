@@ -333,6 +333,31 @@ Recognizing the role of unwitting crowds is a
 persistent challenge for researchers and platform designers. So is deciding how to respond.
 ____
 
+== Ethics
+
+=== MIT AI ethics curriculum
+
+https://qz.com/1700325/mit-developed-a-course-to-teach-tweens-about-the-ethics-of-ai/
+
+Link to curriculum google doc here: https://docs.google.com/document/d/1e9wx9oBg7CR0s5O7YnYHVmX7H7pnITfoDxNdrSGkp60/edit#heading=h.ictx1ljsx0z4
+
+=== How reporters gained Weinstein victims' trust
+
+https://jezebel.com/megan-twohey-and-jodi-kantor-earned-weinstein-accusers-1837978952
+
+(emphasis mine):
+
+[quote]
+____
+“Even if we managed to get Ashley Judd or Gwyneth Paltrow on the phone,
+which we did, we had to figure out how to say in that first minute:
+here’s an argument for trusting us, here’s an argument for telling us
+this really private story,” Kantor says.
+Kantor says she and Twohey kept coming back to a line:
+**“we can’t change what happened to you in the past,
+but if we work together we may be able to take this in some sort of constructive direction.”**
+____
+
 == Philosophy
 
 === Desire without lack
