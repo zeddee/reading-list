@@ -398,3 +398,14 @@ https://stackoverflow.com/questions/50598243/how-to-geth-init-and-start-geth-min
 The fractional part of the common (base-10) logarithm;
 or the significand, the significant digits of a number in scientific notation or a floating-point number.
 Spotted here: https://golang.org/doc/go1.13
+* link:https://en.wikipedia.org/wiki/Board_support_package[**BSP**]:
+Board support package. Usually in the context of embedded systems.
++
+A BSP:
++
+[quote]
+____
+is the layer of software containing hardware-specific drivers and other routines that allow a particular operating system (traditionally a real-time operating system, or RTOS) to function in a particular hardware environment (a computer or CPU card), integrated with the RTOS itself.
+
+Third-party hardware developers who wish to support a particular RTOS must create a BSP that allows that RTOS to run on their platform. In most cases the RTOS image and license, the BSP containing it, and the hardware are bundled together by the hardware vendor.
+____
