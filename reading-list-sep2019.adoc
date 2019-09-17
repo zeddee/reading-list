@@ -381,6 +381,30 @@ ____
 
 Also very curious of what an "event-less" ontology is, but probably won't have time to dig into it (hence filing it here).
 
+== Tech
+
+=== Why Go and not Rust
+
+https://kristoff.it/blog/why-go-and-not-rust/
+
+Loris Cro articulates some of the imposter/wrong-tech-stack anxiety
+that I've been feeling lately about Go v.s. Rust (incidentally, am 
+also in the midst of picking up basic Rust to at least understand
+what I'm missing out on):
+
+[quote]
+____
+You start feeling bad. Why did you choose to learn Go in the first 
+place? You were told that Go is fast and that it has great concurrency 
+primitives, and now Rust comes along and everybody is saying that Rust 
+is better in every aspect. Were they lying before or are they lying now?
+While there is no single language to rule them all, you know that it’s 
+still possible to make bad choices and end up in a technological cul de 
+sac. After all, you did choose Go over that other language a few years 
+ago and you were pretty pleased with the routine of joining circles to 
+ask “Why that and not Go?”
+____
+
 == Link Dump
 
 Another set of links that I want to get into but have to deprioritize.
