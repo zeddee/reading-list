@@ -383,6 +383,12 @@ Also very curious of what an "event-less" ontology is, but probably won't have t
 
 == Tech
 
+=== Google Engineering Practices
+
+https://github.com/google/eng-practices
+
+Good resource on how to manage a team, whether a dev team or otherwise.
+
 === Why Go and not Rust
 
 https://kristoff.it/blog/why-go-and-not-rust/
