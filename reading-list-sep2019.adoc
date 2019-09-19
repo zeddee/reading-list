@@ -405,6 +405,21 @@ ago and you were pretty pleased with the routine of joining circles to
 ask “Why that and not Go?”
 ____
 
+=== Faster JS object creation
+
+https://v8.dev/blog/cost-of-javascript-2019#json
+
+Interesting quirk of the V8 engine. When initializing
+javascript objects, it's faster to call `JSON.parse`
+than to initialize an object directly:
+
+[source, javascript]
+----
+const data = { foo: 42, bar: 69 } //slower
+const data2 = JSON.parse('{"foo": 42, "bar": 69}') //faster
+----
+
+
 == Link Dump
 
 Another set of links that I want to get into but have to deprioritize.
