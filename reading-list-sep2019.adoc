@@ -446,6 +446,7 @@ is an not-for-profit U.S. org that mainly operates in the cyber threat intellige
 
 * **ATT&CK:** Adverserial Tactics, Techniques, & Common Knowledge.
 ** A framework for classify attacks and assess an organization's risk.
+** Basically a public-good knowledgebase of known TTPs
 
 Katie Nickels speaking at Sp4rkCon by Walmart 2019, 
 **"Putting MITRE ATT&CK™ into Action with What You Have, Where You Are presented by Katie Nickels"**,
@@ -478,9 +479,9 @@ David Bianco Pyramid of Pain:
   --------------------------
 ----
 
-==== Tactics
+==== Tactics, Techniques, and Procedures
 
-The adversary's technical goals:
+**Tactics** are the adversary's technical goals:
 
 * Initial access/ingress
 * Execution
@@ -496,6 +497,16 @@ The adversary's technical goals:
 * Impact. Focuses on integrity and availability attacks,
 e.g. data destruction, data manipulation, ransomware etc.
 
+**Techniques** are how those technical goals are achieved:
+
+
+* E.g. Initial access:
+** Spear phishing with an attachment
+
+**Procedures** are specific implementations of a given technique.
+
+* E.g. Spear phishing with an attachment:
+** APT19 sent spear phishing emails with malicious attachments in RTF and XLSM formats to deliver initial exploits.
 
 == Link Dump
 
