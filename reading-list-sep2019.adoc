@@ -212,10 +212,10 @@ Tactics used to seed ignorance/epistemological fragmentation:
 +
 [quote]
 ____
-In the 1990s, Frank Luntz was the king of doing this with terms 
-like partial-birth abortion, climate change, and death tax. Every 
-week, he coordinated congressional staffers and told them to 
-focus on the term of the week and push it through the news media. 
+In the 1990s, Frank Luntz was the king of doing this with terms
+like partial-birth abortion, climate change, and death tax. Every
+week, he coordinated congressional staffers and told them to
+focus on the term of the week and push it through the news media.
 All to create a drumbeat.
 ____
 
@@ -254,7 +254,7 @@ ____
 
 === Agnotology in China
 
-This is a continuation of the previous section: 
+This is a continuation of the previous section:
 link:#_ignorance_and_stupidity_and_misinformation[Ignorance and Stupidity and Misinformation]
 
 I'm just noting that the approach we have to take when attempting
@@ -274,7 +274,7 @@ social credit/ewallet system).
 Epistemological fragmentation then can be said to be
 actually part of the state apparatus, being used explicitly
 to subjugate and to assimilate public thought into the party
-agenda. This was a strategy already in use during the Maoist Cultural Revolution. 
+agenda. This was a strategy already in use during the Maoist Cultural Revolution.
 
 === Misconceptions about disinformation leaves us vulnerable to manipulation
 
@@ -394,20 +394,20 @@ Good resource on how to manage a team, whether a dev team or otherwise.
 https://kristoff.it/blog/why-go-and-not-rust/
 
 Loris Cro articulates some of the imposter/wrong-tech-stack anxiety
-that I've been feeling lately about Go v.s. Rust (incidentally, am 
+that I've been feeling lately about Go v.s. Rust (incidentally, am
 also in the midst of picking up basic Rust to at least understand
 what I'm missing out on):
 
 [quote]
 ____
-You start feeling bad. Why did you choose to learn Go in the first 
-place? You were told that Go is fast and that it has great concurrency 
-primitives, and now Rust comes along and everybody is saying that Rust 
+You start feeling bad. Why did you choose to learn Go in the first
+place? You were told that Go is fast and that it has great concurrency
+primitives, and now Rust comes along and everybody is saying that Rust
 is better in every aspect. Were they lying before or are they lying now?
-While there is no single language to rule them all, you know that it’s 
-still possible to make bad choices and end up in a technological cul de 
-sac. After all, you did choose Go over that other language a few years 
-ago and you were pretty pleased with the routine of joining circles to 
+While there is no single language to rule them all, you know that it’s
+still possible to make bad choices and end up in a technological cul de
+sac. After all, you did choose Go over that other language a few years
+ago and you were pretty pleased with the routine of joining circles to
 ask “Why that and not Go?”
 ____
 
@@ -425,6 +425,77 @@ const data = { foo: 42, bar: 69 } //slower
 const data2 = JSON.parse('{"foo": 42, "bar": 69}') //faster
 ----
 
+== Security
+
+=== STIX + TAXII
+
+* **STIX:** Structured Threat Intelligence eXpression
+** STIX "is a language and serialized format for exchanging cyber threat intelligence (CTI)."
+* **TAXII:** Trusted Automated eXchange of Indicator Information
+** TAXII "is an application layer protocol for the communication of cyber threat intelligence in a simple and scalable manner."
+* **CTI:** Cyber Threat Intelligence
+
+https://oasis-open.github.io/cti-documentation/
+
+=== MITRE ATT&CK
+
+https://attack.mitre.org/resources/getting-started/
+
+link:https://www.mitre.org/about/corporate-overview[MITRE]
+is an not-for-profit U.S. org that mainly operates in the cyber threat intelligence domain.
+
+* **ATT&CK:** Adverserial Tactics, Techniques, & Common Knowledge.
+** A framework for classify attacks and assess an organization's risk.
+
+Katie Nickels speaking at Sp4rkCon by Walmart 2019, 
+**"Putting MITRE ATT&CK™ into Action with What You Have, Where You Are presented by Katie Nickels"**,
+YouTube video, published 18 Jun 2019 by "Sp4rkCon by Walmart".
+Available: https://www.youtube.com/watch?v=bkfwMADar0M&t=701s
+
+* **Adversary Lifecycle:**
+** Recon > Weaponize > Deliver > Exploit > Control > Execute > Maintain
+** **Left of ATT&CK; PRE-ATT&CK.** Involves reconnaissance and weaponisation.
+** **Enterprise ATT&CK:** Windows has the most research. Linux and macOS not so much.
+Deliver > Exploit > Control > Execute > Maintain.
+* **TTP:** Tactics, Techniques, Procedures.
+** Most difficult for attackers to change.
+Detecting TTPs are at the top of the David Bianco Pyramid of [Attacker] Pain.
+* Movement from focus on perimeter defenses to *defense in depth*.
+
+David Bianco Pyramid of Pain:
+
+[source]
+----
+               ^
+              ---
+            / TTP \           <-- cause most pain for attackers
+          /  Tools  \     
+       /  Network or  \
+      / Host artifacts \
+     /   Domain Names   \
+    /   IP Addresses     \
+   /     Hash values      \   <-- trivial for attackers to change
+  --------------------------
+----
+
+==== Tactics
+
+The adversary's technical goals:
+
+* Initial access/ingress
+* Execution
+* Persistence
+* Privilege escalation
+* Defense evasion
+* Credential access
+* Discovery
+* Lateral movement
+* Collection
+* CommandAnd (presumably refers to system takeovers)
+* Exfiltration
+* Impact. Focuses on integrity and availability attacks,
+e.g. data destruction, data manipulation, ransomware etc.
+
 
 == Link Dump
 
@@ -439,7 +510,7 @@ https://stackoverflow.com/questions/50598243/how-to-geth-init-and-start-geth-min
 
 == Glossary
 
-* link:https://en.wikipedia.org/wiki/Mantissa[**Mantissa**]: 
+* link:https://en.wikipedia.org/wiki/Mantissa[**Mantissa**]:
 The fractional part of the common (base-10) logarithm;
 or the significand, the significant digits of a number in scientific notation or a floating-point number.
 Spotted here: https://golang.org/doc/go1.13
@@ -454,3 +525,4 @@ is the layer of software containing hardware-specific drivers and other routines
 
 Third-party hardware developers who wish to support a particular RTOS must create a BSP that allows that RTOS to run on their platform. In most cases the RTOS image and license, the BSP containing it, and the hardware are bundled together by the hardware vendor.
 ____
+
