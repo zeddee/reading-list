@@ -431,15 +431,24 @@ const data2 = JSON.parse('{"foo": 42, "bar": 69}') //faster
 
 * **STIX:** Structured Threat Intelligence eXpression
 ** STIX "is a language and serialized format for exchanging cyber threat intelligence (CTI)."
+** https://github.com/STIXProject
 * **TAXII:** Trusted Automated eXchange of Indicator Information
 ** TAXII "is an application layer protocol for the communication of cyber threat intelligence in a simple and scalable manner."
+** https://github.com/TAXIIProject
+* **CybOX:** Cyber Observable Expression.
+** https://github.com/CybOXProject
 * **CTI:** Cyber Threat Intelligence
+** https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=cti
 
 https://oasis-open.github.io/cti-documentation/
 
 === MITRE ATT&CK
 
-https://attack.mitre.org/resources/getting-started/
+- https://attack.mitre.org/resources/getting-started/
+- https://attack.mitre.org/resources/
+- https://medium.com/mitre-attack/getting-started/home
+- https://medium.com/mitre-attack/att-ck-101-17074d3bc62
+- https://attack.mitre.org/resources/getting-started/
 
 link:https://www.mitre.org/about/corporate-overview[MITRE]
 is an not-for-profit U.S. org that mainly operates in the cyber threat intelligence domain.
@@ -462,6 +471,11 @@ Deliver > Exploit > Control > Execute > Maintain.
 ** Most difficult for attackers to change.
 Detecting TTPs are at the top of the David Bianco Pyramid of [Attacker] Pain.
 * Movement from focus on perimeter defenses to *defense in depth*.
+* **Associated Groups:** This field in ATT&CK used to be named 'aliases',
+but renamed to 'associated groups' because when we have an attacker that
+seems to appear in multiple reports by different security researchers,
+we don't know if they're the same group, or if they're different
+groups with overlapping traits.
 
 David Bianco Pyramid of Pain:
 
