@@ -427,6 +427,49 @@ const data2 = JSON.parse('{"foo": 42, "bar": 69}') //faster
 
 == Security
 
+=== Kali Linux
+
+A special distribution of debian for penetration testing.
+
+Was trying to find a way to run a Kali distribution on the cloud instead
+of taking up precious real-estate on my device when I realised that
+a good portion of penetration testing relies on the pen-testing box
+to be situated on the network being pen-tested against.
+(Braindead moment that lasted over a week).
+
+=== Wi-Fi security
+
+* **EAPOL:** Extensible Authentication Protocol (EAP) over LAN.
+[link:https://tools.ietf.org/html/rfc4017[RFC 4017]]
+Part of the IEEE802.11i-2004 standard, which is an amendment to the origintal IEEE802.11 wireless standard
+that updates the security mechanisms specified in the original standard.
+It deprecates use of WEP (Wired Equivalent Privacy) encryption and
+uses WPA2 (Wi-FI Protected Access II) instead.
+This is a 4-way handshake that generates an EAPOL key,
+which is then used to encrypt traffic between the wireless station
+and the wireless access point (AP)
+
+Other terms:
+
+* **STA:** Short for "wireless STAtion". Can refer to any wireless endpoint.
+* **RSN:** Robust Security Network (another name for WPA2)
+* **RSNAs:** Robust Security Network Associations.
+Describes the relationship between two wireless stations that
+establish authentication between them using a four-way handshake.
+* **RC4 stream cipher:** Rivest Cipher 4, a.k.a. ARC4 or ARCFOUR or Alleged RC4.
+Cipher used in WEP encryption. Fast encryption cipher, but considered insecure.
+IETF prohibits the use of RC4 in HTTPS in 
+link:https://tools.ietf.org/html/rfc7465[RFC 7465].
+* **TKIP:** Temporary Key Integrity Protocol; security protocol used in IEEE802.11.
+* **CCMP:** Counter Mode Cipher Block Chaining Message Authentication Protocol or CCM mode Protocol.
+Security protocol used in IEEE802.11i standard.
+* **MIC:** Message Integrity Code.
+* **PMK:** Pairwise Master Key. Symmetric key used when initiating an EAPON handshake.
+This is usually generated when 
+* **PSK:** Pre-shared Key. 
+* **GTK:** Group Transient Key.
+* **PTK:** Pairwise Transient Key.
+
 === STIX + TAXII
 
 * **STIX:** Structured Threat Intelligence eXpression
