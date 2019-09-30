@@ -6,3 +6,36 @@ Zed Tan <zed@shootbird.work>
 :sectnums:
 :source-highlighter: pygments
 :assetdir: /oct2019-assets
+
+== Human interactions
+
+=== Plants as interface
+
+https://www.dezeen.com/2019/06/17/mit-researchers-engineer-cyborg-plants/
+
+Use plants as interface that can sense input,
+and physically move to signal output. 
+
+Basically plant as screen.
+
+[quote]
+____
+The team's two new projects, titled Phytoactuators and Planta Digitalis respectively, focus on human interaction. They use plants for sensing and display — the two essential elements that complete an interaction loop.
+
+This means that a person can tell a plant to do something, and the plant can also communicate some information back.
+
+[...]
+
+The researchers suggest this functionality could be used to send people notifications, in effect turning the plant into a display. A jiggle from the stem or an arrangement of closed leaves might indicate rain outside, the arrival of a package or some other simple information.
+
+In the second project, Planta Digitalis, the researchers grew a conductive "wire" inside the plant by sitting it in the water-soluble polymer ProDOT. They could then connect this wire to other instruments, turning the plant into an antenna or sensor.
+
+They suggest that with this functionality, the plant could be an inconspicuous motion sensor, sending an alert to people when it detected intruders or wayward pets.
+____
+
+- surveillance applications?
+- use plants as display components e.g. pixels?
+
+____
+"Plants are self-repairing, self-regenerating organisms available at scale," they said. "Through Cyborg Botany, we envision a convergent design world in which we reappropriate our natural capabilities for a new bio-interaction design."
+____
