@@ -39,3 +39,9 @@ ____
 ____
 "Plants are self-repairing, self-regenerating organisms available at scale," they said. "Through Cyborg Botany, we envision a convergent design world in which we reappropriate our natural capabilities for a new bio-interaction design."
 ____
+
+== Tech
+
+=== First time sysadmin brain dump
+
+https://gist.github.com/zeddee/853f6568ff940b8be64c7fb4c5a0b333
