@@ -1,0 +1,13 @@
+= Reading List for Nov 2019
+Zed Tan <zed@shootbird.work>
+:toc: auto
+:sectlinks:
+:sectnums:
+:source-highlighter: pygments
+:assetdir: /nov2019-assets
+
+== Link Dump
+
+* Octopart:
+** https://octopart.com/
+** Cool electronics search engine. Would be great for figuring out hardware projects.

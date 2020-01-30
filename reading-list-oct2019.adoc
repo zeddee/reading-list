@@ -42,6 +42,41 @@ ____
 
 == Tech
 
+=== Ken Thompson and the strongest DES 8-character password
+
+https://leahneukirchen.org/blog/archive/2019/10/ken-thompson-s-unix-password.html
+
+Interesting account of how Ken Thompson, one of computing's pioneers and
+most recently one of the brains behind the Go programming language at Google,
+made a DES password that was difficult to crack because he chose a combination
+of characters that was the most difficult for a computer to crack via brute force,
+even though the encryption algorithm itself is considered weak.
+
 === First time sysadmin brain dump
 
 https://gist.github.com/zeddee/853f6568ff940b8be64c7fb4c5a0b333
+
+== Ethics
+
+=== Automatically modify audio files by editing their transcripts
+
+https://www.poynter.org/tech-tools/2019/this-tool-is-going-to-shape-the-future-of-podcasting-and-possibly-misinformation/
+
+== Math things
+
+=== Harmonics and Subharmonics
+
+- http://hyperphysics.phy-astr.gsu.edu/hbase/Waves/funhar.html
++
+[quote]
+____
+The lowest resonant frequency of a vibrating object is called its fundamental frequency. Most vibrating objects have more than one resonant frequency and those used in musical instruments typically vibrate at harmonics of the fundamental. A harmonic is defined as an integer (whole number) multiple of the fundamental frequency. Vibrating strings, open cylindrical air columns, and conical air columns will vibrate at all harmonics of the fundamental. Cylinders with one end closed will vibrate with only odd harmonics of the fundamental. Vibrating membranes typically produce vibrations at harmonics, but also have some resonant frequencies which are not harmonics. It is for this class of vibrators that the term overtone becomes useful - they are said to have some non-harmonic overtones.
+____
+- http://www.erlphase.com/downloads/application_notes/Understanding_Sub_Harmonics.pdf
+- https://www.scienceforums.net/topic/81920-fundamental-frequencies-and-subharmonics/
+
+- A harmonic is an integer multiple of a fundamental frequency.
+- A fundamental frequency is the lowest frequency of a resonating system i.e.
+a system that has a consistent periodic waveform.
+- A subharmonic is then a waveform that is at a frequency that is
+a fractional multiple of a fundamental frequency.
