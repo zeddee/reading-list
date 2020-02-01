@@ -1,10 +1,11 @@
 Reading List for Jan 2020
 *************************************
 
-..  contents::
-    :sectnums:
+..  contents:: Contents
     :local:
     :depth: 3
+
+.. sectnum:
 
 Tech
 ======
@@ -20,7 +21,7 @@ since they're also remotely located anyway.
 
 What we need to do is:
 
-..  code-block:: bash
+..  code-block::
 
     curl -fsSL <uri>/requirements.txt | python3 -m pip install -r -
     curl -fsSL <uri>/scriptname.py | python3 - [<args>...]
