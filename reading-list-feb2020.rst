@@ -32,6 +32,19 @@ AI Ethics
     Available:
     https://www.nytimes.com/2019/06/27/opinion/police-cam-facial-recognition.html
 
+Tech
+========
+
+Adding dates in Python
+-------------------------
+
+..  code-block::
+
+    from datetime import datetime, timedelta
+
+    datetime.now() # gives us the date and time now
+    datetime.now() + timedelta(days=1) # adds 24 h to the date and time now.
+
 Writing
 =========
 
