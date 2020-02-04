@@ -10,6 +10,10 @@ Reading List for Feb 2020
 AI Ethics
 =========
 
+- Largest supplier of bodycams to US police, Axon,
+  decides that facial recognition would be
+  unethical to implement in their products.
+
     Axon, the company that supplies 47 out of the
     69 largest police agencies in the United States
     with body cameras and software,
