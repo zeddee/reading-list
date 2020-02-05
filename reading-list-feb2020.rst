@@ -73,7 +73,7 @@ A nut graf is a 'nutsheller':
     in news style might start out with a lead like:
     "Federal grants for new job creation in booming in Chicago,
     but unemployment rates are soaring, according to statistics
-    released by the Federal Employment Agency Thursday." 
+    released by the Federal Employment Agency Thursday."
 
     However, if the same story were written in feature style
     rather than news style, then the story would begin in a more
