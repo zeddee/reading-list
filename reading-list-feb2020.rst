@@ -35,6 +35,67 @@ AI Ethics
 Tech
 ========
 
+\*args and \*\*kwargs
+------------------------
+
+Just understood what kwargs are in Python.
+
+kwargs: Keyword arguments. But that's just an
+arbitrary namespace + naming convention/idiom.
+
+When used in a function, the double asterisk
+indicates that the function takes in any number
+of key-value pairs as parameters[#kwargs]_.
+
+For example,
+
+..  code-block::
+
+    def bar(**kwargs):
+        for a in kwargs:
+            print(f"key: {a}\tvalue: {kwargs[a]}")
+
+    bar(name='finn', age='27')
+    # output:
+    # key: name  value: finn
+    # key: age  value: 27
+
+Whereas ``*args`` takes function parameters and assumes
+that they're a tuple:
+
+..  code-block::
+
+    def foo(*args):
+        print(args)
+
+    foo(1,2,3)
+    # (1,2,3)
+
+So when we have ``def baz(*args, **kwargs)``:
+
+- All values passed in as positional arguments
+  are parsed as passed into the 'args' tuple
+- All key-value pairs passed in as parameters
+  are parsed as passed into the 'kwargs' dict.
+
+Other observations:
+
+- ``*args`` must always come before ``**kwargs``.
+
+  - defining ``def baz(**kwargs, *args)`` instead
+    of ``def baz(*args, **kwargs)`` will throw
+    ``SyntaxError: invalid syntax``.
+  - Calling ``baz(this_key='this_value', 'positional_param_A')``
+    instead of ``baz('positional_param_A', this_key='this_value')``
+    will also cause the interpreter to panic,
+    and then scold you for passing keyword arguments
+    befoer your positionals:
+    ``SyntaxError: positional argument follows keyword argument``
+- so this is what the ``:keyword:`` docstring is for,
+  and what that documentation means.
+
+.. [#kwargs] https://stackoverflow.com/questions/36901/what-does-double-star-asterisk-and-star-asterisk-do-for-parameters
+
 Adding dates in Python
 -------------------------
 
