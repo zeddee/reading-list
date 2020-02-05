@@ -35,6 +35,52 @@ AI Ethics
 Tech
 ========
 
+Get raw files from GitLab
+---------------------------
+
+When scripting or building CI/CD pipelines,
+we'll sometimes want to cURL a script and immediately execute it,
+like:
+
+..  code-block::
+
+    curl -fsSL https://example.com/python-script.py | python3 -
+
+But when working with private GitLab repositories, doing that
+will have you curling the sign in page HTML instead, even if
+you're working on-premises (because your aren't sending the correct
+authorisation headers in cURL).
+
+And even if you get past authentication by using a personal access token,
+to access resources on a GitLab server you have to hit it's,
+REST API endpoints instead of relying on the obvious URL structure.
+
+So:
+
+..  code-block::
+
+    # NOTE! You have to URL encode most parameters.
+    # For example, to access a project at ``gitlab-host.com/username/projectname1``,
+    # you have to either use the project ID (and I have no idea where to find this)
+    # or url encode the project name as ``username%2Fprojectname1``
+
+    # To see the contents of a project's root dir
+    curl -fsSL -H 'Private-Token: <personal_access_token>' 'http://gitlab.example.com/api/v4/projects/zedtan%2Fdoc-ops/repository/tree?ref=master'
+
+    # To see the contents of a project directory
+    curl -fsSL -H 'Private-Token: <personal_access_token>' 'http://gitlab.example.com/api/v4/projects/zedtan%2Fdoc-ops/repository/tree?path='<path/to/dir>'ref=master'
+
+    # Get the raw contents of a files
+    # Here, you have to URL encode the dot in the file as ``%2E``
+    # So ``cmd/pythonscript.py`` has to be written as ``cmd%2fpythonscript%2Epy``
+    curl -fsSL -H 'Private-Token: <personal_access_token>' 'http://gitlab.example.com/api/v4/projects/zedtan%2Fdoc-ops/repository/files/azure-publisher%2Fgenerate-sas-token%2Epy/raw?ref=master'
+
+
+References:
+
+- https://stackoverflow.com/questions/24207644/open-a-file-directly-from-a-gitlab-private-repository
+- https://docs.gitlab.com/ee/api/repository_files.html
+
 \*args and \*\*kwargs
 ------------------------
 
