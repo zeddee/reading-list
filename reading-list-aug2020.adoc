@@ -1,0 +1,234 @@
+= August 2020 reading list
+
+== Tech things
+
+=== `mvim`
+
+Finally figured out that `mvim` wasn't working
+with my `git commit --amend` and `rebase -i` commands
+because (but `git commit -m` works fine) because
+those tell mvim for some reason to fork its process
+which git interprets as the commit_edit file closing,
+and is therefore an empty commit.
+
+To fix, have to set editor to use `mvim --nofork`/`mvim -f`
+instead of just `mvim`:
+
+[source, bash]
+----
+export EDITOR='mvim --nofork'
+----
+
+=== Relative imports in python
+
+As per
+link:https://www.python.org/dev/peps/pep-0008/#imports[PEP 8],
+instead of:
+
+[source, python]
+----
+import ./foo
+----
+
+write relative imports as:
+
+[source, python]
+----
+from . import foo
+----
+
+== GREP with filenames
+
+(ported from July 2020 reading list)
+
+[source, shell]
+----
+grep -1 search\-term *.txt # list files with matches
+grep -L search\-term *.txt # list files without matches
+----
+
+=== Implement `stub-columns` for sphinx-contrib/confluencebuilder
+
+After several months of working with tables
+that didn't allow me to set a 'header' column
+in sphinx+confluence, I finally got around to
+link:https://github.com/zeddee/confluencebuilder/pull/2[implementing it myself].
+
+It's hacky, and probably not 'correct' i.e. i'm not
+extending docutils correctly, but it works
+and the tests pass so yeah.
+
+So, on to documenting what my brain
+tried to do while trying to get this to work:
+
+* Had to track down where on earth we were
+emitting table elements. I started off by
+trawling through the code to figure out
+where we were emitting HTML tags or modifying/extending
+docutils. This actually took me a few weeks of intermittent
+effort -- because everything was kept in storage.py.
+* I was also trying to read 
+link:https://docutils.sourceforge.io/docs/ref/doctree.html[docutils documentation on how it crunches rST],
+and … it turns out that tables are not documented:
++
+image::aug2020-assets/docutils-doctree-to-be-completed.jpg["To be completed"]
+* To be fair, the docutils docs also point us to the
+link:https://www.oasis-open.org/specs/tm9901.htm[OASIS spec] for tables, which … I have not read because I was lazy (😅)
+and thought it would be much faster to track down examples
+of how headings in tables are handled. But the spec
+does look useful.
+* Also looked at the
+link:https://www.sphinx-doc.org/en/master/extdev/index.html[Sphinx ext dev docs],
+but couldn't find anything specifically useful for
+implementing stub-columns.
+* After a bit more digging into docutils and confluencebuilder
+source code, it turns out that what I want to modify
+is the html `writer`. I also figured that what I specifically
+wanted to find was how `th` tags are currently added
+to the header rows (since `header-rows` works, even if
+the confluencebuilder docs say that
+link: https://github.com/sphinx-contrib/confluencebuilder/blob/master/doc/markup.rst[they aren't supported])
+** tracked down implementation of tables in docutils
+to here: https://svn.code.sf.net/p/docutils/code/trunk/docutils/docutils/writers/_html_base.py
+** tracked down general writer code in confluencebuilder
+to here: https://github.com/sphinx-contrib/confluencebuilder/blob/master/sphinxcontrib/confluencebuilder/translator/storage.py
+*** which was a bit weird for me because
+docutils places `visit_*` methods under `writers`
+but confluencebuilder places them under `translator` --
+which was confusing because i somehow associated
+`translator` with docutils'
+link:http://svn.code.sf.net/p/docutils/code/trunk/docutils/docutils/transforms/[`transforms`]
+*** But tl;dr i found it.
+** So I decided to take the plunge and edit `translator/storage.py`
+directly.
+*** my gut was telling me that i would need
+the `visit_colspec` method, but
+i didn't really want to implement `colspec`
+as it's not (?) part of the HTML/5 spec
+*** But turns out that as docutils traverses
+(the traversal method is quite interesting as
+well, but i forgot where it's put) the doctree,
+it _must_ call `visit_colspec` as it traverses
+a table. I haven't grasped this yet -- i don't know
+what nodes are traversed where.
+*** implemented feature flag, because i don't
+know where this works and where this doesn't;
+only tested on confluence 7.6.2 locally run
+with 
+link:https://github.com/teamatldocker/confluence[teamatldocker/confluence] docker image.
++
+.Run with:
+[source, bash]
+----
+docker run -d -p 80:8090 --name confluence teamatldocker/confluence
+----
+** first thing I tried was to modify `visit_entry`
+to try and figure out if i'm targeting
+table cells correctly. Thought this would be
+the right thing to do because this is also where
+we set `target_tag = 'th'/'td'`.
+Did this by running a
+few conditionals:
++
+[source,python]
+----
+def visit_entry(self,node):
+    if self._thead_context[-1]:
+        target_tag = 'th'
+    elif self._stub_columns_experimental and \
+            CONDITION_HERE:
+        print(CONDITION_HERE)
+    else:
+        target_tag = 'td'
+
+"""
+CONDITION_HERE:
+
+these failed; i found instances
+in the docutils code where we're
+adding these as attributes,
+so I thought I'd just try to add
+these and run the code.
+- 'stub' in node
+- 'stub_column' in node
+
+what eventually worked was:
+- node.parent.parent.parent.stubs[node.parent.column]
+
+took it from docutils/writers/_base_html.py,
+which was super convoluted but worked
+"""
+----
+
+** Once I did that, I just had to follow
+the error messages I got when I ran the code
+to figure out where I had to port more
+code:
++
+[source]
+----
+Exception occurred:
+  File "/Users/zeddee/working/eiq/confluencebuilder/sphinxcontrib/confluencebuilder/translator/storage.py", line 752, in visit_entry
+    elif node.parent.parent.parent.stubs[node.parent.column]:
+AttributeError: 'tgroup' object has no attribute 'stubs'
+The full traceback has been saved in /var/folders/5q/k4tg4dlj0dnfyh6tcn0cwk0c0000gn/T/sphinx-err-r3y9g_uy.log, if you want to report the issue to the developers.
+----
+
+
+
+== Data resources
+
+Small dump of data science-related resources that have
+accumulated across the 4 browsers (not browser windows)
+I have open.
+
+=== Data science
+
+* Associate Press's Datakit tool, derived from cookie cutter: https://datakit.ap.org/
+* John Peng, "Tukey, Design Thinking, and Better Questions", published 17 Apr 2019.
+Available: https://simplystatistics.org/2019/04/17/tukey-design-thinking-and-better-questions/
+** N.B.: The writer cites John Tukey:
++
+____
+Far better an approximate answer to the right question,
+which is often vague, than an exact answer to the wrong question,
+which can always be made precise.
+____
++
+Which is horrifying to me in many different ways.
+** Author reads it as a call for better questions.
+Maybe. But taken at face value, I think
+that's giving the quote a bit of a wide berth.
+Maybe reading the actual
+link:https://projecteuclid.org/euclid.aoms/1177704711[paper]
+he's quoting from would lend to that interpretation.
+
+=== Journalism & Security
+
+* Digital security primer by GIJN (Global Investigative Journalism Network): https://gijn.org/digital-security/
+* Grégoire Pouget, "Digital Security for Journalists Requires an Adaptable Toolkit",
+published 16 July 2019 on GIJN. Available:
+https://gijn.org/2019/07/16/digital-security-for-journalists-requires-an-adaptable-toolkit/
+* "The Field Guide to Security Training in the Newsroom" by 
+link:https://github.com/OpenNewsLabs/[OpenNewsLabs].
+** https://securitytraining.opennews.org/en/latest/?mc_cid=62ce19ed91&mc_eid=03ff8f9b25
+** Also on GitHub: https://github.com/OpenNewsLabs/field-guide-security-training-newsroom
+* "Measures for Newsrooms and Journalists to Address Online Harassment"
+by IPI (International Press Institute)'s Ontheline project:
+https://newsrooms-ontheline.ipi.media/?mc_cid=743bbd83e2&mc_eid=d358ec5545
+* "Watching Them Watching You: Opsec for Security Investigators",
+published 17 Dec 2019 by Cosive.
+Avail: https://www.cosive.com/blog/2019/12/3/watching-them-watching-you-opsec-for-security-investigators
+
+=== Law & Ethics
+
+* Duke Law and Technology Review: https://dltr.law.duke.edu/
+** A feed of papers (including PDF links) from Duke Law.
+** Of (current) particular interest:
+Walz & Firth-Butterfield,
+"Implementing Ethics Into Artificial Intelligence: A Contribution,
+from a Legal Perspective, to the Development of an AI Governance Regime"
+18 Duke L. & Tech. Rev. 176.
+Avail: https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1352&context=dltr
+* The Turing Way (for ethical, reproducible, collaborative data science):
+https://the-turing-way.netlify.app/welcome
