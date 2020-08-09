@@ -1,4 +1,5 @@
 = August 2020 reading list
+:toc:
 
 == Writing things
 
