@@ -16,34 +16,61 @@ The ones i liked:
 ----
 Write to find out.
 
-When you’re writing, you’re trying to find out something which you don’t know. The whole language of writing for me is finding out what you don’t want to know, what you don’t want to find out. But something forces you to anyway.
+When you’re writing, you’re trying to find out something which you
+don’t know. The whole language of writing for me is finding out what
+you don’t want to know, what you don’t want to find out.
+But something forces you to anyway.
 
 -in a 1984 interview with The Paris Review
 ---------
 Use every experience.
 
-One writes out of one thing only—one’s own experience. Everything depends on how relentlessly one forces from this experience the last drop, sweet or bitter, it can possibly give. This is the only real concern of the artist, to recreate out of the disorder of life that order which is art.
+One writes out of one thing only—one’s own experience.
+Everything depends on how relentlessly one forces from this
+experience the last drop, sweet or bitter, it can possibly give.
+This is the only real concern of the artist, to recreate out of the
+disorder of life that order which is art.
 
--from “Autobiographical Notes,” in the Collected Essays from Library of America
+-from “Autobiographical Notes,”
+in the Collected Essays from Library of America
 ----------
 Writing is hard.
 
-Every form is difficult, no one is easier than another. They all kick your ass. None of it comes easy.
+Every form is difficult, no one is easier than another.
+They all kick your ass. None of it comes easy.
 
 -in a 1984 interview with The Paris Review
 ----------
-Don’t be too ironic.
-
-You are speaking to an old rat. I find much of so‐called avant‐garde writing utterly trivial. If there is no moral question, there is no reason to write. I’m an old‐fashioned writer and, despite the odds, I want to change the world. What I hope to convey? Well, joy, love, the passion to feel how our choices affect the world . . . that’s all.
-
--from a 1979 interview published in The New York Times
-----------
 Write towards truth.
 
-I certainly can’t imagine art for art’s sake . . . that’s a European approach, which never made any sense to me. I think what you have to do, which is the difficult thing about a writer, is avoid slogans. You have to have the [guts] to protest the slogan, no matter how noble it may sound. It always hides something else; the writer should try to expose what it hides.
+I certainly can’t imagine art for art’s sake . . .
+that’s a European approach, which never made any sense to me.
+I think what you have to do, which is the difficult
+thing about a writer, is avoid slogans.
+You have to have the [guts] to protest the slogan,
+no matter how noble it may sound.
+It always hides something else;
+the writer should try to expose what it hides.
 
 -from a 1979 interview published in The New York Times
 ----------
+----
+
+on empty irony:
+
+[source]
+----
+Don’t be too ironic.
+
+You are speaking to an old rat.
+I find much of so‐called avant‐garde writing utterly trivial.
+If there is no moral question, there is no reason to write.
+I’m an old‐fashioned writer and, despite the odds,
+I want to change the world. What I hope to convey?
+Well, joy, love, the passion to feel
+how our choices affect the world . . . that’s all.
+
+-from a 1979 interview published in The New York Times
 ----
 
 two good reminders:
@@ -52,12 +79,22 @@ two good reminders:
 ----
 Write what you see.
 
-I don’t try to be prophetic, as I don’t sit down to write literature. It is simply this: a writer has to take all the risks of putting down what he sees. No one can tell him about that. No one can control that reality. It reminds me of something Pablo Picasso was supposed to have said to Gertrude Stein while he was painting her portrait. Gertrude said, “I don’t look like that.” And Picasso replied, “You will.” And he was right.
+I don’t try to be prophetic, as I don’t sit down to write literature.
+It is simply this: a writer has to take all the risks of putting down
+what he sees. No one can tell him about that.
+No one can control that reality. It reminds me of something Pablo
+Picasso was supposed to have said to Gertrude Stein while he was
+painting her portrait. Gertrude said, “I don’t look like that.”
+And Picasso replied, “You will.” And he was right.
 -in a 1984 interview with The Paris Review
 ----------
 Just keep writing.
 
-Write. Find a way to keep alive and write. There is nothing else to say. If you are going to be a writer there is nothing I can say to stop you; if you’re not going to be a writer nothing I can say will help you. What you really need at the beginning is somebody to let you know that the effort is real.
+Write. Find a way to keep alive and write.
+There is nothing else to say. If you are going to be a writer there
+is nothing I can say to stop you; if you’re not going to be a writer
+nothing I can say will help you. What you really need at the
+beginning is somebody to let you know that the effort is real.
 
 -in a 1984 interview with The Paris Review
 ----
@@ -68,7 +105,8 @@ and the best one:
 ----
 Simplicity is king.
 
-You want to write a sentence as clean as a bone. That is the goal.
+You want to write a sentence as clean as a bone.
+That is the goal.
 
 -in a 1984 interview with The Paris Review
 ----
