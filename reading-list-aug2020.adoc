@@ -286,9 +286,9 @@ AttributeError: 'tgroup' object has no attribute 'stubs'
 The full traceback has been saved in /var/folders/5q/k4tg4dlj0dnfyh6tcn0cwk0c0000gn/T/sphinx-err-r3y9g_uy.log, if you want to report the issue to the developers.
 ----
 
-== Jupyter Notebook tips
+=== Jupyter Notebook tips
 
-=== Run notebook in terminal without launching jupyter server
+==== Run notebook in terminal without launching jupyter server
 
 [source, bash]
 ----
@@ -313,14 +313,14 @@ runnotebook() {
 }
 ----
 
-=== Change size of plots
+==== Change size of plots
 
 [source, python]
 ----
 plt.rcParams["figure.figsize"]= (20,15)
 ----
 
-=== Change font size in plots
+==== Change font size in plots
 
 apparently most plotting functions
 accept a `fontsize:int` parameter
@@ -337,6 +337,14 @@ plt.ylabel("Daily change", fontsize=_FONTSIZE)
 plt.legend(fontsize=_FONTSIZE)
 ----
 
+=== GitHub actions docs
+
+https://docs.github.com/en/actions/reference/software-installed-on-github-hosted-runners
+
+doesn't look too hard… 😅
+
+most interesting is that there is a macOS 10.15
+VM available for use!
 
 == Data resources
 
