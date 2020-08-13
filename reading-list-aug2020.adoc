@@ -286,6 +286,56 @@ AttributeError: 'tgroup' object has no attribute 'stubs'
 The full traceback has been saved in /var/folders/5q/k4tg4dlj0dnfyh6tcn0cwk0c0000gn/T/sphinx-err-r3y9g_uy.log, if you want to report the issue to the developers.
 ----
 
+== Jupyter Notebook tips
+
+=== Run notebook in terminal without launching jupyter server
+
+[source, bash]
+----
+# https://stackoverflow.com/a/40311709
+$ jupyter nbconvert --to notebook --inplace --execute mynotebook.ipynb
+----
+
+I wrote a bash alias for this:
+
+[source, bash]
+----
+runnotebook() {
+  if ! command -v jupyter; then
+    echo Requires jupyter. Install with pip.
+  fi
+
+  if [[ -f $1 ]]; then
+    jupyter nbconvert --to notebook --inplace --execute $1
+  else
+    echo First argument must be file
+  fi
+}
+----
+
+=== Change size of plots
+
+[source, python]
+----
+plt.rcParams["figure.figsize"]= (20,15)
+----
+
+=== Change font size in plots
+
+apparently most plotting functions
+accept a `fontsize:int` parameter
+as an argument:
+
+[source,python]
+----
+_FONTSIZE=20
+#...
+plt.xticks(rotation="vertical", fontsize=_FONTSIZE)
+plt.xlabel("Day of week", fontsize=_FONTSIZE)
+plt.yticks(np.arange(0, df["Daily_delta"].max(), step=5), fontsize=_FONTSIZE)
+plt.ylabel("Daily change", fontsize=_FONTSIZE)
+plt.legend(fontsize=_FONTSIZE)
+----
 
 
 == Data resources
