@@ -159,6 +159,29 @@ grep -1 search\-term *.txt # list files with matches
 grep -L search\-term *.txt # list files without matches
 ----
 
+=== sips to manipulate images in the macos terminal
+
+macOS has the nifty command `sips`
+(scriptable image processing system)
+that allows you to manipulate images
+through the command line.
+
+The following script loops through all the `jpg`
+files in the current directory and
+
+. Resizes them, making them 400px wide.
+. (idk what `--optimizeColorForSharing` does)
+. Sets the output dir to the current dir, so it
+overwrites the files being processed (remember
+to back up your originals first)
+
+[source, shell]
+----
+for f in $(pwd)/*.jpg; do
+    sips --resampleWidth 400 --optimizeColorForSharing -o . $f;
+done
+----
+
 === Implement `stub-columns` for sphinx-contrib/confluencebuilder
 
 After several months of working with tables
