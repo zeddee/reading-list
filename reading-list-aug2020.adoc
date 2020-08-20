@@ -149,7 +149,7 @@ write relative imports as:
 from . import foo
 ----
 
-== GREP with filenames
+=== GREP with filenames
 
 (ported from July 2020 reading list)
 
