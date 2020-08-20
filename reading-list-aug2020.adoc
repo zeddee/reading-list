@@ -170,15 +170,16 @@ The following script loops through all the `jpg`
 files in the current directory and
 
 . Resizes them, making them 400px wide.
-. (idk what `--optimizeColorForSharing` does)
-. Sets the output dir to the current dir, so it
-overwrites the files being processed (remember
-to back up your originals first)
+. (idk what `--optimizeColorForSharing` does,
+but it reduced the file size on some obscenely large
+png files. Resulting color profile is `sRGB IEC61966-2.1`)
+. Processes the images in-place (please make a backup
+before running the command)
 
 [source, shell]
 ----
 for f in $(pwd)/*.jpg; do
-    sips --resampleWidth 400 --optimizeColorForSharing -o . $f;
+    sips --resampleWidth 400 --optimizeColorForSharing $f;
 done
 ----
 
