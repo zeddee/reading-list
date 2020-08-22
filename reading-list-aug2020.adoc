@@ -114,7 +114,7 @@ That is the goal.
 
 == Tech things
 
-=== `mvim`
+=== `mvim` closing too early when running `git commit -m`
 
 Finally figured out that `mvim` wasn't working
 with my `git commit --amend` and `rebase -i` commands
