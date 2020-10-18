@@ -1,0 +1,23 @@
+= August 2020 reading list
+:toc:
+
+== Writing
+
+=== Better ledes
+
+https://dynamicsofwriting.com/2020/10/01/throwback-thursday-cops-set-nude-man-on-fire-see-paragraph-11-or-why-you-should-use-the-inverted-pyramid-better/
+
+Filak's been great with his posts that
+explain how and why you can and should
+write better. In this case, he
+pokes at an unforgivably bad header and lede
+that buries an exceptionally unexceptional story:
+
+____
+As the person who forwarded this to me put it: “They set him on fire and you don’t find out for 11 grafs. 11!!!”
+
+If you read the whole story, you find that the headline does mention this, but headlines aren’t there to bail out bad writing. You also find out that the reason this story has this problem is the reporter wrote it chronologically instead of relying on the inverted pyramid.
+
+Very rarely will I say this, but sometimes being arrested naked isn’t the biggest part of the story.
+____
+
