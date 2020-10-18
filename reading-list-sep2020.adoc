@@ -35,3 +35,11 @@ motivation and ability.
 ____
 
 image::sep2020-assets/Fogg_Behavior_Model_Graphic_2019.jpg[]
+
+== Information Architecture
+
+=== Shopify's monolith
+
+https://engineering.shopify.com/blogs/engineering/shopify-monolith
+
+- Good breakdown of how they think their architecture
