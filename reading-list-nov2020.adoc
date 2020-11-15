@@ -1,0 +1,128 @@
+= November 2020 reading list
+:toc:
+
+== Politics
+
+Reminder that because humans are political animals footnote:[https://plato.stanford.edu/entries/aristotle-politics/supplement3.html#:~:text=Second%2C%20human%20beings%20are%20by,state%20(1253a1%2D18).].
+
+=== NYT on Joseph Tainter and Collapse of Complex Societies
+
+Ben Ehrenreich,
+"How Do You Know When Society Is About to Fall Apart?",
+published 4 Nov 2020 on _The New York Times_.
+Available: https://www.nytimes.com/2020/11/04/magazine/societal-collapse.html
+
+
+
+____
+Only complexity, Tainter argues, provides an explanation that
+applies in every instance of collapse. We go about our lives,
+addressing problems as they arise. Complexity builds and builds,
+usually incrementally, without anyone noticing how brittle it
+has all become. Then some little push arrives, and the society
+begins to fracture. The result is a “rapid, significant loss of
+an established level of sociopolitical complexity.” In human
+terms, that means central governments disintegrating and empires
+fracturing into “small, petty states,” often in conflict with
+one another. Trade routes seize up, and cities are abandoned.
+Literacy falls off, technological knowledge is lost and
+populations decline sharply. “The world,” Tainter writes,
+“perceptibly shrinks, and over the horizon lies the unknown.”
+____
+
+Tainter is structuralist in his thinking:
+
+____
+Scholars of collapse tend to fall into two loose camps.
+The first, dominated by Tainter, looks for grand narratives and
+one-size-fits-all explanations. The second is more interested in
+the particulars of the societies they study.
+____
+
+There are other explanations for the "disappearance"
+of a society other than "collapse", plus Tainter and
+similar thinkers look for a point of fracture,
+whereas reality, ironically, may be more complex
+than that:
+
+____
+The apparent collapse of the Southern Lowland Maya, McAnany
+cautions, is better understood as a dispersal. For the upper
+classes — who appear to have been the first to flee — it was
+probably experienced as a world ending, but most people simply
+“voted with their feet,” migrating to more amenable locations in
+the north and along the coast. That is no longer so easy,
+McAnany says. “We’re too vested and tied to places.” Without the
+possibility of dispersal, or of real structural change to more
+equitably distribute resources, “at some point the whole thing
+blows. It has to.”
+____
+
+Echoes of accelerationism, who believe that humanity must
+breach a sort of event horizon that can only be triggered
+by a crisis of sorts, so the broad goal of humanity should
+be to reach that point as quickly as possible to allow the
+next stage of human development to begin:
+
+____
+The more a population is squeezed, Tainter warns, the larger the 
+share that “must be allocated to legitimization or coercion.” 
+And so it was: As U.S. military spending skyrocketed — to, by 
+some estimates, a total of more than $1 trillion today from $138 
+billion in 1980 — the government would try both tactics, 
+ingratiating itself with the wealthy by cutting taxes while 
+dismantling public-assistance programs and incarcerating the 
+poor in ever-greater numbers. What happened on a national level 
+happened locally as well, with police budgets eclipsing funding 
+for social services in city after city. “As resources committed 
+to benefits decline,” Tainter wrote in 1988, “resources 
+committed to control must increase.”
+____
+
+Ehrenreich starts taking apart Tainters' thinking:
+
+____
+The overall picture drawn by Tainter’s work is a tragic one. It 
+is our very creativity, our extraordinary ability as a species 
+to organize ourselves to solve problems collectively, that leads 
+us into a trap from which there is no escaping. Complexity is 
+“insidious,” in Tainter’s words. “It grows by small steps, each 
+of which seems reasonable at the time.” And then the world 
+starts to fall apart, and you wonder how you got there.
+
+There is, however, another way to look at this. Perhaps collapse 
+is not, actually, a thing. Perhaps, as an idea, it was a product 
+of its time, a Cold War hangover that has outlived its 
+usefulness, or an academic ripple effect of climate-change 
+anxiety, or a feedback loop produced by some combination of the 
+two. Over the last 10 years, more and more scholars have, like 
+McAnany, been questioning the entire notion of collapse. The 
+critical voices have been more likely to come from women — the 
+appeal of collapse’s sudden, violent drama was always, as 
+Dartmouth College’s Deborah L. Nichols put it, “more of a guy 
+thing” — and from Indigenous scholars and those who pay 
+attention to the narratives Indigenous people tell about their 
+own societies. When those are left out, collapse, observes Sarah 
+Parcak, who teaches at the University of Alabama at Birmingham, 
+can easily mean erasure, a convenient way of hiding the violence 
+of conquest. This is not to suggest that once-populous cities 
+have never been abandoned or that the kind of rapid social 
+simplification that Tainter diagnosed has not regularly 
+occurred; only that if you pay attention to people’s lived 
+experience, and not just to the abstractions imposed by a highly 
+fragmented archaeological record, a different kind of picture 
+emerges.
+____
+
+Hammers seeing nails:
+
+____
+Part of the issue may be that Tainter’s understanding of 
+societies as problem-solving entities can obscure as much as it 
+reveals. Plantation slavery arose in order to solve a problem 
+faced by the white landowning class: The production of 
+agricultural commodities like sugar and cotton requires a great 
+deal of backbreaking labor. That problem, however, has nothing 
+to do with the problems of the people they enslaved. Which of 
+them counts as “society”?
+____
