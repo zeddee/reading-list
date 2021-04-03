@@ -1,0 +1,249 @@
+#+TITLE: March 2021 Reading List
+
+* Tools
+** General
+*** [[https://github.com/rberenguel/glancer][Glancer]]
+https://github.com/rberenguel/glancer
+Generates a screenshot with closed-captions from a youtube video.
+Great for putting a talk into an annotatable slide-show format.
+requires:
+
+- [[https://docs.haskellstack.org/en/stable/install_and_upgrade/][haskell stack]]
+- build tools
+
+whether it works or not depends highly on the quality of
+youtube subs. panics on invalid unicode chars e.g.
+~b"\xac"~, so YMMV.
+** Security
+- [[https://content-security-policy.com/][Content Security Policy Reference]]
+** Go HTML templates
+Needed a refresher on Go's HTML templates
+
+Assigning & initializing variables in a HTML template
+
+#+BEGIN_SRC
+{{ $varname := . }}
+  <section>this is varname {{ $varname }} </section>
+#+END_SRC
+** VIM
+have been going through ~vimtutor~ (yes, long overdue)
+
+TIL that:
+
+- ~:r <FILENAME~
+  inserts the contents of ~<FILENAME>~
+- 🌟 ~:r !<cmd>~
+  inserts the output of ~<cmd>~ into VIM. (very cool!)
+- 🌟 ~:edit <FILENAME>~
+  quits your current file (so remember to ~:w~ first) and opens up ~<FILENAME>~ in a new editing session.
+- 🌟 ~:new <FILENAME>~
+  opens a new window below your current session.
+
+  Shortcut: ~CTRL+W n~
+
+   So a combination would be to use ~v SHIFT+g~ to select
+   _all_ text under your cursor, press ~y~ to yank, press
+   ~CTRL+W n~ to open a new window, and ~p~ to paste all that
+   there. (This came out of having to get a section of a
+   40000-line long confluence log file using vim.)
+- 🌟 ~:vert new <FILENAME>~
+  opens a new vertical window to the right of your current
+session.
+** emacs
+yes, i am learning arcane rituals to summon some inner dark being
+
+in iTerm2, you need some setup to use the Option key (⌥) as Meta in emacs.
+- Go to *Preferences > Profiles > \Your profile > Keys*, and set the *Left Option Key* to *Esc+*
+
+~M+x whitespace-global-mode~ allows you to toggle whitespace visibility
+
+There is ~M+x tabify~ and ~M+x untabify~ if you need it
+(though they are ~region~ commands, and I'm not sure how they work yet.)
+
+To set emacs to:
++ use spaces instead of tabs
++ enter 2 spaces per tab keystroke
++ from: https://code.i-harness.com/en/q/1112e
+
+  #+BEGIN_SRC
+  (setq-default indent-tabs-mode nil)
+  (setq-default tab-width 4)
+  (setq indent-line-function 'insert-tab)
+  #+END_SRC
+
+you can hard-wrap a paragraph using the evil combination `g w`. Also: `Meta+x fill paragraph`
+
+set the `fill paragraph` column by adding to `.doom.d/config.el`:
+
+#+BEGIN_SRC
+(setq-default fill-column 80)
+#+END_SRC
+** Bash
+TIL <2021-03-11 Thu> that ~$'string'~ [[http://www.gnu.org/software/bash/manual/html_node/ANSI_002dC-Quoting.html#ANSI_002dC-Quoting][expands ANSI escape sequences]]
+e.g. `$'\s\u2615'` --> ' ☕️'
+
+For posterity:
+
+#+BEGIN_SRC
+3.1.2.4 ANSI-C Quoting
+Words of the form $'string' are treated specially. The word expands to string, with backslash-escaped characters replaced as specified by the ANSI C standard. Backslash escape sequences, if present, are decoded as follows:
+
+\a
+alert (bell)
+
+\b
+backspace
+
+\e
+\E
+an escape character (not ANSI C)
+
+\f
+form feed
+
+\n
+newline
+
+\r
+carriage return
+
+\t
+horizontal tab
+
+\v
+vertical tab
+
+\\
+backslash
+
+\'
+single quote
+
+\"
+double quote
+
+\?
+question mark
+
+\nnn
+the eight-bit character whose value is the octal value nnn (one to three octal digits)
+
+\xHH
+the eight-bit character whose value is the hexadecimal value HH (one or two hex digits)
+
+\uHHHH
+the Unicode (ISO/IEC 10646) character whose value is the hexadecimal value HHHH (one to four hex digits)
+
+\UHHHHHHHH
+the Unicode (ISO/IEC 10646) character whose value is the hexadecimal value HHHHHHHH (one to eight hex digits)
+
+\cx
+a control-x character
+
+The expanded result is single-quoted, as if the dollar sign had not been present.
+#+END_SRC
+
+** Orgmode notes
+- Realised that i've been setting priority cookies ~[#A]~
+without knowing what they mean 😅
+/now/ i know 😬
+*** This is how to [[[[https://orgmode.org/guide/Hyperlinks.html]]][to write hyperlinks]]
+That, or press ~CTRL+c CTRL+l~
+** BeautifulSoup note
+Never got the hang of using the BS library. It's data
+structures never made sense to me: that calling ~soup.p~
+would only get the first ~<p>~ tag in the document.
+
+But! Realized that what BS returns is a generator. That's to
+avoid storing the whole document in memory when it
+initializes ... but why it wouldn't is a question i still
+don't know the answer for. HTML documents aren't that large?
+But that's how it is. I'm more used to data structures that
+are stored and available as trees traversable through stdlib
+methods. E.g. My oob expectation for BS was that the
+constructor would return a dict or list that describes the
+document DOM. but that is apparently not the case.
+
+So!
+
+*** To navigate the bs4.element.NavigableString object fram
+BeautifulSoup, you have to use the ~.next_element~
+~.next_elements~ give you a list of everything that's
+left) or ~.next_sibling~ (same thing with
+~.next_siblings~ ... method? generators? idk. the
+[[[[https://www.crummy.com/software/BeautifulSoup/bs4/doc/#next-element-and-previous-elemen]]t]
+[.next_element docs]]
+call these /attributes/, but that doesn't sound
+right for something so mechanically complex.
+*** The code is stored at https://code.launchpad.net/beautifulsoup,
+using canonical's bazaar VCS (~brew install bazaar~) which
+...  i'm definitely not going to learn. had to get the code
+with ~bzr branch lp:beautifulsoup~.
+*** So the task at hand is to ... navigate to the table
+that we want to grab information from,
+and then call ~next_element~ to find the elements
+that we want until we get /all/ of them.
+
+That sounds ... like a horrendous way to do things.
+** Python notes
+
+*** Making a logger
+You can create a logger that prints out the name of the
+function that calls it by using the ~inspect~ stdlib module:
+
+#+BEGIN_SRC python
+  def logtype(obj: any) -> None:
+    """prints out type of obj"""
+
+    print("{}: {}".format(inspect.currentframe().f_back.f_code.co_name, type(obj)))
+
+  logtype(<object>)
+
+  # stdout
+
+  parse_table: <class 'list_iterator'>
+  parse_table: <class 'bs4.element.Tag'>
+  parse_table: <class 'bs4.element.Tag'>
+  parse_table: <class 'bs4.element.Tag'>
+#+END_SRC
+** Started using [[https://github.com/asdf-vm][asdf]] to manage my nodejs, ruby, and yarn versions.
+Did it because I never liked how i've always had competing
+shims from pyenv, rvm, and nvm on the same machine.
+The tutorial i looked up was crap (wrong commands;
+fortunately syntax && vocabulary was more or less correct,
+just ... wrong commands), and there's no cli help for asdf.
+
+So after a bit of trial and error, i ended up doing:.
+
+#+BEGIN_SRC bash
+brew install asdf
+echo "\. $(brew --prefix asdf)/asdf.sh >> ~/.zshrc # TIL what brew --prefix does
+asdf plugin add nodejs
+asdf plugin add ruby
+asdf plugin add yarn
+asdf list all nodejs
+asdf install nodejs lts-fermium
+asdf install ruby 2.7.2 # ruby 3.0.0 doesn't allow you to install gems like asciidoctor-pdf
+asdf install yarn 1.22.10
+echo "nodejs lts-fermium" >> ~/.tool-versions
+echo "ruby 2.7.2" >> ~/.tool-versions
+echo "yarn 1.22.10" >> ~/.tool-versions
+#+END_SRC
+
+Seems to work ok, even though calling the command
+is a bit slow. Shouldn't be an issue -- I don't use these
+three commands that regularly anyway. Pyenv is still
+managing my python installs, so that's not within scope.
+
+Also, I had a bit of trouble installing nodejs using ~asdf install nodejs lts-fermium~.
+It looks like a distribution issue (something along the
+lines of ~Binaries were not found~), and had to work around
+it by running:
+
+#+BEGIN_SRC bash
+arch -x86_64 zsh
+#+END_SRC
+
+as per https://github.com/asdf-vm/asdf-nodejs/issues/130#issuecomment-753945615
+** rsync
+use rsync instead of cp to preserve file and folder permissions!
