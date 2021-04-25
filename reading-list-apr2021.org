@@ -1,0 +1,328 @@
+#+TITLE: Reading List Apr2021
+
+* AI
+** AI chatbot harvests KaKaoTalk data, leaks personal info and spews hate
+
+HeeSoo, Jang. Published <2021-04-02 Fri> on Slate.
+Available:
+https://slate.com/technology/2021/04/scatterlab-lee-luda-chatbot-kakaotalk-ai-privacy.html
+
+#+BEGIN_QUOTE
+However, within two weeks of Lee-Luda’s launch, people
+started questioning whether the data was refined enough as
+it started using verbally abusive language about certain
+social groups (LGBTQ+, people with disabilities, feminists,
+etc.) and made sexually explicit comments to a number of
+users. ScatterLab explained that the chatbot did not learn
+this behavior from the users it interacted with during the
+two weeks of service but rather learned it from the original
+training dataset. In other words, ScatterLab had not fully
+removed or filtered inappropriate language or intimate and
+sexual conversations from the dataset. It also soon became
+clear that the huge training dataset included personal and
+sensitive information. This revelation emerged when the
+chatbot began exposing people’s names, nicknames, and home
+addresses in its responses.
+#+END_QUOTE
+
+I've been trying to form words around why I dislike
+/Black Mirror/ so much, and sort of justify the anger
+I feel towards the entire series. Seeing this article on
+ScatterLabs and KaKaoTalk sort of let all those feelings
+settle around this:
+
+/Black Mirror/ is made specifically so that you learn
+nothing from it.
+
+It echoes the absurd cowardice of triple-A game publishers
+and other big media
+who shy-away from 'political' and 'politicizing'
+colouring of their work. In particular,
+Red Storm Entertainment's
+[[https://kotaku.com/the-division-2-is-political-despite-what-its-developer-1826776710][bewildering insistence]] that
+/The Division 2/ is utterly apolitical,
+while it's setting and plot eerily mirrors much
+of what happened over the course of 2020--2021:
+an attack on the U.S. Capitol, and a sweeping virus
+(along with the undercurrent of bio-warfare,
+given the untrue but unrelenting misinfo that
+COVID-19 was bioengineered) that throws
+the world into a pharma-dystopian crisis.
+
+* OSINT
+** Grief engines
+Found this definition of "grief engines" I had scribbed on a
+scrap of paper at some point:
+
+#+BEGIN_QUOTE
+Twitter bots that tweet tragedy to evoke and be a target for
+sympathy
+#+END_QUOTE
+
+Definitely not my own words -- probably a YouTube talk,
+podcast, or paper on misinformation that I parsed and
+very absently whittled down to this.
+
+There is definitely more here to unpack:
+- the ever-present military industrial complex that has
+  carved logistics into the very skin of the world;
+- that grief is generative, motive; that if a bot can evoke
+  behavior, then is not the human and their response also
+  part of this machine-loop?
+- That if you can automate the generation of grief, and
+  reliably get a human to respond to it, then is this not
+  automating the human as well?
+
+All questions, no answers.
+** Zarine Kharazian | Tracking Disinformation in an Armenian Context
+#+DATE: <20 Apr 2021>
+Watched this excellent Bellingcat showcase by Zarine
+Kharazian, where she walked us through how she's been
+working with OSINT re: the recent [[https://en.wikipedia.org/wiki/2020_Nagorno-Karabakh_war][Nagorno-Karabakh war in
+Armenia]] (2020).
+
+She covered:
+
+- She's got a writeup + code here on OSINT techniques she
+  used for investigating Plandemic:
+  https://dfrlab.github.io/Plandemic/
+- Useful terms:
+  + "Online harms" as laid out by UK Gov whitepaper:
+    https://www.gov.uk/government/consultations/online-harms-white-paper
+  + "Secondary infections" in misinformation campaigns.
+    Much of the goal of misinfo campaigns are to amplify
+    an "inauthentic" message enough so that "authentic"
+    actors start amplifying those messages as well. C.f.
+    Fox/Newsmax and their audience.
+
+    Again, the contagion metaphor is very appropriate.
+  + "Vicarious trauma": Speaking about mental health of
+    investigative journalists (OSINT or otherwise), Zarine
+    raises the need to pay attention to vicarious trauma
+    experienced when OSINT investigators dive deep into
+    investigations, especially in ongoing conflicts or
+    situations where there is ongoing trauma.
+- Misinfo operators are typically lazy.
+
+  First, a caveat: these indicators by themselves do not
+  necessarily indicate that there is a campaign in progress,
+  but is a good indicator when combined with other telltale
+  signs.
+
+  They may exhibit the following behaviors:
+
+  + Reuse content. You'll see repeated content posted by
+    several accounts/pages.
+  + Rapid activity clustered around certain timeframes.
+  + Uncannily regular activity. E.g. posts are always made
+    during a specific time of the day, like a given account
+    always makes 10 posts in 5 minutes at 3PM each weekday.
+  + Sometimes, a group of accounts become dormant or become
+    active around the time of a significant event.
+  + Social media account history may not be consistent, e.g.
+    sex of personal account may not match apparent sex of
+    profile picture, or how that person presents themselves
+    in their posts. Or if an organization was a dormant
+    travel agency, but suddenly changes its name and
+    starts posting on political topics.
+
+    Such inconsistencies can be genuine, or a spoof campaign
+    where a page/persona is set up to gain unsuspecting
+    followers to whom the actor will later feed their
+    messaging to, or the account/page was hacked.
+
+- CrowdTangle. She went into detail about tools, and this
+  is the only one I caught. FB analytics tool that is
+  super useful.
+
+  Also, Twitter is the easiest to perform research on,
+  because they give API access to researchers and
+  developers. FB is hostile towards efforts to aggreate
+  content through API access. Instagram also.
+
+- What Facebook means by "Coordinated Inauthentic Behavior"
+  (CIB).
+  + Facebook takedowns attributed to CIB are not taken down
+    because of their content. CIB takedowns are performed
+    when certain patterns of behavior that indicate a
+    coordinated attempt to artificially amplify an idea or a
+    cause is detected.
+  + Facebook's definition does not "hinge" (Zarine's
+    excellent choice of word) on the content of posts,
+    but on whether the behavior constitutes a
+    "deceptive use of accounts".
+
+- So clear-cut examples of CIB would be:
+  + Impersonation. Esp. if you impersonate a public figure,
+    or if you impersonate one or more persons in order
+    to give the illusion of a broader pattern of behavior
+    than there actually is.
+
+    This also goes for impersonation of organizations e.g.
+    putting up false FB pages for organizations, fictional
+    or otherwise.
+
+    Also note that FB believes that authentic identity
+    is one of the main factors on deciding whether
+    or not a personal account (not necessarily pages)
+    is[[https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy][ "authentic"]].
+
+- CIB does not have to be:
+  + Automated. (C.f. earlier section on Grief engines and
+    "automated" human behavior). Automation is not necessarily
+    inauthentic or, more generally, bad.
+
+    There are bots that are "authentic". For example, [[https://twitter.com/GunDeaths][Gun
+    Violence Archive (@GunDeaths)]]
+    is a twitter bot that collects and reports on people
+    shot to death in the U.S.
+
+    Bots that are "bad", by this "you know it when you see
+    it" metric, are bots that automatically hurl abuse at
+    public figures, or bots that automatically retweet lies
+    or misleading tweets to pollute the information space.
+
+- Difference between overt and covert activity by state actors.
+  Was zoning out at this point (figuring out some
+  work-related stuff), but my brain managed to retain these
+  bits:
+
+  + Overt activity by state actors are behaviors where state
+    actors are explicitly communicating a message while
+    representing themselves. Examples of overt activity:
+    press releases; propaganda campaigns; "official" tweets
+    (or tweets by officials, e.g. Trump and Zhao
+    LiJian ([[https://twitter.com/zlj517][twitter]])([[https://www.buzzfeednews.com/article/bensmith/zhao-lijian-china-twitter][BuzzFeed News]])([[https://en.wikipedia.org/wiki/Zhao_Lijian][wiki]])).
+  + Covert activity by state actors would be e.g.
+    state-sponsored online activity that contains one or
+    more elements of FB's definition of CIB.
+
+    (I probably paraphrased what Zarine was saying)
+    "Embedding misinformation/online harms in media/social
+    media", without clear attribution to the threat/state
+    actor.
+
+    c.f.:
+    - Katherine. "State-Sponsored Media Twitter Activity on
+      2020 Election Integrity", published 25 Aug 2020 on
+      /Foreign Policy Research Insitute/. Available:
+      https://www.fpri.org/fie/state-sponsored-media-twitter-election-2020-integrity/
+    - Stanford Internet Observatory. "Analysis of June 2020
+      Twitter takedowns linked to China, Russia and Turkey",
+      published 11 Jun 2020. Available:
+      https://fsi.stanford.edu/news/june-2020-twitter-takedown
+* Tools
+** Getting back into RSS feeds
+I've started getting back into using RSS feeds to
+corral the news that I want to read.
+
+I stopped using it back when most writing started
+moving to the social media trifecta: Twitter, Facebook,
+and the now obscure Tumblr.
+
+*** RSS metrics as greenfield opportunity in adtech?
+
+** Bash things
+
+#+BEGIN_SRC sh
+# Change text encoding of file
+iconv -f <INPUT_FORMAT> -t utf-8 <file.txt> > out.txt
+
+# List formats supported by iconv
+iconv -l
+
+# Remove CR from CRLF files
+cat <file.txt> | tr -d '\r' > out.txt'
+#+END_SRC
+
+** Python
+*** More string formatting
+
+Have been using less of the ~f"{var_name}"~ string
+formatting convention, and more ~"{}".format(var_name)~
+instead, so was pleasantly surprised to learn
+two new things from the [[https://marshmallow.readthedocs.io/en/stable/quickstart.html][Marshmallow quick start guide]]:
+
+1. You can convert an interpolated variable in the string
+   to a specific 'format' using ~\!(r|s|a)~. ~!s~ converts
+   the var to its string format (usually not needed),
+   ~!a~ converts it to its ascii format, and
+   ~!r~ converts it to its repr format.
+
+   Of the three, ~!r~ is the most interesting one,
+   because (i) I didn't know about it until now,
+   and (ii) because it does this:
+
+   #+BEGIN_SRC python
+   import datetime as dt
+
+   datenow = dt.datetime.now()
+
+   print("Repr: {!r}".format(datenow))
+   # Repr: datetime.datetime(2021, 4, 18, 11, 3, 12, 368861)
+
+   print("String: {}".format(datenow)
+   # String: 2021-04-18 11:03:19.010738
+   #+END_SRC
+
+2. You can use /named/ variables in string interpolations!:
+
+   #+BEGIN_SRC python
+   class Person:
+       def __init__(self, name, email):
+           self.name = name
+           self.email = email
+
+    queen = Person("Persephone", "queen@under.com")
+
+    print("Name: {person.name}\nEmail:{person.email}".format(person=queen))
+    #+END_SRC
+
+    which is fantastic 🎉
+
+** Applying correct security controls for macOS GNU Emacs binary
+When you run the binary from https://emacsformacosx.com/,
+it asks you to grant a mysterious ruby application
+full disk access...which for me is an immediate no.
+
+This turns up after a bit of searching: https://apple.stackexchange.com/a/387984/414631
+
+So turns out that the GNU Emacs binary uses a ruby
+script to figure out which binary to feed your
+macOS system when the .app file is opened.
+
+So the way to grant permissions to the actual binary
+being run instead of the ruby script is to:
+
+1. Open ~/Applications/Emacs.app/Contents/MacOS~ (the SO
+   answer might be a bit out of date):
+
+   #+BEGIN_SRC text
+   ❯ cd /Applications/Emacs.app/Contents/MacOS && ls
+    Emacs                   bin-arm64-11_2
+    Emacs-arm64-11_2        bin-x86_64-10_11
+    Emacs-arm64-11_2.pdmp   bin-x86_64-10_14
+    Emacs-old               lib-arm64-11_2
+    Emacs-x86_64-10_11      lib-x86_64-10_11
+    Emacs-x86_64-10_11.pdmp lib-x86_64-10_14
+    Emacs-x86_64-10_14      libexec
+    Emacs-x86_64-10_14.pdmp libexec-arm64-11_2
+    Emacs.pdmp              libexec-x86_64-10_11
+    bin                     libexec-x86_64-10_14
+   #+END_SRC
+
+2. Back up the ~Emacs~ script: ~mv Emacs Emacs-old~
+3. Create a symbolic link to the binary for your system. I'm
+   using an M1 (🎉) mac, so I'll run: ~ln -s
+   Emacs-arm64-11_2 Emacs~
+4. Open Emacs.app.
+
+If everything's right, macOS will ask you to grant /some/
+disk access to the Emacs binary instead of the ruby script.
+
+Now the complaints: had to spend a boat load of time trying
+to figure out why the + button in the disk permissions
+options on macOS wouldn't let me add applications manually
+-- textbook antipattern/usability bug.
+Another example of how Apple's design is just bad in weird
+places.
