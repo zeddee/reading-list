@@ -211,6 +211,77 @@ She covered:
       Twitter takedowns linked to China, Russia and Turkey",
       published 11 Jun 2020. Available:
       https://fsi.stanford.edu/news/june-2020-twitter-takedown
+** STIX 1.2 and CVSS
+Have been working with the STIX 1.2 standard
+for a bit at work, and ... to put it mildly, XML is weird.
+
+Also, the STIX 1.2 standard is old and is considered
+finished ... which would not be a problem if it didn't
+expect other projects connected to it to also stay
+unchanged.
+
+Specifically: that the STIX 1.2 [[https://stixproject.github.io/data-model/1.2/et/VulnerabilityType/][~VulnerabilityType]]~ schema
+is specifically pinned to [[https://www.first.org/cvss/v2/guide][CVSS 2.0]], and does not support
+CVSS 3.x.
+
+Schemas in question:
+[[https://stixproject.github.io/data-model/1.2/et/ExploitTargetType/][ExploitTarget (ExploitTargetType)]] -> Vulnerability (VulnerabilityType) -> [[https://stixproject.github.io/data-model/1.2/et/CVSSVectorType/][CVSS_Score (CVSSVectorType)]]
+
+So the problem here is that:
+
+- There is an hidden dependency on a separate spec. This in
+  itself is usually fine ... except that:
+- The STIX 1.2 spec specifically pins it at the CVSS 2.0
+  spec. This means that there is no way to use an updated
+  version of CVSS (i.e. 2.0 and later, 3.x etc.) when
+  defining and exploit target in STIX 1.2.
+- In theory, this level of rigidity and specificity
+  makes the binding stable. But it also means that
+  once the spec it depends upon changes, it then forces
+  /all/ its users to stick with a deprecated or obsolete
+  version of the spec it depends on.
+- That's why the W3C and IETF rfcs /never/ (afaik) pin
+  one spec to a specific version of another spec. That
+  sort of rigidity would then prevent any spec from being
+  updated, essentially ensuring that it would be obsolete
+  in the next 2 to 5 years (optimistically).
+- The pinning of the CVSSVectorType to CVSS 2.0 is /not
+  obvious/. This cost me a couple of hours trying to figure
+  out why a certain piece of software was not accepting CVSS
+  3.x vectors, and wondering if I should be submitting a bug
+  report.
+
+  Turns out that the implementation is faithful to the STIX
+  1.2 spec -- so I saved myself the work of filing a ticket
+  that would inevitably receive a "won't fix" and a comment
+  that just says "Made to spec".
+
+What would I have expected?
+- A version field in any schema type that depends on a
+  separate spec. This makes the schema more complicated to
+  specify
+- esp. if you need to be specific about expected field value
+  format, as in the case with the CVSS 3 & 2 vector string
+  formats:
+  + CVSS 3.x: ~CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H~
+  + CVSS 2.0: ~AV:L/AC:L/Au:N/C:P/I:P/A:P~
+
+Last complaint: providing only CVSS 2.0 calculations is
+irresponsible for any threat intel provider. The threat
+landscape has changed since 2.0, and that's what 3.x is for.
+
+Using CVSS 2.0 for almost all known vulnerabilities would
+/under report/ the severity of the known threat, essentially
+feeding bad intel to defenders.
+
+E.g. [[https://nvd.nist.gov/vuln/detail/CVE-2021-21981][CVE-2021-21981]] (from which we've taken the CVSS 3.x/2.0
+vector strings for the examples above) which is a privilege
+escalation vuln, is reported as a HIGH (7.8) severity vuln
+using CVSS 3.0, while using CVSS 2.0 we get only a MEDIUM
+(4.6) severity report.
+
+Good summary of [[https://www.first.org/cvss/v3.0/user-guide#2-9-Summary-of-Changes][differences between 2.0 and 3.0]].
+
 * Tools
 ** Getting back into RSS feeds
 I've started getting back into using RSS feeds to
