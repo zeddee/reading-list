@@ -1,0 +1,208 @@
+#+TITLE: Reading List 2021H2
+
+* Python things
+** List installed packages in an environment
+
+#+BEGIN_SRC python
+import pkg_resources
+
+print([i for i in pkg_resources.working_set])
+
+# to find all packages with substring in name
+
+print([i for i in pkg_resources.working_set if "api" in str(i)])
+#+END_SRC
+** List modules in a package
+
+#+BEGIN_SRC python
+import requests
+
+print(dir(requests))
+
+# or
+
+print(requests.__dir__)
+
+# we can also do more with __doc__
+
+#+END_SRC
+
+** The ~ast~ stdlib package is super powerful
+The Python stdlib has an AST parser that I discovered a
+month ago, and it's been a treat to use.
+
+I've been using it to parse arbitrary python files to
+generate documentation.
+
+Perks:
+
+- **Avoid dependency hell:** To get sphinx autodoc to run on
+  a python file, you'd need to be able to resolve the entire
+  import/dependency tree of the module. And even then, if
+  you're missing dependencies from the project you'll have
+  missing documentation and warnings in sphinx-build.
+
+  By using ~ast~ to parse a python file and then get the
+  ~__doc__~ dunder attribute, /no dependencies/ are resolved
+  -- you're literally reading the contents of the python
+  file and retrieving what's written in it.
+- **Get more than __doc__:** Docstrings are great. But
+  depending on docstrings to generate documentation for a
+  given python project means that you have to explicitly
+  document everything. This is fine if the developers are
+  on-board, but it becomes extra overhead when you already
+  specify param and return types through type annotations,
+  and sometimes you hit the "the code is self-documenting"
+  wall.
+
+  Parsing the ast allows you to get /everything/ from the
+  python file.
+
+  You can get funcdefs and classdefs, /decorators/ (!),
+  their contents, attributes, magic numbers/values, globals,
+  etc. without needing them to be explicitly documented.
+
+Cons:
+
+- **Need lots of code:** So far, I've only had the time to
+  make one custom script per file that i need to generate
+  documentation for. I'm building everything into a generic
+  parser, but I still need a unique set of calls to be made
+  for each python file that i want to generate documentation
+  from (to filter out all the junk and only retain what i
+  need, and then write it out into a usable format).
+- **Doesn't resolve dependencies:** This pro is also a con.
+  Not having to resolve the entire dependency tree is
+  wonderful when you just need to generate a small subset of
+  things from a single python file. But it also means that
+  if you need to resolve dependencies (e.g. ~ATTRIBUTE_NAME=
+  othermodule.ArbitraryClass.attribute_name~), you must
+  either build the dependency resolution yourself, or find a
+  way to edit the output to replace that value (i.e. no-code
+  method of Hand Editing(TM)).
+* Ruby
+** Ruby environment management
+Had to dive back into ruby for ~|undisclosed|~ reason, and
+I'm already missing the conveniences of local python package
+management. BUT i'm not here to complain, so:
+
+**Ruby package management**
+
+I wanted something like Python's ~venv~ that would let me
+install and manage all my dependencies in a folder that is
+dedicated to a single project (e.g. how ~venv~ would allow
+you to create a ~.venv~ directory and add that to your
+python path).
+
+So it turns out that:
+
+1. There is no real equivalent for ~virtualenv~ or ~venv~,
+   where you can run ~source .venv/bin/activate~ to start
+   using a virtual environment and have everything set for
+   you.
+2. We might not need it.
+
+Other notes:
+- I'm using ~asdf~ to manage my ruby versions. I'm done
+   with messing with multiple shims from pyenv, rbenv/rvm,
+   nvm.
+- I'm using ~direnv~ to manage local environments. This lets
+  me write a ~.envrc~ file to a directory and specify
+  certain conditions that get loaded when I ~cd~ into that
+  directory.
+
+So I've gathered that there are basically 2 ways to do this:
+
+*** Method 1: Set GEM_HOME for your local environment
+Method one is to add the following values to your ~.envrc~ (for ~direnv~):
+
+#+BEGIN_SRC shell
+export GEM_HOME=$(pwd)/.vendor
+export PATH=$PATH:$(pwd)/.vendor/bin
+#+END_SRC
+
+You can also set up your ~.envrc~ to switch the ruby binary
+~ruby~ aliases to when you ~cd~ into this directory.
+
+There is also a way to get ~direnv~ to automatically do this
+for you when you add ~layout ruby <ruby_version>~ to your
+~.envrc~, but ... I don't really want to go there yet.
+*** Method 2 (preferred): Use bundler properly
+Super simple:
+
+#+BEGIN_SRC shell
+## Do this once
+bundle config path .vendor
+bundle config bin .vendor
+
+## Then to start managing your dependencies
+bundle init
+#then edit the Gemfile to add and control your dependencies
+bundle install
+#+END_SRC
+
+I'll admit I didn't understand how to use bundler properly
+before this. I drew parallels with ~npm~ (which installs
+bundles locally to ~node_modules/~ by default), and not ~go~
+where there's a user-level ~GOPATH~ that vendors everything
+(and vendoring is not Go's strong suite either). So I
+assumed that ~bundler~ worked exactly like Go and ~GOPATH~
+with no simple way to work around this. Glad to know I was
+wrong.
+
+Also, the last time I really worked with ruby was when I was
+trying to do weird things with Jekyll in 2016, and the last
+time I really worked with go was pre-1.11, and ~GOMODULES~
+was in preview. This have probably changed since then 😅.
+
+* Linux admin
+** Enabling swap space
+Run as root:
+
+#+BEGIN_SRC shell
+swapon --show
+fallocate -l 4G /swapfile
+chmod 600 /swapfile
+mkswap /swapfile
+swapon /swapfile
+#+END_SRC
+
+Then add to fstab by editing ~/etc/fstab~ and adding this
+line:
+
+#+BEGIN_SRC shell
+/swapfile none swap sw 0 0
+#+END_SRC
+** Basic UFW setup
+Make sure ufw is installed:
+
+#+BEGIN_SRC shell
+sudo apt-get install ufw
+#+END_SRC
+
+Enable ipv6 by editing ~/etc/default/ufw~ and making sure this param is set:
+
+#+BEGIN_SRC text
+IPV6=yes
+#+END_SRC
+
+Then run the following commands:
+
+#+BEGIN_SRC shell
+ufw allow ssh # if you're running ssh on the default port 22
+#otherwise, you'll need to allow the specific port instead
+ufw allow 5522
+ufw default deny incoming
+ufw default allow outgoing
+ufw allow http # allow incoming connections on 80
+ufw allow https # 443
+ufw enable
+#+END_SRC
+
+** Basic postfix management things
+- Postfix configuration file is usually at ~/etc/postfix/main.cf~
+- Useful to ~tail -f /var/log/maillog~ as you run/restart
+  the ~postfix~ service to check logs.
+- ~smtp_sasl_password_maps~ may or may not properly accept
+  ~hash~ keys. In any case, try both ~hash~ and ~static~
+  methods of specifying keys here.
